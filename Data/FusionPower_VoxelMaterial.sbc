@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <VoxelMaterials>
+
+
+		<VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+			<Id>
+				<TypeId>VoxelMaterialDefinition</TypeId>
+				<SubtypeId>HeavyH2O</SubtypeId>
+			</Id>				
+			<MinedOre>Deuterium</MinedOre>
+			<MinedOreRatio>1</MinedOreRatio>
+			<CanBeHarvested>true</CanBeHarvested>
+			<IsRare>true</IsRare>
+			<!-- Wether it spawns in asteroids, default true (even if undefined) -->
+			<SpawnsInAsteroids>true</SpawnsInAsteroids>
+			<!-- True = generated in ore pockets and gets detected by ore detector, false = used as asteroids shell -->
+			<IsRare>true</IsRare>
+			<!-- Wether it can spawn from meteorite impacts, default true (even if undefined); NOTE: requires IsRare to be true. -->
+			<SpawnsFromMeteorites>true</SpawnsFromMeteorites>
+			<IsIndestructible>false</IsIndestructible>
+			<DamageRatio>0.2</DamageRatio>
+			<SpecularPower>15</SpecularPower>
+			<SpecularShininess>1.632</SpecularShininess>
+			
+			
+      <VoxelHandPreview>Textures\Voxels\Deuterium_Thumbnail.dds</VoxelHandPreview>
+      <ColorMetalXZnY>Textures\Voxels\CrystalRock_cm.dds</ColorMetalXZnY>
+      <!--<ColorMetalY>Textures\Voxels\Stone_03_ForAxisY_cm.dds</ColorMetalY>-->
+
+      <NormalGlossXZnY>Textures\Voxels\CrystalRock_ng.dds</NormalGlossXZnY>
+      <!--<NormalGlossY>Textures\Voxels\Stone_03_ForAxisY_ng.dds</NormalGlossY>-->
+
+      <ColorMetalXZnYFar1>Textures\Voxels\CrystalRock_cm.dds</ColorMetalXZnYFar1>
+      <NormalGlossXZnYFar1>Textures\Voxels\CrystalRock_ng.dds</NormalGlossXZnYFar1>
+      <ExtXZnYFar1>Textures\Voxels\Dummy_add.dds</ExtXZnYFar1>
+
+      <ColorMetalXZnYFar2>Textures\Voxels\CrystalRock_cm.dds</ColorMetalXZnYFar2>
+      <NormalGlossXZnYFar2>Textures\Voxels\CrystalRock_ng.dds</NormalGlossXZnYFar2>
+      <ExtXZnYFar2>Textures\Voxels\Dummy_add.dds</ExtXZnYFar2>
+
+
+      <ScaleMultiplier>4</ScaleMultiplier>
+
+      <SpawnChannels>
+        <Channel>2</Channel>
+        <Channel>3</Channel>
+      </SpawnChannels>
+      <Far1Distance>25</Far1Distance>
+      <Far2Distance>400</Far2Distance>
+      <Far1Scale>30</Far1Scale>
+      <Far2Scale>100</Far2Scale>
+	</VoxelMaterial>
+	
+  </VoxelMaterials>
+</Definitions>

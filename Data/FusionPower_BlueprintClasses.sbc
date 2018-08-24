@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BlueprintClasses>
+       <Class>
+      <Id>
+        <TypeId>BlueprintClassDefinition</TypeId>
+        <SubtypeId>HeavyH2OIngots</SubtypeId>
+      </Id>
+      <DisplayName>Deuterium Container</DisplayName>
+      <Icon>Textures\GUI\Icons\buttons\large_block.dds</Icon>
+      <HighlightIcon>Textures\GUI\Icons\buttons\large_block_highlight.dds</HighlightIcon>
+      <InputConstraintIcon>Textures\GUI\Icons\filter_ore.dds</InputConstraintIcon>
+      <OutputConstraintIcon>Textures\GUI\Icons\filter_ingot.dds</OutputConstraintIcon>
+    </Class>
+	<Class>
+      <Id>
+        <TypeId>BlueprintClassDefinition</TypeId>
+        <SubtypeId>DeuteriumOreToIngots</SubtypeId>
+      </Id>
+      <DisplayName>Deuterium Ore</DisplayName>
+      <Icon>Textures\GUI\Icons\buttons\large_block.dds</Icon>
+      <HighlightIcon>Textures\GUI\Icons\buttons\large_block_highlight.dds</HighlightIcon>
+      <InputConstraintIcon>Textures\GUI\Icons\filter_ore.dds</InputConstraintIcon>
+      <OutputConstraintIcon>Textures\GUI\Icons\filter_ingot.dds</OutputConstraintIcon>
+    </Class>
+  </BlueprintClasses>
+  <BlueprintClassEntries>
+	<Entry Class="SmallBlocks" BlueprintSubtypeId="Reactor/SBFusionReactorT1" />
+	<Entry Class="SmallBlocks" BlueprintSubtypeId="Reactor/SBFusionReactorT2" />
+	<Entry Class="SmallBlocks" BlueprintSubtypeId="Reactor/SBFusionReactorT3" />
+	<Entry Class="SmallBlocks" BlueprintSubtypeId="Reactor/SBFusionReactorT4" />
+	<Entry Class="SmallBlocks" BlueprintSubtypeId="Reactor/SBFusionReactorT5" />
+
+	<Entry Class="LargeBlocks" BlueprintSubtypeId="Reactor/LBFusionReactorT1" />
+	<Entry Class="LargeBlocks" BlueprintSubtypeId="Reactor/LBFusionReactorT2" />
+	<Entry Class="LargeBlocks" BlueprintSubtypeId="Reactor/LBFusionReactorT3" />
+	<Entry Class="LargeBlocks" BlueprintSubtypeId="Reactor/LBFusionReactorT4" />
+	<Entry Class="LargeBlocks" BlueprintSubtypeId="Reactor/LBFusionReactorT5" />
+	
+	<Entry Class="Components" BlueprintSubtypeId="MagnetronComponent" />
+	
+  <Entry Class="Components" BlueprintSubtypeId="HeavyH2OOreToIngot" />	
+	<Entry Class="HeavyH2OIngots" BlueprintSubtypeId="DeuteriumOreToIngot" />
+	<Entry Class="DeuteriumOreToIngots" BlueprintSubtypeId="DeuteriumOreToIngot" />
+  <Entry Class="Ice" BlueprintSubtypeId="DepletedWaterIce" />
+  </BlueprintClassEntries>
+</Definitions>
+

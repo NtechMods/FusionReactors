@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Blueprints>
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>MagnetronComponent</SubtypeId>
+      </Id>
+      <DisplayName>Magnetron Containment Component</DisplayName>
+      <Icon>Textures\GUI\Icons\component\AdvancedReactorBundle.dds</Icon>
+      <Prerequisites>
+	    <Item Amount="30" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="26" TypeId="Ingot" SubtypeId="Cobalt" />
+        <Item Amount="10" TypeId="Ingot" SubtypeId="Silicon" />
+        <Item Amount="19" TypeId="Ingot" SubtypeId="Silver" />
+		<Item Amount="5" TypeId="Ingot" SubtypeId="Gold" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="MagnetronComponent" />
+      <BaseProductionTimeInSeconds>35</BaseProductionTimeInSeconds>
+    </Blueprint>
+
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>DeuteriumOreToIngot</SubtypeId>
+      </Id>
+      <DisplayName>HeavyH2O (Deuterium) Cartridge</DisplayName>
+      <Icon>Textures\GUI\Icons\ingot\HH2o.dds</Icon>
+      <Prerequisites>
+        <Item Amount="1" TypeId="Ore" SubtypeId="Deuterium" />
+      </Prerequisites>
+      <Result Amount=".1" TypeId="Ingot" SubtypeId="DeuteriumContainer" />
+      <BaseProductionTimeInSeconds>5</BaseProductionTimeInSeconds>
+    </Blueprint> 
+
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>HeavyH2OOreToIngot</SubtypeId>
+      </Id>
+      <DisplayName>HeavyH2O (Deuterium) Cartridge</DisplayName>
+      <Icon>Textures\GUI\Icons\ingot\HH2o.dds</Icon>
+      <Prerequisites>
+        <Item Amount="1" TypeId="Ore" SubtypeId="Ice" />
+      </Prerequisites>
+      <Result Amount=".01" TypeId="Ingot" SubtypeId="DeuteriumContainer" />
+      <Result Amount="0.99" TypeId="Ingot" SubtypeId="DepletedWaterIce" />
+      <BaseProductionTimeInSeconds>5</BaseProductionTimeInSeconds>
+    </Blueprint>
+    
+   <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>DepletedWaterIceToOxyGen</SubtypeId>
+      </Id>
+      <DisplayName>Depleted Water Ice</DisplayName>
+      <Icon>Textures\GUI\Icons\ingot\gravel_ingot.dds</Icon>
+      <Prerequisites>
+        <Item Amount="1" TypeId="Ore" SubtypeId="DepletedWaterIce" />
+      </Prerequisites>
+      <Result Amount="0.9" TypeId="Ingot" SubtypeId="Stone" />
+      <BaseProductionTimeInSeconds>0.1</BaseProductionTimeInSeconds>
+    </Blueprint>
+  </Blueprints>
+</Definitions>

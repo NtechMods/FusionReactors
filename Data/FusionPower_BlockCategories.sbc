@@ -1,0 +1,79 @@
+<?xml version="1.0" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CategoryClasses>
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId/>
+      </Id>
+      <DisplayName>DisplayName_Category_LargeBlocks</DisplayName>
+      <Name>LargeBlocks</Name>
+      <ItemIds>
+		<string>LBFusionReactorT1</string>
+        <string>LBFusionReactorT2</string>
+		<string>LBFusionReactorT3</string>
+		<string>LBFusionReactorT4</string>
+		<string>LBFusionReactorT5</string>	
+		<string>DeuteriumProcessor</string>
+      </ItemIds>
+    </Category>
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId/>
+      </Id>
+      <DisplayName>DisplayName_Category_SmallBlocks</DisplayName>
+      <Name>SmallBlocks</Name>
+      <ItemIds>
+		<string>SBFusionReactorT1</string>
+		<string>SBFusionReactorT2</string>
+		<string>SBFusionReactorT3</string>
+		<string>SBFusionReactorT4</string>
+		<string>SBFusionReactorT5</string>
+      </ItemIds>
+    </Category>
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId/>
+      </Id>
+      <DisplayName>Ntech</DisplayName>
+      <Name>Ntech</Name>
+      <ItemIds>
+		<string>SBFusionReactorT1</string>
+		<string>SBFusionReactorT2</string>
+		<string>SBFusionReactorT3</string>
+		<string>SBFusionReactorT4</string>
+		<string>SBFusionReactorT5</string>
+		
+		<string>LBFusionReactorT1</string>
+        <string>LBFusionReactorT2</string>
+		<string>LBFusionReactorT3</string>
+		<string>LBFusionReactorT4</string>
+		<string>LBFusionReactorT5</string>
+		<string>DeuteriumProcessor</string>
+      </ItemIds>
+    </Category>
+	<Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId/>
+      </Id>
+      <DisplayName>DisplayName_Category_Power</DisplayName>
+      <Name>Power</Name>
+      <ItemIds>
+		<string>SBFusionReactorT1</string>
+		<string>SBFusionReactorT2</string>
+		<string>SBFusionReactorT3</string>
+		<string>SBFusionReactorT4</string>
+		<string>SBFusionReactorT5</string>
+		
+		<string>LBFusionReactorT1</string>
+        <string>LBFusionReactorT2</string>
+		<string>LBFusionReactorT3</string>
+		<string>LBFusionReactorT4</string>
+		<string>LBFusionReactorT5</string>
+      </ItemIds>
+    </Category>
+  </CategoryClasses>
+</Definitions>
