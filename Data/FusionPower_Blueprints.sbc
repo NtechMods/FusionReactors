@@ -24,7 +24,7 @@
         <TypeId>BlueprintDefinition</TypeId>
         <SubtypeId>DeuteriumOreToIngot</SubtypeId>
       </Id>
-      <DisplayName>HeavyH2O (Deuterium) Cartridge</DisplayName>
+      <DisplayName>Deuterium Container</DisplayName>
       <Icon>Textures\GUI\Icons\ingot\HH2o.dds</Icon>
       <Prerequisites>
         <Item Amount="1" TypeId="Ore" SubtypeId="Deuterium" />
@@ -38,7 +38,7 @@
         <TypeId>BlueprintDefinition</TypeId>
         <SubtypeId>HeavyH2OOreToIngot</SubtypeId>
       </Id>
-      <DisplayName>HeavyH2O (Deuterium) Cartridge</DisplayName>
+      <DisplayName>Deuterium Container</DisplayName>
       <Icon>Textures\GUI\Icons\ingot\HH2o.dds</Icon>
       <Prerequisites>
         <Item Amount="1" TypeId="Ore" SubtypeId="Ice" />
