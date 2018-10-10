@@ -850,6 +850,11 @@
         <TypeId>Ingot</TypeId>
         <SubtypeId>HeavyH2OIngot</SubtypeId>
       </FuelId>
+	  
+      <FuelId>
+        <TypeId>Ingot</TypeId>
+        <SubtypeId>DeuteriumOreToIngot</SubtypeId>
+      </FuelId>
       <PrimarySound>ShipLrgNuclearSm</PrimarySound>
       <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
       <DamagedSound>ParticleReactor</DamagedSound>
@@ -906,7 +911,7 @@
       <StandbyPowerConsumption>0.001</StandbyPowerConsumption>
       <OperationalPowerConsumption>0.63</OperationalPowerConsumption>
       <BlueprintClasses>
-        <Class>DeuteriumOreToIngots</Class>
+        <Class>DeuteriumOreToIngot</Class>
 		<Class>HeavyH2OOreToIngot</Class>
       </BlueprintClasses>
       <RefineSpeed>1.7</RefineSpeed>
