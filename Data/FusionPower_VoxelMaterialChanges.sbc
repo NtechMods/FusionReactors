@@ -20,9 +20,9 @@
         <Change From="Snow" To="Silver_01" />
       </Option>
       <Option Chance="0.005">
-        <Change From="Stone" To="HeavyH2O" />
-        <Change From="Iron_01" To="HeavyH2O" />
-        <Change From="Iron_02" To="HeavyH2O" />
+        <Change From="Stone" To="Deuterium" />
+        <Change From="Iron_01" To="Deuterium" />
+        <Change From="Iron_02" To="Deuterium" />
       </Option>
     </Options>
   </Definition>
@@ -61,8 +61,8 @@
         <Change From="Iron_02" To="Magnesium_01" />
       </Option>
       <Option Chance="0.005">
-        <Change From="Iron_01" To="HeavyH2O" />
-        <Change From="Iron_02" To="HeavyH2O" />
+        <Change From="Iron_01" To="Deuterium" />
+        <Change From="Iron_02" To="Deuterium" />
       </Option>
     </Options>
   </Definition>
@@ -274,8 +274,8 @@
       </Option>
       <Option Chance="0.05">
         <Change From="Stone" To="Ice" />
-        <Change From="Iron_01" To="HeavyH2O" />
-        <Change From="Iron_02" To="HeavyH2O" />
+        <Change From="Iron_01" To="Deuterium" />
+        <Change From="Iron_02" To="Deuterium" />
       </Option>
     </Options>
   </Definition>
@@ -327,8 +327,8 @@
       </Option>
       <Option Chance="0.05">
         <Change From="Stone" To="MarsRocks" />
-        <Change From="Iron_01" To="HeavyH2O" />
-        <Change From="Iron_02" To="HeavyH2O" />
+        <Change From="Iron_01" To="Deuterium" />
+        <Change From="Iron_02" To="Deuterium" />
       </Option>
     </Options>
   </Definition>
@@ -376,8 +376,8 @@
       </Option>
       <Option Chance="0.005">
         <Change From="Stone" To="AlienRockyMountain" />
-        <Change From="Iron_01" To="HeavyH2O" />
-        <Change From="Iron_02" To="HeavyH2O" />
+        <Change From="Iron_01" To="Deuterium" />
+        <Change From="Iron_02" To="Deuterium" />
       </Option>
     </Options>
   </Definition>
@@ -432,8 +432,8 @@
       </Option>
       <Option Chance="0.05">
         <Change From="Stone" To="AlienSnow" />
-        <Change From="Iron_01" To="HeavyH2O" />
-        <Change From="Iron_02" To="HeavyH2O" />
+        <Change From="Iron_01" To="Deuterium" />
+        <Change From="Iron_02" To="Deuterium" />
       </Option>
     </Options>
   </Definition>
@@ -487,8 +487,8 @@
       </Option>
       <Option Chance="0.15">
         <Change From="Stone" To="AlienSnow" />
-        <Change From="Iron_01" To="HeavyH2O" />
-        <Change From="Iron_02" To="HeavyH2O" />
+        <Change From="Iron_01" To="Deuterium" />
+        <Change From="Iron_02" To="Deuterium" />
       </Option>
     </Options>
   </Definition>
@@ -511,8 +511,8 @@
         <Change From="Iron_02" To="Magnesium_01" />
       </Option>
       <Option Chance="0.01">
-        <Change From="Iron_01" To="HeavyH2O" />
-        <Change From="Iron_02" To="HeavyH2O" />
+        <Change From="Iron_01" To="Deuterium" />
+        <Change From="Iron_02" To="Deuterium" />
       </Option>
     </Options>
   </Definition>
