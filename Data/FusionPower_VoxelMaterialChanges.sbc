@@ -19,7 +19,7 @@
         <Change From="Iron_02" To="Gold_01" />
         <Change From="Snow" To="Silver_01" />
       </Option>
-      <Option Chance="0.005">
+      <Option Chance="0.05">
         <Change From="Stone" To="HeavyH2O" />
         <Change From="Iron_01" To="HeavyH2O" />
         <Change From="Iron_02" To="Iron_01" />
@@ -60,7 +60,7 @@
         <Change From="Iron_01" To="Magnesium_01" />
         <Change From="Iron_02" To="Magnesium_01" />
       </Option>
-      <Option Chance="0.005">
+      <Option Chance="0.05">
         <Change From="Iron_01" To="HeavyH2O" />
         <Change From="Iron_02" To="Iron_01" />
       </Option>
@@ -99,6 +99,10 @@
       <Option Chance="0.1">
         <Change From="Iron_01" To="Magnesium_01" />
         <Change From="Iron_02" To="Magnesium_01" />
+      </Option>
+      <Option Chance="0.1">
+        <Change From="Iron_01" To="HeavyH2O" />
+        <Change From="Iron_02" To="Iron_01" />
       </Option>
     </Options>
   </Definition>
@@ -142,6 +146,11 @@
         <Change From="Stone" To="DesertRocks" />
         <Change From="Iron_01" To="Magnesium_01" />
         <Change From="Iron_02" To="Magnesium_01" />
+      </Option>
+      <Option Chance="0.1">
+	    <Change From="Stone" To="DesertRocks" />
+        <Change From="Iron_01" To="HeavyH2O" />
+        <Change From="Iron_02" To="HeavyH2O" />
       </Option>
     </Options>
   </Definition>
@@ -374,7 +383,7 @@
         <Change From="Iron_01" To="Magnesium_01" />
         <Change From="Iron_02" To="Magnesium_01" />
       </Option>
-      <Option Chance="0.005">
+      <Option Chance="0.5">
         <Change From="Stone" To="AlienRockyMountain" />
         <Change From="Iron_01" To="HeavyH2O" />
         <Change From="Iron_02" To="Iron_01" />
@@ -430,7 +439,7 @@
         <Change From="Iron_01" To="Magnesium_01" />
         <Change From="Iron_02" To="Magnesium_01" />
       </Option>
-      <Option Chance="0.05">
+      <Option Chance="0.5">
         <Change From="Stone" To="AlienSnow" />
         <Change From="Iron_01" To="HeavyH2O" />
         <Change From="Iron_02" To="Iron_01" />
@@ -513,6 +522,10 @@
       <Option Chance="0.01">
         <Change From="Iron_01" To="Iron_01" />
         <Change From="Iron_02" To="Iron_01" />
+      </Option>
+      <Option Chance="0.1">
+        <Change From="Iron_01" To="HeavyH2O" />
+        <Change From="Iron_02" To="HeavyH2O" />
       </Option>
     </Options>
   </Definition>

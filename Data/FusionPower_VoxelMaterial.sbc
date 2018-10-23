@@ -11,7 +11,7 @@
 			<MinedOre>Deuterium</MinedOre>
 			<MinedOreRatio>1</MinedOreRatio>
 			<CanBeHarvested>true</CanBeHarvested>
-			<IsRare>true</IsRare>
+			<IsRare>false</IsRare>
 			<!-- Wether it spawns in asteroids, default true (even if undefined) -->
 			<SpawnsInAsteroids>true</SpawnsInAsteroids>
 			<!-- True = generated in ore pockets and gets detected by ore detector, false = used as asteroids shell -->
