@@ -82,7 +82,7 @@
       </InventorySize>
       <FuelId>
         <TypeId>Ingot</TypeId>
-        <SubtypeId>HeavyH2OIngot</SubtypeId>
+        <SubtypeId>DeuteriumContainer</SubtypeId>
       </FuelId>
       <PrimarySound>ShipLrgNuclearSm</PrimarySound>
       <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
@@ -107,6 +107,7 @@
           <SubtypeId>LBFusionReactorT5</SubtypeId>
         </BlockVariant>
       </BlockVariants>
+	  <PCU>25</PCU>
     </Definition>	
 	
     <Definition xsi:type="MyObjectBuilder_ReactorDefinition">
@@ -172,7 +173,7 @@
       </InventorySize>
       <FuelId>
         <TypeId>Ingot</TypeId>
-        <SubtypeId>HeavyH2OIngot</SubtypeId>
+        <SubtypeId>DeuteriumContainer</SubtypeId>
       </FuelId>
       <PrimarySound>ShipLrgNuclearSm</PrimarySound>
       <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
@@ -197,6 +198,7 @@
           <SubtypeId>SBFusionReactorT5</SubtypeId>
         </BlockVariant>
       </BlockVariants>
+	  <PCU>25</PCU>
     </Definition>
 	<!-- End Tier 1 Reactors -->
 	
@@ -282,7 +284,7 @@
       </InventorySize>
       <FuelId>
         <TypeId>Ingot</TypeId>
-        <SubtypeId>HeavyH2OIngot</SubtypeId>
+        <SubtypeId>DeuteriumContainer</SubtypeId>
       </FuelId>
       <PrimarySound>ShipLrgNuclearSm</PrimarySound>
       <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
@@ -290,6 +292,7 @@
       <DestroyEffect>Explosion_Warhead_02</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
 	  <GuiVisible>false</GuiVisible>
+	  <PCU>25</PCU>
     </Definition>	
 	
 	<Definition xsi:type="MyObjectBuilder_ReactorDefinition">
@@ -355,7 +358,7 @@
       </InventorySize>
       <FuelId>
         <TypeId>Ingot</TypeId>
-        <SubtypeId>HeavyH2OIngot</SubtypeId>
+        <SubtypeId>DeuteriumContainer</SubtypeId>
       </FuelId>
       <PrimarySound>ShipLrgNuclearSm</PrimarySound>
       <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
@@ -363,6 +366,7 @@
       <DestroyEffect>Explosion_Warhead_02</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
 	  <GuiVisible>false</GuiVisible>
+	  <PCU>25</PCU>
     </Definition>
 	<!-- End Tier 2 Reactors -->
 	
@@ -448,7 +452,7 @@
       </InventorySize>
       <FuelId>
         <TypeId>Ingot</TypeId>
-        <SubtypeId>HeavyH2OIngot</SubtypeId>
+        <SubtypeId>DeuteriumContainer</SubtypeId>
       </FuelId>
       <PrimarySound>ShipLrgNuclearSm</PrimarySound>
       <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
@@ -456,6 +460,7 @@
       <DestroyEffect>Explosion_Warhead_02</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
 	  <GuiVisible>false</GuiVisible>
+	  <PCU>25</PCU>
     </Definition>	
 	<Definition xsi:type="MyObjectBuilder_ReactorDefinition">
       <Id>
@@ -520,7 +525,7 @@
       </InventorySize>
       <FuelId>
         <TypeId>Ingot</TypeId>
-        <SubtypeId>HeavyH2OIngot</SubtypeId>
+        <SubtypeId>DeuteriumContainer</SubtypeId>
       </FuelId>
       <PrimarySound>ShipLrgNuclearSm</PrimarySound>
       <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
@@ -528,6 +533,7 @@
       <DestroyEffect>Explosion_Warhead_02</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
 	  <GuiVisible>false</GuiVisible>
+	  <PCU>25</PCU>
     </Definition>
 	<!-- End Tier 3 Reactors -->
 	 
@@ -613,7 +619,7 @@
       </InventorySize>
       <FuelId>
         <TypeId>Ingot</TypeId>
-        <SubtypeId>HeavyH2OIngot</SubtypeId>
+        <SubtypeId>DeuteriumContainer</SubtypeId>
       </FuelId>
       <PrimarySound>ShipLrgNuclearSm</PrimarySound>
       <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
@@ -621,6 +627,7 @@
       <DestroyEffect>Explosion_Warhead_02</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
 	  <GuiVisible>false</GuiVisible>
+	  <PCU>25</PCU>
     </Definition>
 	<Definition xsi:type="MyObjectBuilder_ReactorDefinition">
       <Id>
@@ -685,7 +692,7 @@
       </InventorySize>
       <FuelId>
         <TypeId>Ingot</TypeId>
-        <SubtypeId>HeavyH2OIngot</SubtypeId>
+        <SubtypeId>DeuteriumContainer</SubtypeId>
       </FuelId>
       <PrimarySound>ShipLrgNuclearSm</PrimarySound>
       <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
@@ -693,6 +700,7 @@
       <DestroyEffect>Explosion_Warhead_02</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
 	  <GuiVisible>false</GuiVisible>
+	  <PCU>25</PCU>
     </Definition>
 	<!-- End Tier 4 Reactors -->
 	
@@ -777,7 +785,7 @@
       </InventorySize>
       <FuelId>
         <TypeId>Ingot</TypeId>
-        <SubtypeId>HeavyH2OIngot</SubtypeId>
+        <SubtypeId>DeuteriumContainer</SubtypeId>
       </FuelId>
       <PrimarySound>ShipLrgNuclearSm</PrimarySound>
       <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
@@ -785,6 +793,7 @@
       <DestroyEffect>Explosion_Warhead_02</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <GuiVisible>false</GuiVisible>
+	  <PCU>25</PCU>
     </Definition>	
     <Definition xsi:type="MyObjectBuilder_ReactorDefinition">
       <Id>
@@ -848,19 +857,15 @@
       </InventorySize>
       <FuelId>
         <TypeId>Ingot</TypeId>
-        <SubtypeId>HeavyH2OIngot</SubtypeId>
+        <SubtypeId>DeuteriumContainer</SubtypeId>
       </FuelId>
-	  
-      <FuelId>
-        <TypeId>Ingot</TypeId>
-        <SubtypeId>DeuteriumOreToIngot</SubtypeId>
-      </FuelId>
-      <PrimarySound>ShipLrgNuclearSm</PrimarySound>
+	  <PrimarySound>ShipLrgNuclearSm</PrimarySound>
       <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
       <DamagedSound>ParticleReactor</DamagedSound>
       <DestroyEffect>Explosion_Warhead_02</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
 	  <GuiVisible>false</GuiVisible>
+	  <PCU>25</PCU>
     </Definition>
 	
 	<!-- End Tier 5 Reactors -->
@@ -911,10 +916,10 @@
       <StandbyPowerConsumption>0.001</StandbyPowerConsumption>
       <OperationalPowerConsumption>0.63</OperationalPowerConsumption>
       <BlueprintClasses>
-        <Class>DeuteriumOreToIngot</Class>
-		<Class>HeavyH2OOreToIngot</Class>
+        <Class>DeuteriumOreToIngots</Class>
+		<Class>Ingots</Class>
       </BlueprintClasses>
-      <RefineSpeed>1.7</RefineSpeed>
+      <RefineSpeed>1</RefineSpeed>
       <MaterialEfficiency>10</MaterialEfficiency>
       <DamageEffectId>212</DamageEffectId>
 
@@ -923,6 +928,7 @@
       <ActionSound>BlockRafineryProcess</ActionSound>
       <DestroyEffect>Explosion_Missile</DestroyEffect>
       <DestroySound>WepSmallMissileExpl</DestroySound>
+	  <PCU>90</PCU>
     </Definition>
 <!-- End HeavyH2O Refinery --> 
 

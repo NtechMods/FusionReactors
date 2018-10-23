@@ -6,7 +6,7 @@
         <TypeId>Component</TypeId>
         <SubtypeId>MagnetronComponent</SubtypeId>
       </Id>
-      <DisplayName>Magnetron Field Bundle</DisplayName>
+      <DisplayName>Magnetron Component</DisplayName>
       <Icon>Textures\GUI\Icons\component\AdvancedReactorBundle.dds</Icon>
       <Size>
         <X>0.4</X>

@@ -6,7 +6,7 @@
         <TypeId>BlueprintDefinition</TypeId>
         <SubtypeId>MagnetronComponent</SubtypeId>
       </Id>
-      <DisplayName>Magnetron Containment Component</DisplayName>
+      <DisplayName>Magnetron Component</DisplayName>
       <Icon>Textures\GUI\Icons\component\AdvancedReactorBundle.dds</Icon>
       <Prerequisites>
 	    <Item Amount="30" TypeId="Ingot" SubtypeId="Iron" />
@@ -44,11 +44,11 @@
         <Item Amount="1" TypeId="Ore" SubtypeId="Ice" />
       </Prerequisites>
       <Result Amount=".01" TypeId="Ingot" SubtypeId="DeuteriumContainer" />
-      <Result Amount="0.99" TypeId="Ingot" SubtypeId="DepletedWaterIce" />
+     <Result Amount="0.99" TypeId="Ore" SubtypeId="DepletedWaterIce" />
       <BaseProductionTimeInSeconds>5</BaseProductionTimeInSeconds>
     </Blueprint>
     
-   <Blueprint>
+    <Blueprint>
       <Id>
         <TypeId>BlueprintDefinition</TypeId>
         <SubtypeId>DepletedWaterIceToOxyGen</SubtypeId>
