@@ -44,7 +44,7 @@
 	<Entry Class="DeuteriumOreToIngots" BlueprintSubtypeId="Deuterium" />
 	<Entry Class="DeuteriumOreToIngots" BlueprintSubtypeId="DepletedWaterIceToOxyGen" />
 	<Entry Class="Ice" BlueprintSubtypeId="DepletedWaterIceToOxyGen" />
-	<Entry Class="Ingots" BlueprintSubtypeId="DeuteriumContainer" />
+	<!-- <Entry Class="Ingots" BlueprintSubtypeId="DeuteriumContainer" /> -->
   </BlueprintClassEntries>
 </Definitions>
 
