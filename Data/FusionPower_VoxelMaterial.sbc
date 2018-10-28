@@ -6,7 +6,7 @@
 		<VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
 			<Id>
 				<TypeId>VoxelMaterialDefinition</TypeId>
-				<SubtypeId>HeavyH2O</SubtypeId>
+				<SubtypeId>Deuterium</SubtypeId>
 			</Id>				
 			<MinedOre>Deuterium</MinedOre>
 			<MinedOreRatio>1</MinedOreRatio>
