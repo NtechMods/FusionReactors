@@ -44,7 +44,7 @@
         <Item Amount="10" TypeId="Ore" SubtypeId="Stone" />
         <Item Amount="1" TypeId="Ore" SubtypeId="Ice" />
       </Prerequisites>
-	  <Result Amount=".0001" TypeId="Ingot" SubtypeId="DeuteriumContainer" />
+	  <Result Amount=".001" TypeId="Ingot" SubtypeId="DeuteriumContainer" />
       <Result Amount="0.99" TypeId="Ore" SubtypeId="DepletedWaterIce" />
       <BaseProductionTimeInSeconds>5</BaseProductionTimeInSeconds>
     </Blueprint>

@@ -914,12 +914,12 @@
         <Z>2</Z>
       </InventorySize>
       <StandbyPowerConsumption>0.001</StandbyPowerConsumption>
-      <OperationalPowerConsumption>0.63</OperationalPowerConsumption>
+      <OperationalPowerConsumption>0.83</OperationalPowerConsumption>
       <BlueprintClasses>
         <Class>DeuteriumOreToIngots</Class>
 		<!-- <Class>Ingots</Class> -->
       </BlueprintClasses>
-      <RefineSpeed>1</RefineSpeed>
+      <RefineSpeed>2</RefineSpeed>
       <MaterialEfficiency>10</MaterialEfficiency>
       <DamageEffectId>212</DamageEffectId>
 
