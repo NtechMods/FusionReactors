@@ -1,7 +1,5 @@
 ﻿using Sandbox.Common.ObjectBuilders;
 using Sandbox.ModAPI;
-using Sandbox.Game;
-using SpaceEngineers.Game;
 using System;
 using System.Collections.Generic;
 using VRage.Game;
@@ -10,6 +8,7 @@ using VRage.Game.ModAPI;
 using VRage.Game.Entity;
 using VRage.ModAPI;
 using VRageMath;
+using Sandbox.Game.Entities;
 
 namespace PlasmaField
 {
@@ -19,12 +18,12 @@ namespace PlasmaField
     public class ReactorRotatorGameLogic : MyGameLogicComponent
     {
         private const float MAX_RATE = (float)Math.PI * 2; // 360 deg/sec
-        IMyReactor _reactor;
-                
+        MyReactor _reactor;
+
         public override void OnAddedToContainer()
         {
             if (MyAPIGateway.Utilities.IsDedicated) return;
-            _reactor = (IMyReactor)Entity;
+            _reactor = (MyReactor)Entity;
             _reactor.IsWorkingChanged += Reactor_IsWorkingChanged;
             Reactor_IsWorkingChanged(_reactor);
         }
@@ -35,8 +34,8 @@ namespace PlasmaField
             _reactor.IsWorkingChanged -= Reactor_IsWorkingChanged;
             _reactor = null;
             _effect?.Stop();
-                if (_effect != null)
-                    MyParticlesManager.RemoveParticleEffect(_effect);
+            if (_effect != null)
+                MyParticlesManager.RemoveParticleEffect(_effect);
         }
 
         private void Reactor_IsWorkingChanged(IMyCubeBlock obj)
@@ -49,7 +48,7 @@ namespace PlasmaField
         private IMyModel _effectCachedModel;
         private MatrixD? _effectMatrix;
 
-      
+
         private void UpdateParticleEffect()
         {
             if (_effectCachedModel != _reactor.Model)
@@ -92,7 +91,7 @@ namespace PlasmaField
                 sub.LocalMatrix = sub.LocalMatrix * Matrix.CreateRotationY(dTheta);
             }
 
-           if (_reactor != null && _reactor.TryGetSubpart("PlasmaParticle2", out subpart))
+            if (_reactor != null && _reactor.TryGetSubpart("PlasmaParticle2", out subpart))
             {
                 var sub = (IMyEntity)subpart;
                 var fractionalOutput = (_reactor.CurrentOutput + 1) / 800;

@@ -64,8 +64,7 @@
       <MirroringZ>Y</MirroringZ>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>80</BuildTimeSeconds>
-      <Description>Deuterium Reactor that provides 
-	  1 Gigawatt of power, also requires Deuterium Container to fuel.</Description>
+      <Description>Deuterium Reactor that provides 1 Gigawatt of power, also requires Deuterium Container to fuel.</Description>
 
       <ResourceSourceGroup>Reactors</ResourceSourceGroup>
       <MaxPowerOutput>1000</MaxPowerOutput>
@@ -156,8 +155,7 @@
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>40</BuildTimeSeconds>
       <EmissiveColorPreset>Default</EmissiveColorPreset>
-      <Description>Deuterium Reactor that provides 
-	  20 Megawatts of power, also requires Deuterium Container to fuel.</Description>
+      <Description>Deuterium Reactor that provides 20 Megawatts of power, also requires Deuterium Container to fuel.</Description>
 
 
 
@@ -270,8 +268,7 @@
       <MirroringZ>Y</MirroringZ>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>80</BuildTimeSeconds>
-      <Description>Deuterium Reactor that provides 
-	  2.5 Gigawatts of power, also requires Deuterium Container to fuel.</Description>
+      <Description>Deuterium Reactor that provides 2.5 Gigawatts of power, also requires Deuterium Container to fuel.</Description>
 
       <ResourceSourceGroup>Reactors</ResourceSourceGroup>
       <MaxPowerOutput>2500</MaxPowerOutput>
@@ -345,8 +342,7 @@
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>40</BuildTimeSeconds>
       <EmissiveColorPreset>Default</EmissiveColorPreset>
-      <Description>Deuterium Reactor that provides 
-	  45 Megawatts of power, also requires Deuterium Container to fuel.</Description>
+      <Description>Deuterium Reactor that provides 45 Megawatts of power, also requires Deuterium Container to fuel.</Description>
 
 
 
@@ -442,8 +438,7 @@
       <MirroringZ>Y</MirroringZ>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>80</BuildTimeSeconds>
-      <Description>Deuterium Reactor that provides 
-	  7 Gigawatts of power, also requires Deuterium Container to fuel.</Description>
+      <Description>Deuterium Reactor that provides 7 Gigawatts of power, also requires Deuterium Container to fuel.</Description>
 
       <ResourceSourceGroup>Reactors</ResourceSourceGroup>
       <MaxPowerOutput>7000</MaxPowerOutput>
@@ -516,8 +511,7 @@
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>40</BuildTimeSeconds>
       <EmissiveColorPreset>Default</EmissiveColorPreset>
-      <Description>Deuterium Reactor that provides 
-	  75 Megawatts of power, also requires Deuterium Container to fuel.</Description>
+      <Description>Deuterium Reactor that provides 75 Megawatts of power, also requires Deuterium Container to fuel.</Description>
 
 
 
@@ -613,8 +607,7 @@
       <MirroringZ>Y</MirroringZ>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>80</BuildTimeSeconds>
-      <Description>Deuterium Reactor that provides 
-	  15 Gigawatts of power, also requires Deuterium Container to fuel.</Description>
+      <Description>Deuterium Reactor that provides 15 Gigawatts of power, also requires Deuterium Container to fuel.</Description>
 
       <ResourceSourceGroup>Reactors</ResourceSourceGroup>
       <MaxPowerOutput>15000</MaxPowerOutput>
@@ -687,8 +680,7 @@
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>40</BuildTimeSeconds>
       <EmissiveColorPreset>Default</EmissiveColorPreset>
-      <Description>Deuterium Reactor that provides 
-	  150 Megawatts of power, also requires Deuterium Container to fuel.</Description>
+      <Description>Deuterium Reactor that provides 150 Megawatts of power, also requires Deuterium Container to fuel.</Description>
 
  
 
@@ -783,8 +775,7 @@
       <MirroringZ>Y</MirroringZ>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>140</BuildTimeSeconds>
-      <Description>Deuterium Reactor that provides 
-	  30 Gigawatts of power, also requires Deuterium Container to fuel.</Description>
+      <Description>Deuterium Reactor that provides 30 Gigawatts of power, also requires Deuterium Container to fuel.</Description>
 
       <ResourceSourceGroup>Reactors</ResourceSourceGroup>
       <MaxPowerOutput>30000</MaxPowerOutput>
@@ -858,8 +849,7 @@
       <BuildTimeSeconds>40</BuildTimeSeconds>
       <EmissiveColorPreset>Default</EmissiveColorPreset>
       
-      <Description>Deuterium Reactor that provides 
-	  210 Megawatts of power, also requires Deuterium Container to fuel.</Description>
+      <Description>Deuterium Reactor that provides 210 Megawatts of power, also requires Deuterium Container to fuel.</Description>
 
  
       <ResourceSinkGroup>Factory</ResourceSinkGroup>
