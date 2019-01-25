@@ -61,13 +61,14 @@ namespace PlasmaField
             if (_reactor.IsWorking && _effectMatrix.HasValue)
             {
                 var fractionalOutput = _reactor.CurrentOutput / _reactor.MaxOutput;
-                var dTheta = MAX_RATE * fractionalOutput * MyEngineConstants.PHYSICS_STEP_SIZE_IN_SECONDS;
-                _effectMatrix = _effectMatrix.Value * MatrixD.CreateRotationY(dTheta);
+                var dTheta = MAX_RATE  * MyEngineConstants.PHYSICS_STEP_SIZE_IN_SECONDS;
+                _effectMatrix = _effectMatrix.Value * MatrixD.CreateRotationY(-dTheta);
                 if (_effect == null)
-                    MyParticlesManager.TryCreateParticleEffect("PlasmaSparks", out _effect); // particle subtype
-                _effect.WorldMatrix = _effectMatrix.Value * _reactor.WorldMatrix;
-                _effect.Velocity = _reactor.CubeGrid.Physics?.GetVelocityAtPoint(_effect.WorldMatrix.Translation) ?? Vector3.Right; // rotation
+                    MyParticlesManager.TryCreateParticleEffect("EMPdamageEffect", out _effect); // particle subtype
+                    _effect.WorldMatrix = _effectMatrix.Value * _reactor.WorldMatrix;
+                    _effect.Velocity = _reactor.CubeGrid.Physics?.GetVelocityAtPoint(_effect.WorldMatrix.Translation) ?? Vector3.Right; // rotation
             }
+           
             else
             {
                 _effect?.Stop();
@@ -85,18 +86,9 @@ namespace PlasmaField
             if (_reactor != null && _reactor.TryGetSubpart("PlasmaParticle", out subpart))
             {
                 var sub = (IMyEntity)subpart;
-                var fractionalOutput = (_reactor.CurrentOutput + 2) / 800;
+                var fractionalOutput = (_reactor.CurrentOutput + 1) / 400;
                 var dTheta = MAX_RATE * fractionalOutput * MyEngineConstants.PHYSICS_STEP_SIZE_IN_SECONDS;
-                subpart.SetEmissiveParts("PlasmaWave", Color.Blue, fractionalOutput);
-                sub.LocalMatrix = sub.LocalMatrix * Matrix.CreateRotationY(dTheta);
-            }
-
-            if (_reactor != null && _reactor.TryGetSubpart("PlasmaParticle2", out subpart))
-            {
-                var sub = (IMyEntity)subpart;
-                var fractionalOutput = (_reactor.CurrentOutput + 1) / 800;
-                var dTheta = MAX_RATE * fractionalOutput * MyEngineConstants.PHYSICS_STEP_SIZE_IN_SECONDS;
-                subpart.SetEmissiveParts("PlasmaWave", Color.White, fractionalOutput);
+                subpart.SetEmissiveParts("PlasmaEmissive", Color.Teal, fractionalOutput);
                 sub.LocalMatrix = sub.LocalMatrix * Matrix.CreateRotationY(dTheta);
             }
 

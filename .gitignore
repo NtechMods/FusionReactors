@@ -16,6 +16,7 @@
 *.hkt.filter.log
 *.hkt.convert.log
 *.mwm.log
+*.ide-wal
 
 #vs stuff
 *.sln
