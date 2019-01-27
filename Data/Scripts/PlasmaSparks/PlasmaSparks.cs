@@ -47,6 +47,7 @@ namespace PlasmaField
         private MyParticleEffect _effect;
         private IMyModel _effectCachedModel;
         private MatrixD? _effectMatrix;
+        private MatrixD? _effect2Matrix;
 
 
         private void UpdateParticleEffect()
@@ -61,14 +62,16 @@ namespace PlasmaField
             if (_reactor.IsWorking && _effectMatrix.HasValue)
             {
                 var fractionalOutput = _reactor.CurrentOutput / _reactor.MaxOutput;
-                var dTheta = MAX_RATE  * MyEngineConstants.PHYSICS_STEP_SIZE_IN_SECONDS;
+                var dTheta = 2 * MyEngineConstants.PHYSICS_STEP_SIZE_IN_SECONDS;
                 _effectMatrix = _effectMatrix.Value * MatrixD.CreateRotationY(-dTheta);
                 if (_effect == null)
+             
                     MyParticlesManager.TryCreateParticleEffect("EMPdamageEffect", out _effect); // particle subtype
                     _effect.WorldMatrix = _effectMatrix.Value * _reactor.WorldMatrix;
                     _effect.Velocity = _reactor.CubeGrid.Physics?.GetVelocityAtPoint(_effect.WorldMatrix.Translation) ?? Vector3.Right; // rotation
+
+              
             }
-           
             else
             {
                 _effect?.Stop();
@@ -87,8 +90,8 @@ namespace PlasmaField
             {
                 var sub = (IMyEntity)subpart;
                 var fractionalOutput = (_reactor.CurrentOutput + 1) / 400;
-                var dTheta = MAX_RATE * fractionalOutput * MyEngineConstants.PHYSICS_STEP_SIZE_IN_SECONDS;
-                subpart.SetEmissiveParts("PlasmaEmissive", Color.Teal, fractionalOutput);
+                var dTheta = 1 * MAX_RATE /* * fractionalOutput*/ * MyEngineConstants.PHYSICS_STEP_SIZE_IN_SECONDS;
+                subpart.SetEmissiveParts("PlasmaEmissive", Color.Teal, 1/* fractionalOutput*/);
                 sub.LocalMatrix = sub.LocalMatrix * Matrix.CreateRotationY(dTheta);
             }
 

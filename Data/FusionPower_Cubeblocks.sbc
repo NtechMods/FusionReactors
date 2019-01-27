@@ -1,5 +1,33 @@
 <?xml version="1.0"?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--ResearchBlocks -->
+  <ResearchBlocks>
+    <ResearchBlock xsi:type="ResearchBlock">
+      <Id Type="MyObjectBuilder_Reactor" Subtype="LBFusionReactorT1" />
+      <Id Type="MyObjectBuilder_Reactor" Subtype="LBFusionReactorT2" />
+      <Id Type="MyObjectBuilder_Reactor" Subtype="LBFusionReactorT3" />
+      <Id Type="MyObjectBuilder_Reactor" Subtype="LBFusionReactorT4" />
+      <Id Type="MyObjectBuilder_Reactor" Subtype="LBFusionReactorT5" />
+      <Id Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT1" />
+      <Id Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT2" />
+      <Id Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT3" />
+      <Id Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT4" />
+      <Id Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT5" />
+      <UnlockedByGroups>
+        <GroupSubtype>26</GroupSubtype>
+      </UnlockedByGroups>
+    </ResearchBlock>
+  </ResearchBlocks>
+<!-- ResearchGroups -->
+  <ResearchGroups>
+    <ResearchGroup xsi:type="ResearchGroup">
+      <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="30" />
+      <Members>
+        <BlockId Type="MyObjectBuilder_Reactor" Subtype="LBFusionReactorT1" />
+        <BlockId Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT1" />
+      </Members>
+    </ResearchGroup>
+  </ResearchGroups>
   <CubeBlocks>
    <!-- Begin Tier 1 Reactors -->
     <Definition xsi:type="MyObjectBuilder_ReactorDefinition">

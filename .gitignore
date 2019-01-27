@@ -17,6 +17,7 @@
 *.hkt.convert.log
 *.mwm.log
 *.ide-wal
+storage.ide-wal
 
 #vs stuff
 *.sln
