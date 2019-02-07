@@ -13,6 +13,7 @@
       <Id Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT3" />
       <Id Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT4" />
       <Id Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT5" />
+	  <Id Type="MyObjectBuilder_Refinery" Subtype="LBDeuteriumRefinery" />
       <UnlockedByGroups>
         <GroupSubtype>26</GroupSubtype>
       </UnlockedByGroups>
