@@ -30,3 +30,5 @@ Properties
 *.tmp	
 
 
+*.ide-shm
+*.ide-wal
