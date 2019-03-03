@@ -4,66 +4,16 @@
   <ResearchBlocks>
     <ResearchBlock xsi:type="ResearchBlock">
       <Id Type="MyObjectBuilder_Reactor" Subtype="LBFusionReactorT1" />
-      <UnlockedByGroups>
-        <GroupSubtype>26</GroupSubtype>
-      </UnlockedByGroups>
-    </ResearchBlock>
-    <ResearchBlock xsi:type="ResearchBlock">
-      <Id Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT1" />
-      <UnlockedByGroups>
-        <GroupSubtype>26</GroupSubtype>
-      </UnlockedByGroups>
-    </ResearchBlock>
-    <ResearchBlock xsi:type="ResearchBlock">
       <Id Type="MyObjectBuilder_Reactor" Subtype="LBFusionReactorT2" />
-      <UnlockedByGroups>
-        <GroupSubtype>FusionReactorsNtechModsT1</GroupSubtype>
-      </UnlockedByGroups>
-    </ResearchBlock>
-    <ResearchBlock xsi:type="ResearchBlock">
-      <Id Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT2" />
-      <UnlockedByGroups>
-        <GroupSubtype>FusionReactorsNtechModsT1</GroupSubtype>
-      </UnlockedByGroups>
-    </ResearchBlock>
-    <ResearchBlock xsi:type="ResearchBlock">
       <Id Type="MyObjectBuilder_Reactor" Subtype="LBFusionReactorT3" />
-      <UnlockedByGroups>
-        <GroupSubtype>FusionReactorsNtechModsT2</GroupSubtype>
-      </UnlockedByGroups>
-    </ResearchBlock>
-    <ResearchBlock xsi:type="ResearchBlock">
-      <Id Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT3" />
-      <UnlockedByGroups>
-        <GroupSubtype>FusionReactorsNtechModsT2</GroupSubtype>
-      </UnlockedByGroups>
-    </ResearchBlock>
-    <ResearchBlock xsi:type="ResearchBlock">
       <Id Type="MyObjectBuilder_Reactor" Subtype="LBFusionReactorT4" />
-      <UnlockedByGroups>
-        <GroupSubtype>FusionReactorsNtechModsT3</GroupSubtype>
-      </UnlockedByGroups>
-    </ResearchBlock>
-    <ResearchBlock xsi:type="ResearchBlock">
-      <Id Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT4" />
-      <UnlockedByGroups>
-        <GroupSubtype>FusionReactorsNtechModsT3</GroupSubtype>
-      </UnlockedByGroups>
-    </ResearchBlock>
-    <ResearchBlock xsi:type="ResearchBlock">
       <Id Type="MyObjectBuilder_Reactor" Subtype="LBFusionReactorT5" />
-      <UnlockedByGroups>
-        <GroupSubtype>FusionReactorsNtechModsT4</GroupSubtype>
-      </UnlockedByGroups>
-    </ResearchBlock>
-    <ResearchBlock xsi:type="ResearchBlock">
+      <Id Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT1" />
+      <Id Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT2" />
+      <Id Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT3" />
+      <Id Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT4" />
       <Id Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT5" />
-      <UnlockedByGroups>
-        <GroupSubtype>FusionReactorsNtechModsT4</GroupSubtype>
-      </UnlockedByGroups>
-    </ResearchBlock>
-    <ResearchBlock xsi:type="ResearchBlock">
-	  <Id Type="MyObjectBuilder_Refinery" Subtype="DeuteriumProcessor" />
+	  <Id Type="MyObjectBuilder_Refinery" Subtype="LBDeuteriumRefinery" />
       <UnlockedByGroups>
         <GroupSubtype>26</GroupSubtype>
       </UnlockedByGroups>
@@ -72,32 +22,10 @@
 <!-- ResearchGroups -->
   <ResearchGroups>
     <ResearchGroup xsi:type="ResearchGroup">
-      <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="FusionReactorsNtechModsT1" />
+      <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="30" />
       <Members>
         <BlockId Type="MyObjectBuilder_Reactor" Subtype="LBFusionReactorT1" />
         <BlockId Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT1" />
-		<BlockId Type="MyObjectBuilder_Refinery" Subtype="DeuteriumProcessor" />
-      </Members>
-    </ResearchGroup>
-    <ResearchGroup xsi:type="ResearchGroup">
-      <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="FusionReactorsNtechModsT2" />
-      <Members>
-        <BlockId Type="MyObjectBuilder_Reactor" Subtype="LBFusionReactorT2" />
-        <BlockId Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT2" />
-      </Members>
-    </ResearchGroup>
-    <ResearchGroup xsi:type="ResearchGroup">
-      <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="FusionReactorsNtechModsT3" />
-      <Members>
-        <BlockId Type="MyObjectBuilder_Reactor" Subtype="LBFusionReactorT3" />
-        <BlockId Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT3" />
-      </Members>
-    </ResearchGroup>
-    <ResearchGroup xsi:type="ResearchGroup">
-      <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="FusionReactorsNtechModsT4" />
-      <Members>
-        <BlockId Type="MyObjectBuilder_Reactor" Subtype="LBFusionReactorT4" />
-        <BlockId Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT4" />
       </Members>
     </ResearchGroup>
   </ResearchGroups>
