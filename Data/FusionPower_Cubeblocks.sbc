@@ -165,11 +165,11 @@
       <MirroringZ>Y</MirroringZ>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>80</BuildTimeSeconds>
-      <Description>Deuterium Reactor that provides 1 Gigawatt of power, also requires Deuterium Container to fuel.</Description>
-
+      <Description>Deuterium Reactor that provides 1 Gigawatt of power, requires o2/h2 generator and hydrogen tank to operate effectively.</Description>
+	  
       <ResourceSourceGroup>Reactors</ResourceSourceGroup>
       <MaxPowerOutput>1000</MaxPowerOutput>
-      <Consumption>.01</Consumption>
+      <Consumption>0.005</Consumption>
       <!-- Amount of fuel in kg consumed each second per each MW -->
       <StockpileAmount>1</StockpileAmount>
       <!-- Reactor will try to have enough fuel to work for X seconds on full output -->
@@ -186,6 +186,7 @@
         <TypeId>Ingot</TypeId>
         <SubtypeId>DeuteriumContainer</SubtypeId>
       </FuelId>
+      <FuelProductionToCapacityMultiplier>0.005</FuelProductionToCapacityMultiplier>
       <PrimarySound>ShipLrgNuclearSm</PrimarySound>
       <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
       <DamagedSound>ParticleReactor</DamagedSound>
@@ -264,7 +265,7 @@
 
       <ResourceSourceGroup>Reactors</ResourceSourceGroup>
       <MaxPowerOutput>20</MaxPowerOutput>
-      <Consumption>0.01</Consumption>
+      <Consumption>0.005</Consumption>
       <!-- Amount of fuel in kg consumpted each second per each MW -->
       <StockpileAmount>1</StockpileAmount>
       <!-- Reactor will try to have enough fuel to work for X seconds on full output -->
@@ -373,7 +374,7 @@
 
       <ResourceSourceGroup>Reactors</ResourceSourceGroup>
       <MaxPowerOutput>2500</MaxPowerOutput>
-      <Consumption>.01</Consumption>
+      <Consumption>.005</Consumption>
       <!-- Amount of fuel in kg consumed each second per each MW -->
       <StockpileAmount>1</StockpileAmount>
       <!-- Reactor will try to have enough fuel to work for X seconds on full output -->
@@ -451,7 +452,7 @@
 
       <ResourceSourceGroup>Reactors</ResourceSourceGroup>
       <MaxPowerOutput>45</MaxPowerOutput>
-      <Consumption>0.01</Consumption>
+      <Consumption>0.005</Consumption>
       <!-- Amount of fuel in kg consumpted each second per each MW -->
       <StockpileAmount>1</StockpileAmount>
       <!-- Reactor will try to have enough fuel to work for X seconds on full output -->
@@ -543,7 +544,7 @@
 
       <ResourceSourceGroup>Reactors</ResourceSourceGroup>
       <MaxPowerOutput>7000</MaxPowerOutput>
-      <Consumption>.01</Consumption>
+      <Consumption>.005</Consumption>
       <!-- Amount of fuel in kg consumed each second per each MW -->
       <StockpileAmount>1</StockpileAmount>
       <!-- Reactor will try to have enough fuel to work for X seconds on full output -->
@@ -620,7 +621,7 @@
 
       <ResourceSourceGroup>Reactors</ResourceSourceGroup>
       <MaxPowerOutput>75</MaxPowerOutput>
-      <Consumption>0.01</Consumption>
+      <Consumption>0.005</Consumption>
       <!-- Amount of fuel in kg consumpted each second per each MW -->
       <StockpileAmount>1</StockpileAmount>
       <!-- Reactor will try to have enough fuel to work for X seconds on full output -->
@@ -712,7 +713,7 @@
 
       <ResourceSourceGroup>Reactors</ResourceSourceGroup>
       <MaxPowerOutput>15000</MaxPowerOutput>
-      <Consumption>.01</Consumption>
+      <Consumption>.005</Consumption>
       <!-- Amount of fuel in kg consumed each second per each MW -->
       <StockpileAmount>1</StockpileAmount>
       <!-- Reactor will try to have enough fuel to work for X seconds on full output -->
@@ -789,7 +790,7 @@
 
       <ResourceSourceGroup>Reactors</ResourceSourceGroup>
       <MaxPowerOutput>150</MaxPowerOutput>
-      <Consumption>0.01</Consumption>
+      <Consumption>0.005</Consumption>
       <!-- Amount of fuel in kg consumpted each second per each MW -->
       <StockpileAmount>1</StockpileAmount>
       <!-- Reactor will try to have enough fuel to work for X seconds on full output -->
@@ -880,7 +881,7 @@
 
       <ResourceSourceGroup>Reactors</ResourceSourceGroup>
       <MaxPowerOutput>30000</MaxPowerOutput>
-      <Consumption>.01</Consumption>
+      <Consumption>.005</Consumption>
       <!-- Amount of fuel in kg consumed each second per each MW -->
       <StockpileAmount>1</StockpileAmount>
       <!-- Reactor will try to have enough fuel to work for X seconds on full output -->
@@ -957,7 +958,7 @@
 
       <ResourceSourceGroup>Reactors</ResourceSourceGroup>
       <MaxPowerOutput>210</MaxPowerOutput>
-      <Consumption>0.01</Consumption>
+      <Consumption>0.005</Consumption>
       <!-- Amount of fuel in kg consumpted each second per each MW -->
       <StockpileAmount>1</StockpileAmount>
       <!-- Reactor will try to have enough fuel to work for X seconds on full output -->

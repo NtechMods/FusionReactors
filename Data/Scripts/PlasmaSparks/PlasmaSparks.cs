@@ -47,7 +47,9 @@ namespace PlasmaField
         private MyParticleEffect _effect;
         private IMyModel _effectCachedModel;
         private MatrixD? _effectMatrix;
-        private MatrixD? _effect2Matrix;
+
+        const float ParticleMaxDistance = 30;
+
 
 
         private void UpdateParticleEffect()
@@ -65,12 +67,15 @@ namespace PlasmaField
                 var dTheta = 2 * MyEngineConstants.PHYSICS_STEP_SIZE_IN_SECONDS;
                 _effectMatrix = _effectMatrix.Value * MatrixD.CreateRotationY(-dTheta);
                 if (_effect == null)
-             
-                    MyParticlesManager.TryCreateParticleEffect("EMPdamageEffect", out _effect); // particle subtype
-                    _effect.WorldMatrix = _effectMatrix.Value * _reactor.WorldMatrix;
-                    _effect.Velocity = _reactor.CubeGrid.Physics?.GetVelocityAtPoint(_effect.WorldMatrix.Translation) ?? Vector3.Right; // rotation
 
-              
+                    MyParticlesManager.TryCreateParticleEffect("EMPdamageEffect", out _effect); // particle subtype
+                _effect.WorldMatrix = _effectMatrix.Value * _reactor.WorldMatrix;
+                _effect.Velocity = _reactor.CubeGrid.Physics?.GetVelocityAtPoint(_effect.WorldMatrix.Translation) ?? Vector3.Right; // rotation
+
+                if (_effect == null) return;
+               // if (Vector3D.DistanceSquared(MyAPIGateway.Session.Camera.WorldMatrix.Translation, _reactor.Position) >= ParticleMaxDistance * ParticleMaxDistance)
+                //    return;
+
             }
             else
             {
@@ -78,7 +83,9 @@ namespace PlasmaField
                 if (_effect != null)
                     MyParticlesManager.RemoveParticleEffect(_effect);
                 _effect = null;
+                if (_effect == null) return;
             }
+            
         }
 
         public override void UpdateAfterSimulation()
