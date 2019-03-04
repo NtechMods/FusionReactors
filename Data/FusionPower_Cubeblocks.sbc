@@ -4,16 +4,66 @@
   <ResearchBlocks>
     <ResearchBlock xsi:type="ResearchBlock">
       <Id Type="MyObjectBuilder_Reactor" Subtype="LBFusionReactorT1" />
-      <Id Type="MyObjectBuilder_Reactor" Subtype="LBFusionReactorT2" />
-      <Id Type="MyObjectBuilder_Reactor" Subtype="LBFusionReactorT3" />
-      <Id Type="MyObjectBuilder_Reactor" Subtype="LBFusionReactorT4" />
-      <Id Type="MyObjectBuilder_Reactor" Subtype="LBFusionReactorT5" />
+      <UnlockedByGroups>
+        <GroupSubtype>26</GroupSubtype>
+      </UnlockedByGroups>
+    </ResearchBlock>
+    <ResearchBlock xsi:type="ResearchBlock">
       <Id Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT1" />
+      <UnlockedByGroups>
+        <GroupSubtype>26</GroupSubtype>
+      </UnlockedByGroups>
+    </ResearchBlock>
+    <ResearchBlock xsi:type="ResearchBlock">
+      <Id Type="MyObjectBuilder_Reactor" Subtype="LBFusionReactorT2" />
+      <UnlockedByGroups>
+        <GroupSubtype>FusionReactorsNtechModsT1</GroupSubtype>
+      </UnlockedByGroups>
+    </ResearchBlock>
+    <ResearchBlock xsi:type="ResearchBlock">
       <Id Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT2" />
+      <UnlockedByGroups>
+        <GroupSubtype>FusionReactorsNtechModsT1</GroupSubtype>
+      </UnlockedByGroups>
+    </ResearchBlock>
+    <ResearchBlock xsi:type="ResearchBlock">
+      <Id Type="MyObjectBuilder_Reactor" Subtype="LBFusionReactorT3" />
+      <UnlockedByGroups>
+        <GroupSubtype>FusionReactorsNtechModsT2</GroupSubtype>
+      </UnlockedByGroups>
+    </ResearchBlock>
+    <ResearchBlock xsi:type="ResearchBlock">
       <Id Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT3" />
+      <UnlockedByGroups>
+        <GroupSubtype>FusionReactorsNtechModsT2</GroupSubtype>
+      </UnlockedByGroups>
+    </ResearchBlock>
+    <ResearchBlock xsi:type="ResearchBlock">
+      <Id Type="MyObjectBuilder_Reactor" Subtype="LBFusionReactorT4" />
+      <UnlockedByGroups>
+        <GroupSubtype>FusionReactorsNtechModsT3</GroupSubtype>
+      </UnlockedByGroups>
+    </ResearchBlock>
+    <ResearchBlock xsi:type="ResearchBlock">
       <Id Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT4" />
+      <UnlockedByGroups>
+        <GroupSubtype>FusionReactorsNtechModsT3</GroupSubtype>
+      </UnlockedByGroups>
+    </ResearchBlock>
+    <ResearchBlock xsi:type="ResearchBlock">
+      <Id Type="MyObjectBuilder_Reactor" Subtype="LBFusionReactorT5" />
+      <UnlockedByGroups>
+        <GroupSubtype>FusionReactorsNtechModsT4</GroupSubtype>
+      </UnlockedByGroups>
+    </ResearchBlock>
+    <ResearchBlock xsi:type="ResearchBlock">
       <Id Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT5" />
-	  <Id Type="MyObjectBuilder_Refinery" Subtype="LBDeuteriumRefinery" />
+      <UnlockedByGroups>
+        <GroupSubtype>FusionReactorsNtechModsT4</GroupSubtype>
+      </UnlockedByGroups>
+    </ResearchBlock>
+    <ResearchBlock xsi:type="ResearchBlock">
+	  <Id Type="MyObjectBuilder_Refinery" Subtype="DeuteriumProcessor" />
       <UnlockedByGroups>
         <GroupSubtype>26</GroupSubtype>
       </UnlockedByGroups>
@@ -22,10 +72,32 @@
 <!-- ResearchGroups -->
   <ResearchGroups>
     <ResearchGroup xsi:type="ResearchGroup">
-      <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="30" />
+      <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="FusionReactorsNtechModsT1" />
       <Members>
         <BlockId Type="MyObjectBuilder_Reactor" Subtype="LBFusionReactorT1" />
         <BlockId Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT1" />
+		<BlockId Type="MyObjectBuilder_Refinery" Subtype="DeuteriumProcessor" />
+      </Members>
+    </ResearchGroup>
+    <ResearchGroup xsi:type="ResearchGroup">
+      <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="FusionReactorsNtechModsT2" />
+      <Members>
+        <BlockId Type="MyObjectBuilder_Reactor" Subtype="LBFusionReactorT2" />
+        <BlockId Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT2" />
+      </Members>
+    </ResearchGroup>
+    <ResearchGroup xsi:type="ResearchGroup">
+      <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="FusionReactorsNtechModsT3" />
+      <Members>
+        <BlockId Type="MyObjectBuilder_Reactor" Subtype="LBFusionReactorT3" />
+        <BlockId Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT3" />
+      </Members>
+    </ResearchGroup>
+    <ResearchGroup xsi:type="ResearchGroup">
+      <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="FusionReactorsNtechModsT4" />
+      <Members>
+        <BlockId Type="MyObjectBuilder_Reactor" Subtype="LBFusionReactorT4" />
+        <BlockId Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT4" />
       </Members>
     </ResearchGroup>
   </ResearchGroups>
@@ -97,9 +169,9 @@
 	  
       <ResourceSourceGroup>Reactors</ResourceSourceGroup>
       <MaxPowerOutput>1000</MaxPowerOutput>
-      <Consumption>0.005</Consumption>
+	  <Consumption>0.005</Consumption>
       <!-- Amount of fuel in kg consumed each second per each MW -->
-      <StockpileAmount>1</StockpileAmount>
+      <StockpileAmount>10</StockpileAmount>
       <!-- Reactor will try to have enough fuel to work for X seconds on full output -->
 
       <EmissiveColorPreset>Default</EmissiveColorPreset>
@@ -114,7 +186,7 @@
         <TypeId>Ingot</TypeId>
         <SubtypeId>DeuteriumContainer</SubtypeId>
       </FuelId>
-      <FuelProductionToCapacityMultiplier>0.005</FuelProductionToCapacityMultiplier>
+      <FuelProductionToCapacityMultiplier>0.8</FuelProductionToCapacityMultiplier>
       <PrimarySound>ShipLrgNuclearSm</PrimarySound>
       <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
       <DamagedSound>ParticleReactor</DamagedSound>
@@ -195,9 +267,9 @@
       <MaxPowerOutput>20</MaxPowerOutput>
       <Consumption>0.005</Consumption>
       <!-- Amount of fuel in kg consumpted each second per each MW -->
-      <StockpileAmount>1</StockpileAmount>
+      <StockpileAmount>10</StockpileAmount>
       <!-- Reactor will try to have enough fuel to work for X seconds on full output -->
-
+      <FuelProductionToCapacityMultiplier>0.8</FuelProductionToCapacityMultiplier>
       <InventorySize>
         <X>1</X>
         <Y>1</Y>
@@ -302,10 +374,11 @@
 
       <ResourceSourceGroup>Reactors</ResourceSourceGroup>
       <MaxPowerOutput>2500</MaxPowerOutput>
-      <Consumption>.005</Consumption>
+      <Consumption>.01</Consumption>
       <!-- Amount of fuel in kg consumed each second per each MW -->
-      <StockpileAmount>1</StockpileAmount>
+      <StockpileAmount>10</StockpileAmount>
       <!-- Reactor will try to have enough fuel to work for X seconds on full output -->
+      <FuelProductionToCapacityMultiplier>0.8</FuelProductionToCapacityMultiplier>
 
       <EmissiveColorPreset>Default</EmissiveColorPreset>
       <ResourceSinkGroup>Factory</ResourceSinkGroup>
@@ -382,8 +455,9 @@
       <MaxPowerOutput>45</MaxPowerOutput>
       <Consumption>0.005</Consumption>
       <!-- Amount of fuel in kg consumpted each second per each MW -->
-      <StockpileAmount>1</StockpileAmount>
+      <StockpileAmount>10</StockpileAmount>
       <!-- Reactor will try to have enough fuel to work for X seconds on full output -->
+      <FuelProductionToCapacityMultiplier>0.8</FuelProductionToCapacityMultiplier>
 
       <InventorySize>
         <X>1</X>
@@ -472,10 +546,11 @@
 
       <ResourceSourceGroup>Reactors</ResourceSourceGroup>
       <MaxPowerOutput>7000</MaxPowerOutput>
-      <Consumption>.005</Consumption>
+      <Consumption>.01</Consumption>
       <!-- Amount of fuel in kg consumed each second per each MW -->
-      <StockpileAmount>1</StockpileAmount>
+      <StockpileAmount>10</StockpileAmount>
       <!-- Reactor will try to have enough fuel to work for X seconds on full output -->
+      <FuelProductionToCapacityMultiplier>0.8</FuelProductionToCapacityMultiplier>
 
       <EmissiveColorPreset>Default</EmissiveColorPreset>
       <ResourceSinkGroup>Factory</ResourceSinkGroup>
@@ -551,8 +626,9 @@
       <MaxPowerOutput>75</MaxPowerOutput>
       <Consumption>0.005</Consumption>
       <!-- Amount of fuel in kg consumpted each second per each MW -->
-      <StockpileAmount>1</StockpileAmount>
+      <StockpileAmount>10</StockpileAmount>
       <!-- Reactor will try to have enough fuel to work for X seconds on full output -->
+      <FuelProductionToCapacityMultiplier>0.8</FuelProductionToCapacityMultiplier>
 
       <InventorySize>
         <X>1</X>
@@ -641,10 +717,11 @@
 
       <ResourceSourceGroup>Reactors</ResourceSourceGroup>
       <MaxPowerOutput>15000</MaxPowerOutput>
-      <Consumption>.005</Consumption>
+      <Consumption>.01</Consumption>
       <!-- Amount of fuel in kg consumed each second per each MW -->
-      <StockpileAmount>1</StockpileAmount>
+      <StockpileAmount>10</StockpileAmount>
       <!-- Reactor will try to have enough fuel to work for X seconds on full output -->
+      <FuelProductionToCapacityMultiplier>0.8</FuelProductionToCapacityMultiplier>
 
       <EmissiveColorPreset>Default</EmissiveColorPreset>
       <ResourceSinkGroup>Factory</ResourceSinkGroup>
@@ -720,8 +797,9 @@
       <MaxPowerOutput>150</MaxPowerOutput>
       <Consumption>0.005</Consumption>
       <!-- Amount of fuel in kg consumpted each second per each MW -->
-      <StockpileAmount>1</StockpileAmount>
+      <StockpileAmount>10</StockpileAmount>
       <!-- Reactor will try to have enough fuel to work for X seconds on full output -->
+      <FuelProductionToCapacityMultiplier>0.8</FuelProductionToCapacityMultiplier>
 
       <InventorySize>
         <X>1</X>
@@ -809,10 +887,11 @@
 
       <ResourceSourceGroup>Reactors</ResourceSourceGroup>
       <MaxPowerOutput>30000</MaxPowerOutput>
-      <Consumption>.005</Consumption>
+      <Consumption>.01</Consumption>
       <!-- Amount of fuel in kg consumed each second per each MW -->
-      <StockpileAmount>1</StockpileAmount>
+      <StockpileAmount>10</StockpileAmount>
       <!-- Reactor will try to have enough fuel to work for X seconds on full output -->
+      <FuelProductionToCapacityMultiplier>0.8</FuelProductionToCapacityMultiplier>
 
       <EmissiveColorPreset>Default</EmissiveColorPreset>
       <ResourceSinkGroup>Factory</ResourceSinkGroup>
@@ -888,8 +967,9 @@
       <MaxPowerOutput>210</MaxPowerOutput>
       <Consumption>0.005</Consumption>
       <!-- Amount of fuel in kg consumpted each second per each MW -->
-      <StockpileAmount>1</StockpileAmount>
+      <StockpileAmount>10</StockpileAmount>
       <!-- Reactor will try to have enough fuel to work for X seconds on full output -->
+      <FuelProductionToCapacityMultiplier>0.8</FuelProductionToCapacityMultiplier>
 
       <InventorySize>
         <X>1</X>

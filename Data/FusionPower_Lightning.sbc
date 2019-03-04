@@ -9,9 +9,9 @@
       <Version>0</Version>
       <ParticleId>5550</ParticleId>
       <Length>10000</Length>
-      <DurationMin>0</DurationMin>
-      <DurationMax>3000</DurationMax>
-      <DistanceMax>0</DistanceMax>
+      <DurationMin>0.4</DurationMin>
+      <DurationMax>0.5</DurationMax>
+      <DistanceMax>100</DistanceMax>
       <Loop>true</Loop>
       <ParticleGenerations>
    <ParticleGeneration Name="Lightning01" Version="2">
