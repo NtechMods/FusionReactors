@@ -169,10 +169,7 @@
 	  
       <ResourceSourceGroup>Reactors</ResourceSourceGroup>
       <MaxPowerOutput>1000</MaxPowerOutput>
-	  <Consumption>0.0005</Consumption>
-      <!-- Amount of fuel in kg consumed each second per each MW -->
       <StockpileAmount>10</StockpileAmount>
-      <!-- Reactor will try to have enough fuel to work for X seconds on full output -->
 
       <EmissiveColorPreset>Default</EmissiveColorPreset>
       <ResourceSinkGroup>Factory</ResourceSinkGroup>
@@ -186,7 +183,6 @@
         <TypeId>Ingot</TypeId>
         <SubtypeId>DeuteriumContainer</SubtypeId>
       </FuelId>
-      <FuelProductionToCapacityMultiplier>1</FuelProductionToCapacityMultiplier>
       <PrimarySound>ShipLrgNuclearSm</PrimarySound>
       <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
       <DamagedSound>ParticleReactor</DamagedSound>
@@ -265,11 +261,7 @@
 
       <ResourceSourceGroup>Reactors</ResourceSourceGroup>
       <MaxPowerOutput>20</MaxPowerOutput>
-      <Consumption>0.005</Consumption>
-      <!-- Amount of fuel in kg consumpted each second per each MW -->
-      <StockpileAmount>1</StockpileAmount>
-      <!-- Reactor will try to have enough fuel to work for X seconds on full output -->
-      <FuelProductionToCapacityMultiplier>0.08</FuelProductionToCapacityMultiplier>
+      <StockpileAmount>10</StockpileAmount>
       <InventorySize>
         <X>1</X>
         <Y>1</Y>
@@ -374,11 +366,7 @@
 
       <ResourceSourceGroup>Reactors</ResourceSourceGroup>
       <MaxPowerOutput>2500</MaxPowerOutput>
-      <Consumption>.01</Consumption>
-      <!-- Amount of fuel in kg consumed each second per each MW -->
       <StockpileAmount>10</StockpileAmount>
-      <!-- Reactor will try to have enough fuel to work for X seconds on full output -->
-      <FuelProductionToCapacityMultiplier>0.08</FuelProductionToCapacityMultiplier>
 
       <EmissiveColorPreset>Default</EmissiveColorPreset>
       <ResourceSinkGroup>Factory</ResourceSinkGroup>
@@ -453,11 +441,7 @@
 
       <ResourceSourceGroup>Reactors</ResourceSourceGroup>
       <MaxPowerOutput>45</MaxPowerOutput>
-      <Consumption>0.005</Consumption>
-      <!-- Amount of fuel in kg consumpted each second per each MW -->
       <StockpileAmount>10</StockpileAmount>
-      <!-- Reactor will try to have enough fuel to work for X seconds on full output -->
-      <FuelProductionToCapacityMultiplier>0.08</FuelProductionToCapacityMultiplier>
 
       <InventorySize>
         <X>1</X>
@@ -546,11 +530,7 @@
 
       <ResourceSourceGroup>Reactors</ResourceSourceGroup>
       <MaxPowerOutput>7000</MaxPowerOutput>
-      <Consumption>.01</Consumption>
-      <!-- Amount of fuel in kg consumed each second per each MW -->
       <StockpileAmount>10</StockpileAmount>
-      <!-- Reactor will try to have enough fuel to work for X seconds on full output -->
-      <FuelProductionToCapacityMultiplier>0.08</FuelProductionToCapacityMultiplier>
 
       <EmissiveColorPreset>Default</EmissiveColorPreset>
       <ResourceSinkGroup>Factory</ResourceSinkGroup>
@@ -624,11 +604,7 @@
 
       <ResourceSourceGroup>Reactors</ResourceSourceGroup>
       <MaxPowerOutput>75</MaxPowerOutput>
-      <Consumption>0.005</Consumption>
-      <!-- Amount of fuel in kg consumpted each second per each MW -->
       <StockpileAmount>10</StockpileAmount>
-      <!-- Reactor will try to have enough fuel to work for X seconds on full output -->
-      <FuelProductionToCapacityMultiplier>0.08</FuelProductionToCapacityMultiplier>
 
       <InventorySize>
         <X>1</X>
@@ -717,11 +693,7 @@
 
       <ResourceSourceGroup>Reactors</ResourceSourceGroup>
       <MaxPowerOutput>15000</MaxPowerOutput>
-      <Consumption>.01</Consumption>
-      <!-- Amount of fuel in kg consumed each second per each MW -->
       <StockpileAmount>10</StockpileAmount>
-      <!-- Reactor will try to have enough fuel to work for X seconds on full output -->
-      <FuelProductionToCapacityMultiplier>0.08</FuelProductionToCapacityMultiplier>
 
       <EmissiveColorPreset>Default</EmissiveColorPreset>
       <ResourceSinkGroup>Factory</ResourceSinkGroup>
@@ -795,11 +767,7 @@
 
       <ResourceSourceGroup>Reactors</ResourceSourceGroup>
       <MaxPowerOutput>150</MaxPowerOutput>
-      <Consumption>0.005</Consumption>
-      <!-- Amount of fuel in kg consumpted each second per each MW -->
       <StockpileAmount>10</StockpileAmount>
-      <!-- Reactor will try to have enough fuel to work for X seconds on full output -->
-      <FuelProductionToCapacityMultiplier>0.08</FuelProductionToCapacityMultiplier>
 
       <InventorySize>
         <X>1</X>
@@ -887,11 +855,7 @@
 
       <ResourceSourceGroup>Reactors</ResourceSourceGroup>
       <MaxPowerOutput>30000</MaxPowerOutput>
-      <Consumption>.01</Consumption>
-      <!-- Amount of fuel in kg consumed each second per each MW -->
       <StockpileAmount>10</StockpileAmount>
-      <!-- Reactor will try to have enough fuel to work for X seconds on full output -->
-      <FuelProductionToCapacityMultiplier>0.08</FuelProductionToCapacityMultiplier>
 
       <EmissiveColorPreset>Default</EmissiveColorPreset>
       <ResourceSinkGroup>Factory</ResourceSinkGroup>
@@ -965,11 +929,7 @@
 
       <ResourceSourceGroup>Reactors</ResourceSourceGroup>
       <MaxPowerOutput>210</MaxPowerOutput>
-      <Consumption>0.005</Consumption>
-      <!-- Amount of fuel in kg consumpted each second per each MW -->
       <StockpileAmount>10</StockpileAmount>
-      <!-- Reactor will try to have enough fuel to work for X seconds on full output -->
-      <FuelProductionToCapacityMultiplier>0.08</FuelProductionToCapacityMultiplier>
 
       <InventorySize>
         <X>1</X>
