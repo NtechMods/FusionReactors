@@ -989,6 +989,7 @@
       <BuildTimeSeconds>20</BuildTimeSeconds>
       <ResourceSinkGroup>Factory</ResourceSinkGroup>
       <InventoryMaxVolume>4</InventoryMaxVolume>
+	  <OreAmountPerPullRequest>50</OreAmountPerPullRequest>
       <InventorySize>
         <X>2</X>
         <Y>2</Y>
