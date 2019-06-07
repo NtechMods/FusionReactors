@@ -999,7 +999,7 @@
       <OperationalPowerConsumption>0.83</OperationalPowerConsumption>
       <BlueprintClasses>
         <Class>DeuteriumOreToIngots</Class>
-		<!-- <Class>Ingots</Class> -->
+		<Class>HeavyH2OOreToIngot</Class>
       </BlueprintClasses>
       <RefineSpeed>2</RefineSpeed>
       <MaterialEfficiency>10</MaterialEfficiency>
