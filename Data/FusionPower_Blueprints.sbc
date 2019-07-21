@@ -41,8 +41,8 @@
       <DisplayName>Deuterium Container</DisplayName>
       <Icon>Textures\GUI\Icons\ingot\HH2o.dds</Icon>
       <Prerequisites>
-        <Item Amount="10" TypeId="Ore" SubtypeId="Uranium" />
-        <Item Amount="10" TypeId="Ore" SubtypeId="Ice" />
+        <Item Amount="1" TypeId="Ore" SubtypeId="Uranium" />
+        <Item Amount="100" TypeId="Ore" SubtypeId="Ice" />
       </Prerequisites>
 	  <Result Amount=".01" TypeId="Ingot" SubtypeId="DeuteriumContainer" />
       <Result Amount="0.99" TypeId="Ore" SubtypeId="DepletedWaterIce" />
