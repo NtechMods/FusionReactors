@@ -16,6 +16,10 @@
       <Mass>50</Mass>
       <Volume>20</Volume>
       <Model>Models\Components\reactor_components_component.mwm</Model>
+            <MinimalPricePerUnit>100000</MinimalPricePerUnit>
+            <MinimumOfferAmount>10</MinimumOfferAmount>
+            <MaximumOfferAmount>48</MaximumOfferAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
       <MaxIntegrity>20</MaxIntegrity>
       <DropProbability>0.1</DropProbability>
     </Component>
