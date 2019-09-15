@@ -96,7 +96,7 @@ namespace PlasmaField
             if (_reactor != null && _reactor.TryGetSubpart("PlasmaParticle", out subpart))
             {
                 var sub = (IMyEntity)subpart;
-                var fractionalOutput = (_reactor.CurrentOutput + 1) / 400;
+                var fractionalOutput = (_reactor.CurrentOutput + 1) / 4800;
                 var dTheta = 1 * MAX_RATE /* * fractionalOutput*/ * MyEngineConstants.PHYSICS_STEP_SIZE_IN_SECONDS;
                 subpart.SetEmissiveParts("PlasmaEmissive", Color.Teal, 1/* fractionalOutput*/);
                 sub.LocalMatrix = sub.LocalMatrix * Matrix.CreateRotationY(dTheta);
