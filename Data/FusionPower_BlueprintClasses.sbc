@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <BlueprintClasses>
-  <!--     <Class>
+    <Class>
       <Id>
         <TypeId>BlueprintClassDefinition</TypeId>
         <SubtypeId>HeavyH2OIngots</SubtypeId>
@@ -11,7 +11,7 @@
       <HighlightIcon>Textures\GUI\Icons\buttons\large_block_highlight.dds</HighlightIcon>
       <InputConstraintIcon>Textures\GUI\Icons\filter_ore.dds</InputConstraintIcon>
       <OutputConstraintIcon>Textures\GUI\Icons\filter_ingot.dds</OutputConstraintIcon>
-    </Class> -->
+    </Class>
 	<Class>
       <Id>
         <TypeId>BlueprintClassDefinition</TypeId>
@@ -39,12 +39,14 @@
 	
 	<Entry Class="Components" BlueprintSubtypeId="MagnetronComponent" />
 	
-    <Entry Class="DeuteriumOreToIngots" BlueprintSubtypeId="HeavyH2OOreToIngot" />	
+    <Entry Class="HeavyH20Ingots" BlueprintSubtypeId="HeavyH2OOreToIngot" />
 	<Entry Class="DeuteriumOreToIngots" BlueprintSubtypeId="DeuteriumOreToIngot" />
+	<Entry Class="DeuteriumOreToIngots" BlueprintSubtypeId="IcetoDeuterium" />
+	<Entry Class="DeuteriumOreToIngots" BlueprintSubtypeId="StonetoDeuterium" />
 	<Entry Class="DeuteriumOreToIngots" BlueprintSubtypeId="Deuterium" />
-	<Entry Class="DeuteriumOreToIngots" BlueprintSubtypeId="UraniumOreToIngot" />
-	<Entry Class="DeuteriumOreToIngots" BlueprintSubtypeId="DepletedWaterIceToOxyGen" />
-	<Entry Class="Ice" BlueprintSubtypeId="DepletedWaterIceToOxyGen" />
+<!--	<Entry Class="DeuteriumOreToIngots" BlueprintSubtypeId="UraniumOreToIngot" /> -->
+	<!-- <Entry Class="DeuteriumOreToIngots" BlueprintSubtypeId="DepletedWaterIceToOxyGen" />-->
+	<!-- <Entry Class="Ice" BlueprintSubtypeId="DepletedWaterIceToOxyGen" /> -->
 	<!-- <Entry Class="Ingots" BlueprintSubtypeId="DeuteriumContainer" /> -->
   </BlueprintClassEntries>
 </Definitions>

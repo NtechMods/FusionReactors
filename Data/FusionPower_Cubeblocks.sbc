@@ -165,7 +165,7 @@
       <MirroringZ>Y</MirroringZ>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>80</BuildTimeSeconds>
-      <Description>Deuterium Reactor that provides 1 Gigawatt of power, also requires Deuterium Container to fuel.</Description>
+      <Description>Deuterium Reactor that provides 1 Gigawatt of power, requires Deuterium Container to fuel.</Description>
 	  
       <ResourceSourceGroup>Reactors</ResourceSourceGroup>
       <MaxPowerOutput>1000</MaxPowerOutput>
@@ -983,13 +983,19 @@
         <Model BuildPercentUpperBound="1.00" File="Models\Cubes\LBDeuteriumRefinery_Constr3.mwm" />
       </BuildProgressModels>
       <BlockPairName>D2oProcessor</BlockPairName>
-      <Description>Deuterium Processor to process ice and uranium ore into Deuterium Containers, you can also find deuterium ore that can be processed into Deuterium Containers.</Description>
+      <Description>Deuterium Processor to process ice into Deuterium.</Description>
       <EdgeType>Light</EdgeType>
       <EmissiveColorPreset>Default</EmissiveColorPreset>
       <BuildTimeSeconds>20</BuildTimeSeconds>
       <ResourceSinkGroup>Factory</ResourceSinkGroup>
       <InventoryMaxVolume>4</InventoryMaxVolume>
-	  <OreAmountPerPullRequest>50</OreAmountPerPullRequest>
+	  <OreAmountPerPullRequest>1000</OreAmountPerPullRequest> 
+	  <BlockVariants>
+        <BlockVariant>
+          <TypeId>Refinery</TypeId>
+          <SubtypeId>DeuteriumandUraniumProcessor</SubtypeId>
+        </BlockVariant>
+      </BlockVariants>
       <InventorySize>
         <X>2</X>
         <Y>2</Y>
@@ -999,16 +1005,77 @@
       <OperationalPowerConsumption>0.83</OperationalPowerConsumption>
       <BlueprintClasses>
         <Class>DeuteriumOreToIngots</Class>
-		<Class>HeavyH2OOreToIngot</Class>
+		<!--<Class>HeavyH2OOreToIngot</Class>-->
+		<Class>IcetoDeuterium</Class>
       </BlueprintClasses>
-      <RefineSpeed>2</RefineSpeed>
-      <MaterialEfficiency>10</MaterialEfficiency>
+      <RefineSpeed>1</RefineSpeed>
+      <MaterialEfficiency>1</MaterialEfficiency>
       <DamageEffectId>212</DamageEffectId>
       <Description>Description_Refinery</Description>
 
       <DamagedSound>ParticleHeavyMech</DamagedSound>
-      <PrimarySound>BlockRafinery</PrimarySound>
-      <ActionSound>BlockRafineryProcess</ActionSound>
+      <PrimarySound>BlockAssembler</PrimarySound>
+      <ActionSound>BlockAssemblerProcess</ActionSound>
+      <DestroyEffect>Explosion_Missile</DestroyEffect>
+      <DestroySound>WepSmallMissileExpl</DestroySound>
+	  <PCU>90</PCU>
+    </Definition>
+	
+    <Definition xsi:type="MyObjectBuilder_RefineryDefinition">
+      <Id>
+        <TypeId>Refinery</TypeId>
+        <SubtypeId>DeuteriumandUraniumProcessor</SubtypeId>
+      </Id>
+      <DisplayName>Uranium Ice Deuterium Processor</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\ThRefinery.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="2" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\LBDeuteriumRefinery.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="110" />
+        <Component Subtype="Construction" Count="5" />
+        <Component Subtype="LargeTube" Count="2" />
+        <Component Subtype="Motor" Count="4" />
+        <Component Subtype="Computer" Count="5" />
+        <Component Subtype="SteelPlate" Count="10" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <MirroringZ>Y</MirroringZ>
+      <MirroringY>Z</MirroringY>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\LBDeuteriumRefinery_Constr1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\LBDeuteriumRefinery_Constr2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\LBDeuteriumRefinery_Constr3.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>D2oProcessor2</BlockPairName>
+      <Description>Deuterium Processor to process ice and uranium into Deuterium.</Description>
+      <EdgeType>Light</EdgeType>
+      <EmissiveColorPreset>Default</EmissiveColorPreset>
+      <BuildTimeSeconds>20</BuildTimeSeconds>
+      <ResourceSinkGroup>Factory</ResourceSinkGroup>
+      <InventoryMaxVolume>4</InventoryMaxVolume>
+	  <OreAmountPerPullRequest>1000</OreAmountPerPullRequest>
+	  <GuiVisible>false</GuiVisible>
+      <InventorySize>
+        <X>2</X>
+        <Y>2</Y>
+        <Z>2</Z>
+      </InventorySize>
+      <StandbyPowerConsumption>0.001</StandbyPowerConsumption>
+      <OperationalPowerConsumption>0.83</OperationalPowerConsumption>
+      <BlueprintClasses>
+		<Class>HeavyH2OOreToIngot</Class>
+      </BlueprintClasses>
+      <RefineSpeed>1</RefineSpeed>
+      <MaterialEfficiency>1</MaterialEfficiency>
+      <DamageEffectId>212</DamageEffectId>
+      <Description>Description_Refinery</Description>
+
+      <DamagedSound>ParticleHeavyMech</DamagedSound>
+      <PrimarySound>BlockAssembler</PrimarySound>
+      <ActionSound>BlockAssemblerProcess</ActionSound>
       <DestroyEffect>Explosion_Missile</DestroyEffect>
       <DestroySound>WepSmallMissileExpl</DestroySound>
 	  <PCU>90</PCU>
