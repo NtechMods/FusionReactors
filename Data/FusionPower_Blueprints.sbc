@@ -33,7 +33,7 @@
       <BaseProductionTimeInSeconds>10</BaseProductionTimeInSeconds>
     </Blueprint> 
 
-<!--	<Blueprint>
+<Blueprint>
       <Id>
         <TypeId>BlueprintDefinition</TypeId>
         <SubtypeId>HeavyH2OOreToIngot</SubtypeId>
@@ -47,7 +47,7 @@
 	  <Result Amount=".1" TypeId="Ingot" SubtypeId="DeuteriumContainer" />
       <Result Amount="0.99" TypeId="Ore" SubtypeId="DepletedWaterIce" />
       <BaseProductionTimeInSeconds>5</BaseProductionTimeInSeconds>
-    </Blueprint> -->
+    </Blueprint>
     <Blueprint>
       <Id>
         <TypeId>BlueprintDefinition</TypeId>
