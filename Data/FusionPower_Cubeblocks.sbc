@@ -101,6 +101,94 @@
       </Members>
     </ResearchGroup>
   </ResearchGroups>
+  
+  
+<!--Block Groups -->
+    <BlockVariantGroups>
+
+        <!-- Reactors -->
+
+        <BlockVariantGroup>
+            <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="DeuteriumGroup1" />
+            <Icon>Textures\GUI\Icons\Cubes\FusionReactor.dds</Icon>
+            <DisplayName>DisplayName_BlockGroup_EnergyFueledGroup</DisplayName>
+            <Description>Tier 2 Fusion Reactors produce 20.0MW for small grid, and 1.0GW for large grid.</Description>
+            <Blocks>
+                <Block Type="MyObjectBuilder_Reactor" Subtype="LBFusionReactorT1" />
+                <Block Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT1" />
+            </Blocks>
+        </BlockVariantGroup>
+        <BlockVariantGroup>
+            <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="DeuteriumGroup2" />
+            <Icon>Textures\GUI\Icons\Cubes\FusionReactor.dds</Icon>
+            <DisplayName>DisplayName_BlockGroup_EnergyFueledGroup</DisplayName>
+            <Description>Tier 2 Fusion Reactors produce 45.0MW for small grid, and 2.5GW for large grid.</Description>
+            <Blocks>
+                <Block Type="MyObjectBuilder_Reactor" Subtype="LBFusionReactorT2" />
+                <Block Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT2" />
+            </Blocks>
+        </BlockVariantGroup>
+        <BlockVariantGroup>
+            <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="DeuteriumGroup3" />
+            <Icon>Textures\GUI\Icons\Cubes\FusionReactor.dds</Icon>
+            <DisplayName>DisplayName_BlockGroup_EnergyFueledGroup</DisplayName>
+            <Description>Tier 3 Fusion Reactors produce 75.0MW for small grid, and 7.0GW for large grid.</Description>
+            <Blocks>
+                <Block Type="MyObjectBuilder_Reactor" Subtype="LBFusionReactorT3" />
+                <Block Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT3" />
+            </Blocks>
+        </BlockVariantGroup>
+        <BlockVariantGroup>
+            <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="DeuteriumGroup4" />
+            <Icon>Textures\GUI\Icons\Cubes\FusionReactor.dds</Icon>
+            <DisplayName>DisplayName_BlockGroup_EnergyFueledGroup</DisplayName>
+            <Description>Tier 3 Fusion Reactors produce 150.0MW for small grid, and 15.0GW for large grid.</Description>
+            <Blocks>
+                <Block Type="MyObjectBuilder_Reactor" Subtype="LBFusionReactorT4" />
+                <Block Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT4" />
+            </Blocks>
+        </BlockVariantGroup>
+        <BlockVariantGroup>
+            <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="DeuteriumGroup5" />
+            <Icon>Textures\GUI\Icons\Cubes\FusionReactor.dds</Icon>
+            <DisplayName>DisplayName_BlockGroup_EnergyFueledGroup</DisplayName>
+            <Description>Tier 3 Fusion Reactors produce 210.0MW for small grid, and 30.0GW for large grid.</Description>
+            <Blocks>
+                <Block Type="MyObjectBuilder_Reactor" Subtype="LBFusionReactorT5" />
+                <Block Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT5" />
+            </Blocks>
+        </BlockVariantGroup>
+  </BlockVariantGroups>
+  
+<!-- Radial Menu -->
+   <RadialMenus>
+    <RadialMenu>
+      <Id Type="RadialMenu" Subtype="Toolbar" />
+      <Sections>
+        <Section>
+          <Label>Fusion Reactors</Label>
+          <Items>
+            <Item xsi:type="MyObjectBuilder_RadialMenuItemCubeBlock">
+              <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="DeuteriumGroup1" />
+            </Item>
+            <Item xsi:type="MyObjectBuilder_RadialMenuItemCubeBlock">
+              <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="DeuteriumGroup2" />
+            </Item>
+            <Item xsi:type="MyObjectBuilder_RadialMenuItemCubeBlock">
+              <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="DeuteriumGroup3" />
+            </Item>
+            <Item xsi:type="MyObjectBuilder_RadialMenuItemCubeBlock">
+              <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="DeuteriumGroup4" />
+            </Item>
+            <Item xsi:type="MyObjectBuilder_RadialMenuItemCubeBlock">
+              <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="DeuteriumGroup5" />
+            </Item>
+          </Items>
+        </Section>
+	  </Sections>
+	</RadialMenu>
+   </RadialMenus> 
+  
   <CubeBlocks>
    <!-- Begin Tier 1 Reactors -->
     <Definition xsi:type="MyObjectBuilder_ReactorDefinition">
