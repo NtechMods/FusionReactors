@@ -160,7 +160,7 @@
         </BlockVariantGroup>
   </BlockVariantGroups>
   
-<!-- Radial Menu -->
+<!-- Radial Menu 
    <RadialMenus>
     <RadialMenu>
       <Id Type="RadialMenu" Subtype="Toolbar" />
@@ -187,7 +187,7 @@
         </Section>
 	  </Sections>
 	</RadialMenu>
-   </RadialMenus> 
+   </RadialMenus> -->
   
   <CubeBlocks>
    <!-- Begin Tier 1 Reactors -->
@@ -276,24 +276,7 @@
       <DamagedSound>ParticleReactor</DamagedSound>
       <DestroyEffect>Explosion_Warhead_02</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
-      <BlockVariants>
-        <BlockVariant>
-          <TypeId>Reactor</TypeId>
-          <SubtypeId>LBFusionReactorT2</SubtypeId>
-        </BlockVariant>
-        <BlockVariant>
-          <TypeId>Reactor</TypeId>
-          <SubtypeId>LBFusionReactorT3</SubtypeId>
-        </BlockVariant>
-        <BlockVariant>
-          <TypeId>Reactor</TypeId>
-          <SubtypeId>LBFusionReactorT4</SubtypeId>
-        </BlockVariant>
-        <BlockVariant>
-          <TypeId>Reactor</TypeId>
-          <SubtypeId>LBFusionReactorT5</SubtypeId>
-        </BlockVariant>
-      </BlockVariants>
+	  <GuiVisible>false</GuiVisible>
 	  <PCU>25</PCU>
     </Definition>	
 	
@@ -364,24 +347,7 @@
       <DamagedSound>ParticleReactor</DamagedSound>
       <DestroyEffect>Explosion_Warhead_02</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
-      <BlockVariants>
-        <BlockVariant>
-          <TypeId>Reactor</TypeId>
-          <SubtypeId>SBFusionReactorT2</SubtypeId>
-        </BlockVariant>
-        <BlockVariant>
-          <TypeId>Reactor</TypeId>
-          <SubtypeId>SBFusionReactorT3</SubtypeId>
-        </BlockVariant>
-        <BlockVariant>
-          <TypeId>Reactor</TypeId>
-          <SubtypeId>SBFusionReactorT4</SubtypeId>
-        </BlockVariant>
-        <BlockVariant>
-          <TypeId>Reactor</TypeId>
-          <SubtypeId>SBFusionReactorT5</SubtypeId>
-        </BlockVariant>
-      </BlockVariants>
+	  <GuiVisible>false</GuiVisible>
 	  <PCU>25</PCU>
     </Definition>
 	<!-- End Tier 1 Reactors -->
@@ -1241,8 +1207,15 @@
       <BlockPosition>
       <Name>D2oProcessor</Name>
       <Position>
-        <X>0</X>
-        <Y>20</Y>
+        <X>4</X>
+        <Y>7</Y>
+      </Position>
+    </BlockPosition>
+      <BlockPosition>
+      <Name>D2oProcessor2</Name>
+      <Position>
+        <X>4</X>
+        <Y>7</Y>
       </Position>
     </BlockPosition>
     <BlockPosition>
