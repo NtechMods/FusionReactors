@@ -350,7 +350,7 @@
 
 	  
 		<ParticleGeneration Name="RandomTimer" Version="4">
-          <GenerationType>CPU</GenerationType>
+          <GenerationType>GPU</GenerationType>
           <Properties>
             <Property Name="Birth" Type="Float" AnimationType="Animated">
               <Keys>
