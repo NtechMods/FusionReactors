@@ -109,55 +109,39 @@
         <!-- Reactors -->
 
         <BlockVariantGroup>
-            <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="DeuteriumGroup1" />
+            <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="DeuteriumPowerGroup" />
             <Icon>Textures\GUI\Icons\Cubes\FusionReactor.dds</Icon>
-            <DisplayName>DisplayName_BlockGroup_EnergyFueledGroup</DisplayName>
-            <Description>Tier 2 Fusion Reactors produce 20.0MW for small grid, and 1.0GW for large grid.</Description>
+            <DisplayName>DisplayName_BlockGroup_FusionPowered</DisplayName>
+            <Description>Fusion Reactors provid power without quantity.</Description>
             <Blocks>
                 <Block Type="MyObjectBuilder_Reactor" Subtype="LBFusionReactorT1" />
                 <Block Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT1" />
-            </Blocks>
-        </BlockVariantGroup>
-        <BlockVariantGroup>
-            <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="DeuteriumGroup2" />
-            <Icon>Textures\GUI\Icons\Cubes\FusionReactor.dds</Icon>
-            <DisplayName>DisplayName_BlockGroup_EnergyFueledGroup</DisplayName>
-            <Description>Tier 2 Fusion Reactors produce 45.0MW for small grid, and 2.5GW for large grid.</Description>
-            <Blocks>
+				
                 <Block Type="MyObjectBuilder_Reactor" Subtype="LBFusionReactorT2" />
-                <Block Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT2" />
-            </Blocks>
-        </BlockVariantGroup>
-        <BlockVariantGroup>
-            <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="DeuteriumGroup3" />
-            <Icon>Textures\GUI\Icons\Cubes\FusionReactor.dds</Icon>
-            <DisplayName>DisplayName_BlockGroup_EnergyFueledGroup</DisplayName>
-            <Description>Tier 3 Fusion Reactors produce 75.0MW for small grid, and 7.0GW for large grid.</Description>
-            <Blocks>
+                <Block Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT2" />				
+				
                 <Block Type="MyObjectBuilder_Reactor" Subtype="LBFusionReactorT3" />
-                <Block Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT3" />
-            </Blocks>
-        </BlockVariantGroup>
-        <BlockVariantGroup>
-            <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="DeuteriumGroup4" />
-            <Icon>Textures\GUI\Icons\Cubes\FusionReactor.dds</Icon>
-            <DisplayName>DisplayName_BlockGroup_EnergyFueledGroup</DisplayName>
-            <Description>Tier 3 Fusion Reactors produce 150.0MW for small grid, and 15.0GW for large grid.</Description>
-            <Blocks>
+                <Block Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT3" />				
+				
                 <Block Type="MyObjectBuilder_Reactor" Subtype="LBFusionReactorT4" />
                 <Block Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT4" />
-            </Blocks>
-        </BlockVariantGroup>
-        <BlockVariantGroup>
-            <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="DeuteriumGroup5" />
-            <Icon>Textures\GUI\Icons\Cubes\FusionReactor.dds</Icon>
-            <DisplayName>DisplayName_BlockGroup_EnergyFueledGroup</DisplayName>
-            <Description>Tier 3 Fusion Reactors produce 210.0MW for small grid, and 30.0GW for large grid.</Description>
-            <Blocks>
+				
                 <Block Type="MyObjectBuilder_Reactor" Subtype="LBFusionReactorT5" />
                 <Block Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT5" />
             </Blocks>
         </BlockVariantGroup>
+		
+        <BlockVariantGroup>
+            <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="DeuteriumRefinerGroup" />
+            <Icon>Textures\GUI\Icons\Cubes\ThRefinery.dds</Icon>
+            <DisplayName>DisplayName_BlockGroup_FusionRefiners</DisplayName>
+            <Description>Deuterium Fuel Refiners that refine deuterium ice or ice with uranium ore.</Description>
+            <Blocks>
+                <Block Type="MyObjectBuilder_Refinery" Subtype="DeuteriumProcessor" />
+                <Block Type="MyObjectBuilder_Refinery" Subtype="DeuteriumandUraniumProcessor" />
+            </Blocks>
+        </BlockVariantGroup>
+        
   </BlockVariantGroups>
   
 <!-- Radial Menu 
@@ -1136,120 +1120,20 @@
     </Definition>
 <!-- End HeavyH2O Refinery --> 
 
-<!-- Fix for Refinery not working properly 
-    <Definition xsi:type="MyObjectBuilder_RefineryDefinition">
-      <Id>
-        <TypeId>Refinery</TypeId>
-        <SubtypeId>LargeRefinery</SubtypeId>
-      </Id>
-      <DisplayName>DisplayName_Block_Refinery</DisplayName>
-      <Icon>Textures\GUI\Icons\Cubes\refinery.dds</Icon>
-      <CubeSize>Large</CubeSize>
-      <BlockTopology>TriangleMesh</BlockTopology>
-      <Size x="2" y="4" z="2" />
-      <ModelOffset x="0" y="0" z="0" />
-      <Model>Models\Cubes\Large\Refinery.mwm</Model>
-      <Components>
-        <Component Subtype="SteelPlate" Count="1100" />
-        <Component Subtype="Construction" Count="40" />
-        <Component Subtype="LargeTube" Count="20" />
-        <Component Subtype="Motor" Count="16" />
-        <Component Subtype="Computer" Count="20" />
-        <Component Subtype="SteelPlate" Count="100" />
-      </Components>
-      <CriticalComponent Subtype="Computer" Index="0" />
-      <Center x="1" y="0" z="1" />
-      <MountPoints>
-        <MountPoint Side="Back" StartX="0" StartY="0" EndX="2" EndY="4" />
-        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="2" EndY="2" Default="true" />
-        <MountPoint Side="Top" StartX="0" StartY="0" EndX="2" EndY="2" />
-        <MountPoint Side="Left" StartX="1" StartY="0" EndX="2" EndY="4" />
-        <MountPoint Side="Right" StartX="0" StartY="0" EndX="1" EndY="4" />
-      </MountPoints>
-      <BuildProgressModels>
-        <Model BuildPercentUpperBound="0.16" File="Models\Cubes\Large\RefineryConstruction_1.mwm" />
-        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\RefineryConstruction_2.mwm" />
-        <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Large\RefineryConstruction_3.mwm" />
-        <Model BuildPercentUpperBound="0.83" File="Models\Cubes\Large\RefineryConstruction_4.mwm" />
-        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\RefineryConstruction_5.mwm" />
-      </BuildProgressModels>
-      <BlockPairName>Refinery</BlockPairName>
-      <EdgeType>Light</EdgeType>
-      <BuildTimeSeconds>70</BuildTimeSeconds>
-      <ResourceSinkGroup>Factory</ResourceSinkGroup>
-      <InventoryMaxVolume>7.5</InventoryMaxVolume>
-      <InventorySize>
-        <X>2.5</X>
-        <Y>2.5</Y>
-        <Z>2.5</Z>
-      </InventorySize>
-      <StandbyPowerConsumption>0.001</StandbyPowerConsumption>
-      <OperationalPowerConsumption>0.56</OperationalPowerConsumption>
-      <BlueprintClasses>
-        <Class>Ingots</Class>
-      </BlueprintClasses>
-      <RefineSpeed>1.3</RefineSpeed>
-      <MaterialEfficiency>0.8</MaterialEfficiency>
-      <OreAmountPerPullRequest>2000</OreAmountPerPullRequest>
-      <DamageEffectId>212</DamageEffectId>
-      <Center x="1" y="0" z="0" />
-      <MirroringZ>Y</MirroringZ>
-      <DamagedSound>ParticleHeavyMech</DamagedSound>
-      <PrimarySound>BlockRafinery</PrimarySound>
-      <ActionSound>BlockRafineryProcess</ActionSound>
-      <EmissiveColorPreset>Default</EmissiveColorPreset>
-      <DestroyEffect>Explosion_Warhead_02</DestroyEffect>
-      <DestroySound>WepSmallWarheadExpl</DestroySound>
-    </Definition> -->
 
  </CubeBlocks>
  <BlockPositions>
       <BlockPosition>
       <Name>D2oProcessor</Name>
       <Position>
-        <X>4</X>
-        <Y>7</Y>
-      </Position>
-    </BlockPosition>
-      <BlockPosition>
-      <Name>D2oProcessor2</Name>
-      <Position>
-        <X>4</X>
-        <Y>7</Y>
+        <X>2</X>
+        <Y>20</Y>
       </Position>
     </BlockPosition>
     <BlockPosition>
       <Name>Tier1D2o</Name>
       <Position>
         <X>1</X>
-        <Y>20</Y>
-      </Position>
-    </BlockPosition>
-    <BlockPosition>
-      <Name>Tier2D2o</Name>
-      <Position>
-        <X>2</X>
-        <Y>20</Y>
-      </Position>
-    </BlockPosition>
-    <BlockPosition>
-      <Name>Tier3D2o</Name>
-      <Position>
-        <X>3</X>
-        <Y>20</Y>
-      </Position>
-    </BlockPosition>
-    <BlockPosition>
-      <Name>Tier4D2o</Name>
-      <Position>
-        <X>4</X>
-        <Y>20</Y>
-      </Position>
-    </BlockPosition>
-    <BlockPosition>
-      <Name>Tier5D2o</Name>
-      <Position>
-        <X>5</X>
         <Y>20</Y>
       </Position>
     </BlockPosition>
