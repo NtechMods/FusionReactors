@@ -41,7 +41,9 @@
 	
 	<Entry Class="Components" BlueprintSubtypeId="MagnetronComponent" />
 	
-    <Entry Class="HeavyH20Ingots" BlueprintSubtypeId="HeavyH2OOreToIngot" />
+    <Entry Class="HeavyH2OIngots" BlueprintSubtypeId="HeavyH2oOreToIngot" />
+    <Entry Class="HeavyH2OIngots" BlueprintSubtypeId="StonetoDeuterium" />
+    <Entry Class="HeavyH2OIngots" BlueprintSubtypeId="DeuteriumOreToIngot" />
 	<Entry Class="DeuteriumOreToIngots" BlueprintSubtypeId="DeuteriumOreToIngot" />
 	<Entry Class="DeuteriumOreToIngots" BlueprintSubtypeId="IcetoDeuterium" />
 	<Entry Class="DeuteriumOreToIngots" BlueprintSubtypeId="StonetoDeuterium" />

@@ -56,7 +56,7 @@
       <IconSymbol>Dh2o</IconSymbol>
     </PhysicalItem>
     
-	<PhysicalItem>
+<!--	<PhysicalItem>
       <Id>
         <TypeId>Ore</TypeId>
         <SubtypeId>DepletedWaterIce</SubtypeId>
@@ -80,7 +80,7 @@
 
             <MinimumAcquisitionAmount>100</MinimumAcquisitionAmount>
             <MaximumAcquisitionAmount>500</MaximumAcquisitionAmount>
-      <IconSymbol>IconSymbol_Ice</IconSymbol>
-    </PhysicalItem>
+      <IconSymbol>H_h2o</IconSymbol>
+    </PhysicalItem>-->
   </PhysicalItems>
 </Definitions>

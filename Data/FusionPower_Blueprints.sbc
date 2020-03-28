@@ -36,7 +36,7 @@
 <Blueprint>
       <Id>
         <TypeId>BlueprintDefinition</TypeId>
-        <SubtypeId>HeavyH2OOreToIngot</SubtypeId>
+        <SubtypeId>HeavyH2oOreToIngot</SubtypeId>
       </Id>
       <DisplayName>Deuterium Container</DisplayName>
       <Icon>Textures\GUI\Icons\ingot\HH2o.dds</Icon>
@@ -44,8 +44,8 @@
         <Item Amount="1" TypeId="Ore" SubtypeId="Uranium" />
         <Item Amount="100" TypeId="Ore" SubtypeId="Ice" />
       </Prerequisites>
-	  <Result Amount=".1" TypeId="Ingot" SubtypeId="DeuteriumContainer" />
-      <Result Amount="0.99" TypeId="Ore" SubtypeId="DepletedWaterIce" />
+	  <Result Amount="1" TypeId="Ingot" SubtypeId="DeuteriumContainer" />
+      <!-- <Result Amount="0.99" TypeId="Ore" SubtypeId="DepletedWaterIce" /> -->
       <BaseProductionTimeInSeconds>5</BaseProductionTimeInSeconds>
     </Blueprint>
     <Blueprint>
@@ -73,7 +73,7 @@
       <Prerequisites>
         <Item Amount="1000" TypeId="Ore" SubtypeId="Ice" />
       </Prerequisites>
-      <!--<Result Amount="33.2" TypeId="Ore" SubtypeId="Ice" />-->
+      <Result Amount="999" TypeId="Ore" SubtypeId="Ice" />
       <Result Amount="1" TypeId="Ore" SubtypeId="Deuterium" />
       <BaseProductionTimeInSeconds>10</BaseProductionTimeInSeconds>
     </Blueprint>
