@@ -71,9 +71,8 @@
       <DisplayName>Deuterium</DisplayName>
       <Icon>Textures\GUI\Icons\ingot\RawHH2o.dds</Icon>
       <Prerequisites>
-        <Item Amount="1000" TypeId="Ore" SubtypeId="Ice" />
+        <Item Amount="100" TypeId="Ore" SubtypeId="Ice" />
       </Prerequisites>
-      <Result Amount="999" TypeId="Ore" SubtypeId="Ice" />
       <Result Amount="1" TypeId="Ore" SubtypeId="Deuterium" />
       <BaseProductionTimeInSeconds>10</BaseProductionTimeInSeconds>
     </Blueprint>
