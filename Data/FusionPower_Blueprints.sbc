@@ -30,7 +30,7 @@
         <Item Amount="1" TypeId="Ore" SubtypeId="Deuterium" />
       </Prerequisites>
       <Result Amount="0.1" TypeId="Ingot" SubtypeId="DeuteriumContainer" />
-      <BaseProductionTimeInSeconds>10</BaseProductionTimeInSeconds>
+      <BaseProductionTimeInSeconds>5</BaseProductionTimeInSeconds>
     </Blueprint> 
 
 <Blueprint>
@@ -56,11 +56,11 @@
       <DisplayName>Deuterium</DisplayName>
       <Icon>Textures\GUI\Icons\ingot\RawHH2o.dds</Icon>
       <Prerequisites>
-        <Item Amount="100000" TypeId="Ore" SubtypeId="Stone" />
+        <Item Amount="10000" TypeId="Ore" SubtypeId="Stone" />
       </Prerequisites>
       <!--<Result Amount="33.2" TypeId="Ore" SubtypeId="Ice" />-->
-      <Result Amount="1" TypeId="Ore" SubtypeId="Deuterium" />
-      <BaseProductionTimeInSeconds>10</BaseProductionTimeInSeconds>
+      <Result Amount="1" TypeId="Ingot" SubtypeId="DeuteriumContainer" />
+      <BaseProductionTimeInSeconds>5</BaseProductionTimeInSeconds>
     </Blueprint>	
 
     <Blueprint>

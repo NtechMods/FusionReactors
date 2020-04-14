@@ -138,7 +138,6 @@
             <Description>Deuterium Fuel Refiners that refine deuterium ice or ice with uranium ore.</Description>
             <Blocks>
                 <Block Type="MyObjectBuilder_Refinery" Subtype="DeuteriumProcessor" />
-                <Block Type="MyObjectBuilder_Refinery" Subtype="DeuteriumandUraniumProcessor" />
             </Blocks>
         </BlockVariantGroup>
         
@@ -1021,7 +1020,7 @@
         <Model BuildPercentUpperBound="1.00" File="Models\Cubes\LBDeuteriumRefinery_Constr3.mwm" />
       </BuildProgressModels>
       <BlockPairName>D2oProcessor</BlockPairName>
-      <Description>Deuterium Processor to process ice into Deuterium.</Description>
+      <Description>Deuterium Processor to process ice, stone, and deuterium into Deuterium Containers.</Description>
       <EdgeType>Light</EdgeType>
       <EmissiveColorPreset>Default</EmissiveColorPreset>
       <BuildTimeSeconds>20</BuildTimeSeconds>
@@ -1043,7 +1042,7 @@
       <OperationalPowerConsumption>0.83</OperationalPowerConsumption>
       <BlueprintClasses>
         <Class>DeuteriumOreToIngots</Class>
-		<!--<Class>HeavyH2OOreToIngot</Class>-->
+		<Class>HeavyH2OIngots</Class>
 		<Class>IcetoDeuterium</Class>
       </BlueprintClasses>
       <RefineSpeed>1</RefineSpeed>
@@ -1059,7 +1058,7 @@
 	  <PCU>90</PCU>
     </Definition>
 	
-    <Definition xsi:type="MyObjectBuilder_RefineryDefinition">
+   <!-- <Definition xsi:type="MyObjectBuilder_RefineryDefinition">
       <Id>
         <TypeId>Refinery</TypeId>
         <SubtypeId>DeuteriumandUraniumProcessor</SubtypeId>
@@ -1117,7 +1116,7 @@
       <DestroyEffect>Explosion_Missile</DestroyEffect>
       <DestroySound>WepSmallMissileExpl</DestroySound>
 	  <PCU>90</PCU>
-    </Definition>
+    </Definition> -->
 <!-- End HeavyH2O Refinery --> 
 
 
