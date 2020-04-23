@@ -1,83 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Blueprints>
-    <Blueprint>
-      <Id>
-        <TypeId>BlueprintDefinition</TypeId>
-        <SubtypeId>MagnetronComponent</SubtypeId>
-      </Id>
-      <DisplayName>Magnetron Component</DisplayName>
-      <Icon>Textures\GUI\Icons\component\AdvancedReactorBundle.dds</Icon>
-      <Prerequisites>
-	    <Item Amount="30" TypeId="Ingot" SubtypeId="Iron" />
-        <Item Amount="26" TypeId="Ingot" SubtypeId="Cobalt" />
-        <Item Amount="10" TypeId="Ingot" SubtypeId="Silicon" />
-        <Item Amount="19" TypeId="Ingot" SubtypeId="Silver" />
-		<Item Amount="5" TypeId="Ingot" SubtypeId="Gold" />
-      </Prerequisites>
-      <Result Amount="1" TypeId="Component" SubtypeId="MagnetronComponent" />
-      <BaseProductionTimeInSeconds>35</BaseProductionTimeInSeconds>
-    </Blueprint>
+	<Blueprints>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>MagnetronComponent</SubtypeId>
+			</Id>
+			<DisplayName>Magnetron Component</DisplayName>
+			<Icon>Textures\GUI\Icons\component\AdvancedReactorBundle.dds</Icon>
+			<Prerequisites>
+				<Item Amount="30" TypeId="Ingot" SubtypeId="Iron" />
+				<Item Amount="26" TypeId="Ingot" SubtypeId="Cobalt" />
+				<Item Amount="10" TypeId="Ingot" SubtypeId="Silicon" />
+				<Item Amount="19" TypeId="Ingot" SubtypeId="Silver" />
+				<Item Amount="5" TypeId="Ingot" SubtypeId="Gold" />
+			</Prerequisites>
+			<Result Amount="1" TypeId="Component" SubtypeId="MagnetronComponent" />
+			<BaseProductionTimeInSeconds>35</BaseProductionTimeInSeconds>
+		</Blueprint>
 
-	<Blueprint>
-      <Id>
-        <TypeId>BlueprintDefinition</TypeId>
-        <SubtypeId>DeuteriumOreToIngot</SubtypeId>
-      </Id>
-      <DisplayName>Deuterium Container</DisplayName>
-      <Icon>Textures\GUI\Icons\ingot\HH2o.dds</Icon>
-      <Prerequisites>
-        <Item Amount="1" TypeId="Ore" SubtypeId="Deuterium" />
-      </Prerequisites>
-      <Result Amount="0.1" TypeId="Ingot" SubtypeId="DeuteriumContainer" />
-      <BaseProductionTimeInSeconds>5</BaseProductionTimeInSeconds>
-    </Blueprint> 
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>DeuteriumOreToIngot</SubtypeId>
+			</Id>
+			<DisplayName>Deuterium Container</DisplayName>
+			<Icon>Textures\GUI\Icons\ingot\HH2o.dds</Icon>
+			<Prerequisites>
+				<Item Amount="1" TypeId="Ore" SubtypeId="Deuterium" />
+			</Prerequisites>
+			<Result Amount="0.2" TypeId="Ingot" SubtypeId="DeuteriumContainer" />
+			<BaseProductionTimeInSeconds>5</BaseProductionTimeInSeconds>
+		</Blueprint> 
+<!--
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>HeavyH2oOreToIngot</SubtypeId>
+			</Id>
+			<DisplayName>Deuterium Container</DisplayName>
+			<Icon>Textures\GUI\Icons\ingot\HH2o.dds</Icon>
+			<Prerequisites>
+				<Item Amount="0.1" TypeId="Ore" SubtypeId="Uranium" />
+				<Item Amount="100" TypeId="Ore" SubtypeId="Ice" />
+			</Prerequisites>
+			<Result Amount="1" TypeId="Ingot" SubtypeId="DeuteriumContainer" />
+			
+			<BaseProductionTimeInSeconds>5</BaseProductionTimeInSeconds>
+		</Blueprint>
+-->
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>StonetoDeuterium</SubtypeId>
+			</Id>
+			<DisplayName>Deuterium</DisplayName>
+			<Icon>Textures\GUI\Icons\ingot\RawHH2o.dds</Icon>
+			<Prerequisites>
+				<Item Amount="10000" TypeId="Ore" SubtypeId="Stone" />
+			</Prerequisites>
+			<!--<Result Amount="33.2" TypeId="Ore" SubtypeId="Ice" />-->
+			<Result Amount="1" TypeId="Ore" SubtypeId="Deuterium" />
+			<BaseProductionTimeInSeconds>10</BaseProductionTimeInSeconds>
+		</Blueprint>	
 
-<Blueprint>
-      <Id>
-        <TypeId>BlueprintDefinition</TypeId>
-        <SubtypeId>HeavyH2oOreToIngot</SubtypeId>
-      </Id>
-      <DisplayName>Deuterium Container</DisplayName>
-      <Icon>Textures\GUI\Icons\ingot\HH2o.dds</Icon>
-      <Prerequisites>
-        <Item Amount="1" TypeId="Ore" SubtypeId="Uranium" />
-        <Item Amount="100" TypeId="Ore" SubtypeId="Ice" />
-      </Prerequisites>
-	  <Result Amount="1" TypeId="Ingot" SubtypeId="DeuteriumContainer" />
-      <!-- <Result Amount="0.99" TypeId="Ore" SubtypeId="DepletedWaterIce" /> -->
-      <BaseProductionTimeInSeconds>5</BaseProductionTimeInSeconds>
-    </Blueprint>
-    <Blueprint>
-      <Id>
-        <TypeId>BlueprintDefinition</TypeId>
-        <SubtypeId>StonetoDeuterium</SubtypeId>
-      </Id>
-      <DisplayName>Deuterium</DisplayName>
-      <Icon>Textures\GUI\Icons\ingot\RawHH2o.dds</Icon>
-      <Prerequisites>
-        <Item Amount="10000" TypeId="Ore" SubtypeId="Stone" />
-      </Prerequisites>
-      <!--<Result Amount="33.2" TypeId="Ore" SubtypeId="Ice" />-->
-      <Result Amount="1" TypeId="Ingot" SubtypeId="DeuteriumContainer" />
-      <BaseProductionTimeInSeconds>5</BaseProductionTimeInSeconds>
-    </Blueprint>	
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>IcetoDeuterium</SubtypeId>
+			</Id>
+			<DisplayName>Deuterium</DisplayName>
+			<Icon>Textures\GUI\Icons\ingot\RawHH2o.dds</Icon>
+			<Prerequisites>
+				<Item Amount="10000" TypeId="Ore" SubtypeId="Ice" />
+			</Prerequisites>
+			<Result Amount="1" TypeId="Ore" SubtypeId="Deuterium" />
+			<BaseProductionTimeInSeconds>15</BaseProductionTimeInSeconds>
+		</Blueprint>
 
-    <Blueprint>
-      <Id>
-        <TypeId>BlueprintDefinition</TypeId>
-        <SubtypeId>IcetoDeuterium</SubtypeId>
-      </Id>
-      <DisplayName>Deuterium</DisplayName>
-      <Icon>Textures\GUI\Icons\ingot\RawHH2o.dds</Icon>
-      <Prerequisites>
-        <Item Amount="100" TypeId="Ore" SubtypeId="Ice" />
-      </Prerequisites>
-      <Result Amount="1" TypeId="Ore" SubtypeId="Deuterium" />
-      <BaseProductionTimeInSeconds>10</BaseProductionTimeInSeconds>
-    </Blueprint>
-    
- <!--   <Blueprint>
+		<!--   <Blueprint>
       <Id>
         <TypeId>BlueprintDefinition</TypeId>
         <SubtypeId>DepletedWaterIceToOxyGen</SubtypeId>
@@ -90,5 +91,5 @@
       <Result Amount="0.9" TypeId="Ore" SubtypeId="Ice" />
       <BaseProductionTimeInSeconds>0.1</BaseProductionTimeInSeconds>
     </Blueprint> -->
-  </Blueprints>
+	</Blueprints>
 </Definitions>
