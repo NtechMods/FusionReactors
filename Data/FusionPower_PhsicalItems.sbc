@@ -34,7 +34,7 @@
         <TypeId>Ore</TypeId>
         <SubtypeId>Deuterium</SubtypeId>
       </Id>
-      <DisplayName>Deuterium Ice</DisplayName>
+      <DisplayName>Liquid Deuterium</DisplayName>
       <Icon>Textures\GUI\Icons\ingot\RawHH2o.dds</Icon>
       <Size>
         <X>0.07</X>
