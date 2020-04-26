@@ -24,7 +24,7 @@
 				<TypeId>BlueprintDefinition</TypeId>
 				<SubtypeId>DeuteriumOreToIngot</SubtypeId>
 			</Id>
-			<DisplayName>Deuterium Container</DisplayName>
+			<DisplayName>1 Litre Deuterium Container</DisplayName>
 			<Icon>Textures\GUI\Icons\ingot\HH2o.dds</Icon>
 			<Prerequisites>
 				<Item Amount="1" TypeId="Ore" SubtypeId="Deuterium" />
@@ -57,11 +57,11 @@
 			<DisplayName>Liquid Deuterium</DisplayName>
 			<Icon>Textures\GUI\Icons\ingot\RawHH2o.dds</Icon>
 			<Prerequisites>
-				<Item Amount="25000" TypeId="Ore" SubtypeId="Stone" />
+				<Item Amount="15000" TypeId="Ore" SubtypeId="Stone" />
 			</Prerequisites>
 			<!--<Result Amount="33.2" TypeId="Ore" SubtypeId="Ice" />-->
 			<Result Amount="1" TypeId="Ore" SubtypeId="Deuterium" />
-			<BaseProductionTimeInSeconds>10</BaseProductionTimeInSeconds>
+			<BaseProductionTimeInSeconds>40</BaseProductionTimeInSeconds>
 		</Blueprint>	
 
 		<Blueprint>
@@ -72,10 +72,10 @@
 			<DisplayName>Liquid Deuterium</DisplayName>
 			<Icon>Textures\GUI\Icons\ingot\RawHH2o.dds</Icon>
 			<Prerequisites>
-				<Item Amount="25000" TypeId="Ore" SubtypeId="Ice" />
+				<Item Amount="15000" TypeId="Ore" SubtypeId="Ice" />
 			</Prerequisites>
 			<Result Amount="1" TypeId="Ore" SubtypeId="Deuterium" />
-			<BaseProductionTimeInSeconds>15</BaseProductionTimeInSeconds>
+			<BaseProductionTimeInSeconds>40</BaseProductionTimeInSeconds>
 		</Blueprint>
 
 		<!--   <Blueprint>
