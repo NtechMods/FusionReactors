@@ -60,7 +60,7 @@
 				<Item Amount="15000" TypeId="Ore" SubtypeId="Stone" />
 			</Prerequisites>
 			<!--<Result Amount="33.2" TypeId="Ore" SubtypeId="Ice" />-->
-			<Result Amount="1" TypeId="Ore" SubtypeId="Deuterium" />
+			<Result Amount="1" TypeId="Ingot" SubtypeId="DeuteriumContainer" />
 			<BaseProductionTimeInSeconds>40</BaseProductionTimeInSeconds>
 		</Blueprint>	
 
@@ -74,7 +74,7 @@
 			<Prerequisites>
 				<Item Amount="15000" TypeId="Ore" SubtypeId="Ice" />
 			</Prerequisites>
-			<Result Amount="1" TypeId="Ore" SubtypeId="Deuterium" />
+			<Result Amount="1" TypeId="Ingot" SubtypeId="DeuteriumContainer" />
 			<BaseProductionTimeInSeconds>40</BaseProductionTimeInSeconds>
 		</Blueprint>
 
