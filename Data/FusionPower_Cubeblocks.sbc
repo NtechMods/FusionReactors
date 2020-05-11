@@ -63,7 +63,7 @@
       </UnlockedByGroups>
     </ResearchBlock>
     <ResearchBlock xsi:type="ResearchBlock">
-	  <Id Type="MyObjectBuilder_Assembler" Subtype="DeuteriumProcessor" />
+	  <Id Type="MyObjectBuilder_Refinery" Subtype="DeuteriumProcessor" />
       <UnlockedByGroups>
         <GroupSubtype>26</GroupSubtype>
       </UnlockedByGroups>
@@ -76,7 +76,7 @@
       <Members>
         <BlockId Type="MyObjectBuilder_Reactor" Subtype="LBFusionReactorT1" />
         <BlockId Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT1" />
-		<BlockId Type="MyObjectBuilder_Assembler" Subtype="DeuteriumProcessor" />
+		<BlockId Type="MyObjectBuilder_Refinery" Subtype="DeuteriumProcessor" />
       </Members>
     </ResearchGroup>
     <ResearchGroup xsi:type="ResearchGroup">
@@ -137,7 +137,7 @@
             <DisplayName>DisplayName_BlockGroup_FusionRefiners</DisplayName>
             <Description>Deuterium Fuel Refiners that refine deuterium ice or ice with uranium ore.</Description>
             <Blocks>
-                <Block Type="MyObjectBuilder_Assembler" Subtype="DeuteriumProcessor" />
+                <Block Type="MyObjectBuilder_Refinery" Subtype="DeuteriumProcessor" />
             </Blocks>
         </BlockVariantGroup>
         
@@ -991,9 +991,9 @@
 	
 	
 	<!-- Begin HeavyH2O Refinery -->
-    <Definition xsi:type="MyObjectBuilder_AssemblerDefinition">
+    <Definition xsi:type="MyObjectBuilder_RefineryDefinition">
       <Id>
-        <TypeId>Assembler</TypeId>
+        <TypeId>Refinery</TypeId>
         <SubtypeId>DeuteriumProcessor</SubtypeId>
       </Id>
       <DisplayName>Deuterium Processor</DisplayName>
@@ -1020,19 +1020,16 @@
         <Model BuildPercentUpperBound="1.00" File="Models\Cubes\LBDeuteriumRefinery_BS3.mwm" />
       </BuildProgressModels>
       <BlockPairName>D2oProcessor</BlockPairName>
-      <Description>Deuterium Processor must queue Deuterium to make Deuterium, and queue Deuterium Containers to complete the fuel production process.</Description>
+      <Description>Deuterium Processor for material extraction of deuterium liquid into Deuterium Containers for fuel.</Description>
       <EdgeType>Light</EdgeType>
       <EmissiveColorPreset>Default</EmissiveColorPreset>
       <BuildTimeSeconds>20</BuildTimeSeconds>
       <ResourceSinkGroup>Factory</ResourceSinkGroup>
       <InventoryMaxVolume>4</InventoryMaxVolume>
-	  <OreAmountPerPullRequest>1000</OreAmountPerPullRequest> 
-	  <BlockVariants>
-        <BlockVariant>
-          <TypeId>Refinery</TypeId>
-          <SubtypeId>DeuteriumandUraniumProcessor</SubtypeId>
-        </BlockVariant>
-      </BlockVariants>
+	  <OreAmountPerPullRequest>1000</OreAmountPerPullRequest>
+      <RefineSpeed>1</RefineSpeed>
+      <MaterialEfficiency>1</MaterialEfficiency>
+      
       <InventorySize>
         <X>2</X>
         <Y>2</Y>
