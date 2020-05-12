@@ -250,10 +250,15 @@
         <Y>1</Y>
         <Z>1</Z>
       </InventorySize>
-      <FuelId>
-        <TypeId>Ingot</TypeId>
-        <SubtypeId>DeuteriumContainer</SubtypeId>
-      </FuelId>
+      <FuelInfos>
+	   <FuelInfo>
+	    <Id>
+	     <TypeId>Ingot</TypeId>
+         <SubtypeId>DeuteriumContainer</SubtypeId>
+		</Id>
+		<Ratio>0.04</Ratio>
+	   </FuelInfo>
+      </FuelInfos>
       <PrimarySound>ShipLrgNuclearSm</PrimarySound>
       <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
       <DamagedSound>ParticleReactor</DamagedSound>
@@ -321,10 +326,15 @@
         <Y>1</Y>
         <Z>1</Z>
       </InventorySize>
-      <FuelId>
-        <TypeId>Ingot</TypeId>
-        <SubtypeId>DeuteriumContainer</SubtypeId>
-      </FuelId>
+      <FuelInfos>
+	   <FuelInfo>
+	    <Id>
+	     <TypeId>Ingot</TypeId>
+         <SubtypeId>DeuteriumContainer</SubtypeId>
+		</Id>
+		<Ratio>0.04</Ratio>
+	   </FuelInfo>
+      </FuelInfos>
       <PrimarySound>ShipLrgNuclearSm</PrimarySound>
       <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
       <DamagedSound>ParticleReactor</DamagedSound>
@@ -413,10 +423,15 @@
         <Y>1</Y>
         <Z>1</Z>
       </InventorySize>
-      <FuelId>
-        <TypeId>Ingot</TypeId>
-        <SubtypeId>DeuteriumContainer</SubtypeId>
-      </FuelId>
+      <FuelInfos>
+	   <FuelInfo>
+	    <Id>
+	     <TypeId>Ingot</TypeId>
+         <SubtypeId>DeuteriumContainer</SubtypeId>
+		</Id>
+		<Ratio>0.04</Ratio>
+	   </FuelInfo>
+      </FuelInfos>
       <PrimarySound>ShipLrgNuclearSm</PrimarySound>
       <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
       <DamagedSound>ParticleReactor</DamagedSound>
@@ -485,10 +500,15 @@
         <Y>1</Y>
         <Z>1</Z>
       </InventorySize>
-      <FuelId>
-        <TypeId>Ingot</TypeId>
-        <SubtypeId>DeuteriumContainer</SubtypeId>
-      </FuelId>
+      <FuelInfos>
+	   <FuelInfo>
+	    <Id>
+	     <TypeId>Ingot</TypeId>
+         <SubtypeId>DeuteriumContainer</SubtypeId>
+		</Id>
+		<Ratio>0.04</Ratio>
+	   </FuelInfo>
+      </FuelInfos>
       <PrimarySound>ShipLrgNuclearSm</PrimarySound>
       <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
       <DamagedSound>ParticleReactor</DamagedSound>
@@ -577,10 +597,15 @@
         <Y>1</Y>
         <Z>1</Z>
       </InventorySize>
-      <FuelId>
-        <TypeId>Ingot</TypeId>
-        <SubtypeId>DeuteriumContainer</SubtypeId>
-      </FuelId>
+      <FuelInfos>
+	   <FuelInfo>
+	    <Id>
+	     <TypeId>Ingot</TypeId>
+         <SubtypeId>DeuteriumContainer</SubtypeId>
+		</Id>
+		<Ratio>0.04</Ratio>
+	   </FuelInfo>
+      </FuelInfos>
       <PrimarySound>ShipLrgNuclearSm</PrimarySound>
       <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
       <DamagedSound>ParticleReactor</DamagedSound>
@@ -648,10 +673,15 @@
         <Y>1</Y>
         <Z>1</Z>
       </InventorySize>
-      <FuelId>
-        <TypeId>Ingot</TypeId>
-        <SubtypeId>DeuteriumContainer</SubtypeId>
-      </FuelId>
+      <FuelInfos>
+	   <FuelInfo>
+	    <Id>
+	     <TypeId>Ingot</TypeId>
+         <SubtypeId>DeuteriumContainer</SubtypeId>
+		</Id>
+		<Ratio>0.04</Ratio>
+	   </FuelInfo>
+      </FuelInfos>
       <PrimarySound>ShipLrgNuclearSm</PrimarySound>
       <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
       <DamagedSound>ParticleReactor</DamagedSound>
@@ -740,10 +770,15 @@
         <Y>1</Y>
         <Z>1</Z>
       </InventorySize>
-      <FuelId>
-        <TypeId>Ingot</TypeId>
-        <SubtypeId>DeuteriumContainer</SubtypeId>
-      </FuelId>
+      <FuelInfos>
+	   <FuelInfo>
+	    <Id>
+	     <TypeId>Ingot</TypeId>
+         <SubtypeId>DeuteriumContainer</SubtypeId>
+		</Id>
+		<Ratio>0.04</Ratio>
+	   </FuelInfo>
+      </FuelInfos>
       <PrimarySound>ShipLrgNuclearSm</PrimarySound>
       <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
       <DamagedSound>ParticleReactor</DamagedSound>
@@ -811,10 +846,15 @@
         <Y>1</Y>
         <Z>1</Z>
       </InventorySize>
-      <FuelId>
-        <TypeId>Ingot</TypeId>
-        <SubtypeId>DeuteriumContainer</SubtypeId>
-      </FuelId>
+      <FuelInfos>
+	   <FuelInfo>
+	    <Id>
+	     <TypeId>Ingot</TypeId>
+         <SubtypeId>DeuteriumContainer</SubtypeId>
+		</Id>
+		<Ratio>0.04</Ratio>
+	   </FuelInfo>
+      </FuelInfos>
       <PrimarySound>ShipLrgNuclearSm</PrimarySound>
       <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
       <DamagedSound>ParticleReactor</DamagedSound>
@@ -902,10 +942,15 @@
         <Y>1</Y>
         <Z>1</Z>
       </InventorySize>
-      <FuelId>
-        <TypeId>Ingot</TypeId>
-        <SubtypeId>DeuteriumContainer</SubtypeId>
-      </FuelId>
+      <FuelInfos>
+	   <FuelInfo>
+	    <Id>
+	     <TypeId>Ingot</TypeId>
+         <SubtypeId>DeuteriumContainer</SubtypeId>
+		</Id>
+		<Ratio>0.04</Ratio>
+	   </FuelInfo>
+      </FuelInfos>
       <PrimarySound>ShipLrgNuclearSm</PrimarySound>
       <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
       <DamagedSound>ParticleReactor</DamagedSound>
@@ -973,10 +1018,15 @@
         <Y>1</Y>
         <Z>1</Z>
       </InventorySize>
-      <FuelId>
-        <TypeId>Ingot</TypeId>
-        <SubtypeId>DeuteriumContainer</SubtypeId>
-      </FuelId>
+      <FuelInfos>
+	   <FuelInfo>
+	    <Id>
+	     <TypeId>Ingot</TypeId>
+         <SubtypeId>DeuteriumContainer</SubtypeId>
+		</Id>
+		<Ratio>0.04</Ratio>
+	   </FuelInfo>
+      </FuelInfos>
 	  <PrimarySound>ShipLrgNuclearSm</PrimarySound>
       <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
       <DamagedSound>ParticleReactor</DamagedSound>
@@ -991,10 +1041,7 @@
 	
 	
 	<!-- Begin HeavyH2O Refinery -->
-    <!-- <Definition xsi:type="MyObjectBuilder_AssemblerDefinition">
-      <Id>
-        <TypeId>Assembler</TypeId> -->
-	 <Definition xsi:type="MyObjectBuilder_RefineryDefinition">
+    <Definition xsi:type="MyObjectBuilder_RefineryDefinition">
       <Id>
         <TypeId>Refinery</TypeId>
         <SubtypeId>DeuteriumProcessor</SubtypeId>
@@ -1023,16 +1070,15 @@
         <Model BuildPercentUpperBound="1.00" File="Models\Cubes\LBDeuteriumRefinery_BS3.mwm" />
       </BuildProgressModels>
       <BlockPairName>D2oProcessor</BlockPairName>
-      <Description>Deuterium Processor processes Stone, Ice, or Deuterium Ice into liquid, and places it in containers.</Description>
+      <Description>Deuterium Processor for material extraction of deuterium liquid into Deuterium Containers for fuel.</Description>
       <EdgeType>Light</EdgeType>
       <EmissiveColorPreset>Default</EmissiveColorPreset>
       <BuildTimeSeconds>20</BuildTimeSeconds>
       <ResourceSinkGroup>Factory</ResourceSinkGroup>
       <InventoryMaxVolume>4</InventoryMaxVolume>
-	  <OreAmountPerPullRequest>1000</OreAmountPerPullRequest> 
+	  <OreAmountPerPullRequest>1000</OreAmountPerPullRequest>
       <RefineSpeed>1</RefineSpeed>
       <MaterialEfficiency>1</MaterialEfficiency>
-
       <InventorySize>
         <X>2</X>
         <Y>2</Y>

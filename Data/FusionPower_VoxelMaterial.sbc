@@ -8,7 +8,7 @@
       </Id>
       <MaterialTypeName>Rock</MaterialTypeName>
       <MinedOre>Deuterium</MinedOre>
-      <MinedOreRatio>0.8</MinedOreRatio>
+      <MinedOreRatio>0.05</MinedOreRatio>
       <CanBeHarvested>true</CanBeHarvested>
       <SpawnsInAsteroids>true</SpawnsInAsteroids>
       <IsRare>true</IsRare>
