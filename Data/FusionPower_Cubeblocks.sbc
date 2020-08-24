@@ -1099,12 +1099,12 @@
 	  <PCU>90</PCU>
     </Definition>
 	
-   <!-- <Definition xsi:type="MyObjectBuilder_RefineryDefinition">
+   <Definition xsi:type="MyObjectBuilder_AssemblerDefinition">
       <Id>
-        <TypeId>Refinery</TypeId>
-        <SubtypeId>DeuteriumandUraniumProcessor</SubtypeId>
+        <TypeId>Assembler</TypeId>
+        <SubtypeId>DeuteriumandUraniumAssembler</SubtypeId>
       </Id>
-      <DisplayName>Uranium Ice Deuterium Processor</DisplayName>
+      <DisplayName>Queue-able Deuterium Processor</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\ThRefinery.dds</Icon>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
@@ -1123,12 +1123,12 @@
       <MirroringZ>Y</MirroringZ>
       <MirroringY>Z</MirroringY>
       <BuildProgressModels>
-        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\LBDeuteriumRefinery_Constr1.mwm" />
-        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\LBDeuteriumRefinery_Constr2.mwm" />
-        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\LBDeuteriumRefinery_Constr3.mwm" />
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\LBDeuteriumRefinery_BS1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\LBDeuteriumRefinery_BS2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\LBDeuteriumRefinery_BS3.mwm" />
       </BuildProgressModels>
       <BlockPairName>D2oProcessor2</BlockPairName>
-      <Description>Deuterium Processor to process ice and uranium into Deuterium.</Description>
+      <Description>Queue-able Deuterium Processor to process ice, stone, and Deuterium into Deuterium Containers for use in the fusion reactors.</Description>
       <EdgeType>Light</EdgeType>
       <EmissiveColorPreset>Default</EmissiveColorPreset>
       <BuildTimeSeconds>20</BuildTimeSeconds>
@@ -1146,8 +1146,7 @@
       <BlueprintClasses>
 		<Class>HeavyH2OIngots</Class>
       </BlueprintClasses>
-      <RefineSpeed>1</RefineSpeed>
-      <MaterialEfficiency>1</MaterialEfficiency>
+      <AssemblySpeed>1.0</AssemblySpeed>
       <DamageEffectId>212</DamageEffectId>
       <Description>Description_Refinery</Description>
 
@@ -1156,8 +1155,13 @@
       <ActionSound>BlockAssemblerProcess</ActionSound>
       <DestroyEffect>Explosion_Missile</DestroyEffect>
       <DestroySound>WepSmallMissileExpl</DestroySound>
-	  <PCU>90</PCU>
-    </Definition> -->
+	  <PCU>40</PCU>
+            <TieredUpdateTimes>
+                <unsignedInt>60</unsignedInt>
+                <unsignedInt>120</unsignedInt>
+                <unsignedInt>240</unsignedInt>
+            </TieredUpdateTimes>
+    </Definition> 
 <!-- End HeavyH2O Refinery --> 
 
 
@@ -1167,6 +1171,13 @@
       <Name>D2oProcessor</Name>
       <Position>
         <X>2</X>
+        <Y>20</Y>
+      </Position>
+    </BlockPosition>
+      <BlockPosition>
+      <Name>D2oProcessor2</Name>
+      <Position>
+        <X>3</X>
         <Y>20</Y>
       </Position>
     </BlockPosition>
