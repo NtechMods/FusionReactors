@@ -68,6 +68,12 @@
         <GroupSubtype>26</GroupSubtype>
       </UnlockedByGroups>
     </ResearchBlock>
+    <ResearchBlock xsi:type="ResearchBlock">
+		<Id Type="MyObjectBuilder_Assembler" Subtype="DeuteriumandUraniumAssembler" />
+      <UnlockedByGroups>
+        <GroupSubtype>26</GroupSubtype>
+      </UnlockedByGroups>
+    </ResearchBlock>
   </ResearchBlocks>
 <!-- ResearchGroups -->
   <ResearchGroups>
@@ -77,6 +83,7 @@
         <BlockId Type="MyObjectBuilder_Reactor" Subtype="LBFusionReactorT1" />
         <BlockId Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT1" />
 		<BlockId Type="MyObjectBuilder_Refinery" Subtype="DeuteriumProcessor" />
+		<BlockId Type="MyObjectBuilder_Assembler" Subtype="DeuteriumandUraniumAssembler" />
       </Members>
     </ResearchGroup>
     <ResearchGroup xsi:type="ResearchGroup">
