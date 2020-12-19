@@ -4,7 +4,7 @@
     <Component>
       <Id>
         <TypeId>Component</TypeId>
-        <SubtypeId>MagnetronComponent</SubtypeId>
+        <SubtypeId>Magnetron_Component</SubtypeId>
       </Id>
       <DisplayName>Magnetron Component</DisplayName>
       <Icon>Textures\GUI\Icons\component\AdvancedReactorBundle.dds</Icon>
@@ -20,6 +20,24 @@
             <MinimumOfferAmount>10</MinimumOfferAmount>
             <MaximumOfferAmount>48</MaximumOfferAmount>
             <CanPlayerOrder>true</CanPlayerOrder>
+      <MaxIntegrity>20</MaxIntegrity>
+      <DropProbability>0.1</DropProbability>
+    </Component>
+    <Component>
+      <Id>
+        <TypeId>Component</TypeId>
+        <SubtypeId>MagnetronComponent</SubtypeId>
+      </Id>
+      <DisplayName>Magnetron Component</DisplayName>
+      <Icon>Textures\GUI\Icons\component\AdvancedReactorBundle.dds</Icon>
+      <Size>
+        <X>0.4</X>
+        <Y>0.4</Y>
+        <Z>0.4</Z>
+      </Size>
+      <Mass>50</Mass>
+      <Volume>20</Volume>
+      <Model>Models\Components\reactor_components_component.mwm</Model>
       <MaxIntegrity>20</MaxIntegrity>
       <DropProbability>0.1</DropProbability>
     </Component>

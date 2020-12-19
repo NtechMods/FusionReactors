@@ -40,7 +40,7 @@
 	<Entry Class="LargeBlocks" BlueprintSubtypeId="Reactor/LBFusionReactorT5" />
 	<Entry Class="LargeBlocks" BlueprintSubtypeId="DeuteriumProcessor" />
 	
-	<Entry Class="Components" BlueprintSubtypeId="MagnetronComponent" />
+	<Entry Class="Components" BlueprintSubtypeId="Magnetron_Component" />
 	
     <!--<Entry Class="HeavyH2OIngots" BlueprintSubtypeId="HeavyH2oOreToIngot" />-->
     <Entry Class="HeavyH2OIngots" BlueprintSubtypeId="StonetoDeuterium" />
