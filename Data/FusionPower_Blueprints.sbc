@@ -14,6 +14,7 @@
 				<Item Amount="10" TypeId="Ingot" SubtypeId="Silicon" />
 				<Item Amount="19" TypeId="Ingot" SubtypeId="Silver" />
 				<Item Amount="5" TypeId="Ingot" SubtypeId="Gold" />
+				<Item Amount="1" TypeId="Ingot" SubtypeId="Uranium" />
 			</Prerequisites>
 			<Result Amount="1" TypeId="Component" SubtypeId="Magnetron_Component" />
 			<BaseProductionTimeInSeconds>35</BaseProductionTimeInSeconds>
