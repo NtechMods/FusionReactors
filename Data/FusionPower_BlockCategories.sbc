@@ -11,10 +11,11 @@
       <ItemIds>
 		<string>LBFusionReactorT1</string>
         <string>LBFusionReactorT2</string>
-		<string>LBFusionReactorT3</string>
-		<string>LBFusionReactorT4</string>
-		<string>LBFusionReactorT5</string>	
-		<string>DeuteriumProcessor</string>
+		    <string>LBFusionReactorT3</string>
+		    <string>LBFusionReactorT4</string>
+		    <string>LBFusionReactorT5</string>	
+		    <string>DeuteriumProcessor</string>
+		    <string>DeuteriumandUraniumAssembler</string>
       </ItemIds>
     </Category>
     <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
@@ -25,11 +26,11 @@
       <DisplayName>DisplayName_Category_SmallBlocks</DisplayName>
       <Name>SmallBlocks</Name>
       <ItemIds>
-		<string>SBFusionReactorT1</string>
-		<string>SBFusionReactorT2</string>
-		<string>SBFusionReactorT3</string>
-		<string>SBFusionReactorT4</string>
-		<string>SBFusionReactorT5</string>
+		    <string>SBFusionReactorT1</string>
+		    <string>SBFusionReactorT2</string>
+		    <string>SBFusionReactorT3</string>
+		    <string>SBFusionReactorT4</string>
+		    <string>SBFusionReactorT5</string>
       </ItemIds>
     </Category>
     <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
@@ -40,18 +41,19 @@
       <DisplayName>Ntech</DisplayName>
       <Name>Ntech</Name>
       <ItemIds>
-		<string>SBFusionReactorT1</string>
-		<string>SBFusionReactorT2</string>
-		<string>SBFusionReactorT3</string>
-		<string>SBFusionReactorT4</string>
-		<string>SBFusionReactorT5</string>
+		    <string>SBFusionReactorT1</string>
+		    <string>SBFusionReactorT2</string>
+	    	<string>SBFusionReactorT3</string>
+	    	<string>SBFusionReactorT4</string>
+	    	<string>SBFusionReactorT5</string>
 		
-		<string>LBFusionReactorT1</string>
+	    	<string>LBFusionReactorT1</string>
         <string>LBFusionReactorT2</string>
-		<string>LBFusionReactorT3</string>
-		<string>LBFusionReactorT4</string>
-		<string>LBFusionReactorT5</string>
-		<string>DeuteriumProcessor</string>
+    		<string>LBFusionReactorT3</string>
+	    	<string>LBFusionReactorT4</string>
+	    	<string>LBFusionReactorT5</string>
+    		<string>DeuteriumProcessor</string>
+    		<string>DeuteriumandUraniumAssembler</string>
       </ItemIds>
     </Category>
 	<Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
@@ -62,17 +64,17 @@
       <DisplayName>DisplayName_Category_Power</DisplayName>
       <Name>Power</Name>
       <ItemIds>
-		<string>SBFusionReactorT1</string>
-		<string>SBFusionReactorT2</string>
-		<string>SBFusionReactorT3</string>
-		<string>SBFusionReactorT4</string>
-		<string>SBFusionReactorT5</string>
+	    	<string>SBFusionReactorT1</string>
+    		<string>SBFusionReactorT2</string>
+    		<string>SBFusionReactorT3</string>
+    		<string>SBFusionReactorT4</string>
+    		<string>SBFusionReactorT5</string>
 		
-		<string>LBFusionReactorT1</string>
-        <string>LBFusionReactorT2</string>
-		<string>LBFusionReactorT3</string>
-		<string>LBFusionReactorT4</string>
-		<string>LBFusionReactorT5</string>
+	    	<string>LBFusionReactorT1</string>
+       <string>LBFusionReactorT2</string>
+	    	<string>LBFusionReactorT3</string>
+	    	<string>LBFusionReactorT4</string>
+    		<string>LBFusionReactorT5</string>
       </ItemIds>
     </Category>
   </CategoryClasses>
