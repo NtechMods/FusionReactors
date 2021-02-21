@@ -88,7 +88,7 @@ namespace PlasmaField
             
         }
 
-        public override void UpdateAfterSimulation()
+        public override void UpdateBeforeSimulation()
         {
             if (MyAPIGateway.Utilities.IsDedicated) return;
             UpdateParticleEffect();
