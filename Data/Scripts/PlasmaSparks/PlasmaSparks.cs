@@ -64,7 +64,7 @@ namespace PlasmaField
             if (_reactor.IsWorking && _effectMatrix.HasValue)
             {
                 var fractionalOutput = _reactor.CurrentOutput / _reactor.MaxOutput;
-                var dTheta = 2 * MyEngineConstants.PHYSICS_STEP_SIZE_IN_SECONDS;
+                var dTheta = 1 * MyEngineConstants.PHYSICS_STEP_SIZE_IN_SECONDS;
                 _effectMatrix = _effectMatrix.Value * MatrixD.CreateRotationY(-dTheta);
                 if (_effect == null)
 
