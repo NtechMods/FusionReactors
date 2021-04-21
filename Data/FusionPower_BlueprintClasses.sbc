@@ -41,6 +41,18 @@
 	<Entry Class="LargeBlocks" BlueprintSubtypeId="DeuteriumProcessor" />
 	
 	<Entry Class="Components" BlueprintSubtypeId="Magnetron_Component" />
+	<Entry Class="Components" BlueprintSubtypeId="Magnetron_UpgradeMk1" />
+	<Entry Class="Components" BlueprintSubtypeId="Magnetron_UpgradeMk2" />
+	<Entry Class="Components" BlueprintSubtypeId="Magnetron_UpgradeMk3" />
+	<Entry Class="Components" BlueprintSubtypeId="Magnetron_UpgradeMk4" />
+	<Entry Class="Components" BlueprintSubtypeId="Magnetron_UpgradeMk5" />
+
+  
+	<Entry Class="Ingots" BlueprintSubtypeId="UpgradePartMk1" />
+	<Entry Class="Ingots" BlueprintSubtypeId="UpgradePartMk2" />
+	<Entry Class="Ingots" BlueprintSubtypeId="UpgradePartMk3" />
+	<Entry Class="Ingots" BlueprintSubtypeId="UpgradePartMk4" />
+	<Entry Class="Ingots" BlueprintSubtypeId="UpgradePartMk5" />
 	
     <!--<Entry Class="HeavyH2OIngots" BlueprintSubtypeId="HeavyH2oOreToIngot" />-->
     <Entry Class="HeavyH2OIngots" BlueprintSubtypeId="StonetoDeuterium" />

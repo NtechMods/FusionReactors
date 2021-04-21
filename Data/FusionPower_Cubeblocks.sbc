@@ -1,120 +1,116 @@
 <?xml version="1.0"?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-<!--ResearchBlocks -->
-  <ResearchBlocks>
-    <ResearchBlock xsi:type="ResearchBlock">
-      <Id Type="MyObjectBuilder_Reactor" Subtype="LBFusionReactorT1" />
-      <UnlockedByGroups>
-        <GroupSubtype>26</GroupSubtype>
-      </UnlockedByGroups>
-    </ResearchBlock>
-    <ResearchBlock xsi:type="ResearchBlock">
-      <Id Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT1" />
-      <UnlockedByGroups>
-        <GroupSubtype>26</GroupSubtype>
-      </UnlockedByGroups>
-    </ResearchBlock>
-    <ResearchBlock xsi:type="ResearchBlock">
-      <Id Type="MyObjectBuilder_Reactor" Subtype="LBFusionReactorT2" />
-      <UnlockedByGroups>
-        <GroupSubtype>FusionReactorsNtechModsT1</GroupSubtype>
-      </UnlockedByGroups>
-    </ResearchBlock>
-    <ResearchBlock xsi:type="ResearchBlock">
-      <Id Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT2" />
-      <UnlockedByGroups>
-        <GroupSubtype>FusionReactorsNtechModsT1</GroupSubtype>
-      </UnlockedByGroups>
-    </ResearchBlock>
-    <ResearchBlock xsi:type="ResearchBlock">
-      <Id Type="MyObjectBuilder_Reactor" Subtype="LBFusionReactorT3" />
-      <UnlockedByGroups>
-        <GroupSubtype>FusionReactorsNtechModsT2</GroupSubtype>
-      </UnlockedByGroups>
-    </ResearchBlock>
-    <ResearchBlock xsi:type="ResearchBlock">
-      <Id Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT3" />
-      <UnlockedByGroups>
-        <GroupSubtype>FusionReactorsNtechModsT2</GroupSubtype>
-      </UnlockedByGroups>
-    </ResearchBlock>
-    <ResearchBlock xsi:type="ResearchBlock">
-      <Id Type="MyObjectBuilder_Reactor" Subtype="LBFusionReactorT4" />
-      <UnlockedByGroups>
-        <GroupSubtype>FusionReactorsNtechModsT3</GroupSubtype>
-      </UnlockedByGroups>
-    </ResearchBlock>
-    <ResearchBlock xsi:type="ResearchBlock">
-      <Id Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT4" />
-      <UnlockedByGroups>
-        <GroupSubtype>FusionReactorsNtechModsT3</GroupSubtype>
-      </UnlockedByGroups>
-    </ResearchBlock>
-    <ResearchBlock xsi:type="ResearchBlock">
-      <Id Type="MyObjectBuilder_Reactor" Subtype="LBFusionReactorT5" />
-      <UnlockedByGroups>
-        <GroupSubtype>FusionReactorsNtechModsT4</GroupSubtype>
-      </UnlockedByGroups>
-    </ResearchBlock>
-    <ResearchBlock xsi:type="ResearchBlock">
-      <Id Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT5" />
-      <UnlockedByGroups>
-        <GroupSubtype>FusionReactorsNtechModsT4</GroupSubtype>
-      </UnlockedByGroups>
-    </ResearchBlock>
-    <ResearchBlock xsi:type="ResearchBlock">
-	  <Id Type="MyObjectBuilder_Refinery" Subtype="DeuteriumProcessor" />
-      <UnlockedByGroups>
-        <GroupSubtype>26</GroupSubtype>
-      </UnlockedByGroups>
-    </ResearchBlock>
-    <ResearchBlock xsi:type="ResearchBlock">
-		<Id Type="MyObjectBuilder_Assembler" Subtype="DeuteriumandUraniumAssembler" />
-      <UnlockedByGroups>
-        <GroupSubtype>26</GroupSubtype>
-      </UnlockedByGroups>
-    </ResearchBlock>
-  </ResearchBlocks>
-<!-- ResearchGroups -->
-  <ResearchGroups>
-    <ResearchGroup xsi:type="ResearchGroup">
-      <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="FusionReactorsNtechModsT1" />
-      <Members>
-        <BlockId Type="MyObjectBuilder_Reactor" Subtype="LBFusionReactorT1" />
-        <BlockId Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT1" />
-		<BlockId Type="MyObjectBuilder_Refinery" Subtype="DeuteriumProcessor" />
-		<BlockId Type="MyObjectBuilder_Assembler" Subtype="DeuteriumandUraniumAssembler" />
-      </Members>
-    </ResearchGroup>
-    <ResearchGroup xsi:type="ResearchGroup">
-      <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="FusionReactorsNtechModsT2" />
-      <Members>
-        <BlockId Type="MyObjectBuilder_Reactor" Subtype="LBFusionReactorT2" />
-        <BlockId Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT2" />
-      </Members>
-    </ResearchGroup>
-    <ResearchGroup xsi:type="ResearchGroup">
-      <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="FusionReactorsNtechModsT3" />
-      <Members>
-        <BlockId Type="MyObjectBuilder_Reactor" Subtype="LBFusionReactorT3" />
-        <BlockId Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT3" />
-      </Members>
-    </ResearchGroup>
-    <ResearchGroup xsi:type="ResearchGroup">
-      <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="FusionReactorsNtechModsT4" />
-      <Members>
-        <BlockId Type="MyObjectBuilder_Reactor" Subtype="LBFusionReactorT4" />
-        <BlockId Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT4" />
-      </Members>
-    </ResearchGroup>
-  </ResearchGroups>
-  
-  
-<!--Block Groups -->
+    <!--ResearchBlocks -->
+    <ResearchBlocks>
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="MyObjectBuilder_Reactor" Subtype="LBFusionReactorT1" />
+            <UnlockedByGroups>
+                <GroupSubtype>26</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT1" />
+            <UnlockedByGroups>
+                <GroupSubtype>26</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="MyObjectBuilder_Reactor" Subtype="LBFusionReactorT2" />
+            <UnlockedByGroups>
+                <GroupSubtype>FusionReactorsNtechModsT1</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT2" />
+            <UnlockedByGroups>
+                <GroupSubtype>FusionReactorsNtechModsT1</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="MyObjectBuilder_Reactor" Subtype="LBFusionReactorT3" />
+            <UnlockedByGroups>
+                <GroupSubtype>FusionReactorsNtechModsT2</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT3" />
+            <UnlockedByGroups>
+                <GroupSubtype>FusionReactorsNtechModsT2</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="MyObjectBuilder_Reactor" Subtype="LBFusionReactorT4" />
+            <UnlockedByGroups>
+                <GroupSubtype>FusionReactorsNtechModsT3</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT4" />
+            <UnlockedByGroups>
+                <GroupSubtype>FusionReactorsNtechModsT3</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="MyObjectBuilder_Reactor" Subtype="LBFusionReactorT5" />
+            <UnlockedByGroups>
+                <GroupSubtype>FusionReactorsNtechModsT4</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT5" />
+            <UnlockedByGroups>
+                <GroupSubtype>FusionReactorsNtechModsT4</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="MyObjectBuilder_Refinery" Subtype="DeuteriumProcessor" />
+            <UnlockedByGroups>
+                <GroupSubtype>26</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="MyObjectBuilder_Assembler" Subtype="DeuteriumandUraniumAssembler" />
+            <UnlockedByGroups>
+                <GroupSubtype>26</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>
+    </ResearchBlocks>
+    <!-- ResearchGroups -->
+    <ResearchGroups>
+        <ResearchGroup xsi:type="ResearchGroup">
+            <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="FusionReactorsNtechModsT1" />
+            <Members>
+                <BlockId Type="MyObjectBuilder_Reactor" Subtype="LBFusionReactorT1" />
+                <BlockId Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT1" />
+                <BlockId Type="MyObjectBuilder_Refinery" Subtype="DeuteriumProcessor" />
+                <BlockId Type="MyObjectBuilder_Assembler" Subtype="DeuteriumandUraniumAssembler" />
+            </Members>
+        </ResearchGroup>
+        <ResearchGroup xsi:type="ResearchGroup">
+            <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="FusionReactorsNtechModsT2" />
+            <Members>
+                <BlockId Type="MyObjectBuilder_Reactor" Subtype="LBFusionReactorT2" />
+                <BlockId Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT2" />
+            </Members>
+        </ResearchGroup>
+        <ResearchGroup xsi:type="ResearchGroup">
+            <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="FusionReactorsNtechModsT3" />
+            <Members>
+                <BlockId Type="MyObjectBuilder_Reactor" Subtype="LBFusionReactorT3" />
+                <BlockId Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT3" />
+            </Members>
+        </ResearchGroup>
+        <ResearchGroup xsi:type="ResearchGroup">
+            <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="FusionReactorsNtechModsT4" />
+            <Members>
+                <BlockId Type="MyObjectBuilder_Reactor" Subtype="LBFusionReactorT4" />
+                <BlockId Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT4" />
+            </Members>
+        </ResearchGroup>
+    </ResearchGroups>
+    <!--Block Groups -->
     <BlockVariantGroups>
-
         <!-- Reactors -->
-
         <BlockVariantGroup>
             <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="DeuteriumPowerGroup" />
             <Icon>Textures\GUI\Icons\Cubes\FusionReactor.dds</Icon>
@@ -123,21 +119,16 @@
             <Blocks>
                 <Block Type="MyObjectBuilder_Reactor" Subtype="LBFusionReactorT1" />
                 <Block Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT1" />
-				
                 <Block Type="MyObjectBuilder_Reactor" Subtype="LBFusionReactorT2" />
-                <Block Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT2" />				
-				
+                <Block Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT2" />
                 <Block Type="MyObjectBuilder_Reactor" Subtype="LBFusionReactorT3" />
-                <Block Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT3" />				
-				
+                <Block Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT3" />
                 <Block Type="MyObjectBuilder_Reactor" Subtype="LBFusionReactorT4" />
                 <Block Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT4" />
-				
                 <Block Type="MyObjectBuilder_Reactor" Subtype="LBFusionReactorT5" />
                 <Block Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT5" />
             </Blocks>
         </BlockVariantGroup>
-		
         <BlockVariantGroup>
             <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="DeuteriumRefinerGroup" />
             <Icon>Textures\GUI\Icons\Cubes\ThRefinery.dds</Icon>
@@ -148,10 +139,8 @@
                 <Block Type="MyObjectBuilder_Assembler" Subtype="DeuteriumandUraniumAssembler" />
             </Blocks>
         </BlockVariantGroup>
-        
-  </BlockVariantGroups>
-  
-<!-- Radial Menu 
+    </BlockVariantGroups>
+    <!-- Radial Menu 
    <RadialMenus>
     <RadialMenu>
       <Id Type="RadialMenu" Subtype="Toolbar" />
@@ -179,1213 +168,1139 @@
 	  </Sections>
 	</RadialMenu>
    </RadialMenus> -->
-  
-  <CubeBlocks>
-   <!-- Begin Tier 1 Reactors -->
-    <Definition xsi:type="MyObjectBuilder_ReactorDefinition">
-      <Id>
-        <TypeId>Reactor</TypeId>
-        <SubtypeId>LBFusionReactorT1</SubtypeId>
-      </Id>
-      <DisplayName>1GW Deuterium Fusion Reactor Mk1</DisplayName>
-      <Icon>Textures\GUI\Icons\Cubes\FusionReactor.dds</Icon>
-      <CubeSize>Large</CubeSize>
-      <BlockTopology>TriangleMesh</BlockTopology>
-      <Size x="3" y="2" z="3" />
-      <ModelOffset x="0" y="0" z="0" />
-      <Model>Models\Cubes\LBFusionReactor.mwm</Model>
-      <Components>
-        <Component Subtype="SteelPlate" Count="800" />
-        <Component Subtype="Construction" Count="200" />
-        <Component Subtype="MetalGrid" Count="40" />
-        <Component Subtype="Computer" Count="250" />
-        <Component Subtype="LargeTube" Count="50" />
-		    <Component Subtype="Superconductor" Count="150" />
-        <Component Subtype="Magnetron_Component" Count="1000" />
-        <Component Subtype="Magnetron_Component" Count="1">
-		  	<DeconstructId>
-            <TypeId>Component</TypeId>
-            <SubtypeId>UpgradePartMk2</SubtypeId>
-        </DeconstructId>
-        </Component>
-        <Component Subtype="Motor" Count="20" />
-        <Component Subtype="SteelPlate" Count="300" />
-      </Components>
-      <CriticalComponent Subtype="Motor" Index="0" />
-      <MountPoints>
-		<MountPoint Side="Front" StartX="0.07" StartY="1.89" EndX="0.39" EndY="1.99" />
-		<MountPoint Side="Left" StartX="0.07" StartY="1.89" EndX="0.39" EndY="1.99" />
-		<MountPoint Side="Bottom" StartX="1.10" StartY="1.10" EndX="1.90" EndY="1.90" Default="true"/>
-		<MountPoint Side="Top" StartX="1.09" StartY="1.09" EndX="1.91" EndY="1.91" />
-		<MountPoint Side="Left" StartX="2.61" StartY="1.89" EndX="2.93" EndY="1.99" />
-		<MountPoint Side="Front" StartX="0.07" StartY="0.01" EndX="0.39" EndY="0.11" />
-		<MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="0.55" EndY="0.55" />
-		<MountPoint Side="Top" StartX="0.00" StartY="2.45" EndX="0.55" EndY="3.00" />
-		<MountPoint Side="Top" StartX="2.45" StartY="2.44" EndX="3.00" EndY="3.00" />
-		<MountPoint Side="Top" StartX="2.46" StartY="0.00" EndX="3.00" EndY="0.55" />
-		<MountPoint Side="Bottom" StartX="0.00" StartY="2.45" EndX="0.55" EndY="3.00" />
-		<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="0.55" EndY="0.55" />
-		<MountPoint Side="Bottom" StartX="2.45" StartY="0.00" EndX="3.00" EndY="0.56" />
-		<MountPoint Side="Bottom" StartX="2.44" StartY="2.45" EndX="3.00" EndY="3.00" />
-		<MountPoint Side="Left" StartX="2.61" StartY="0.01" EndX="2.93" EndY="0.11" />
-		<MountPoint Side="Left" StartX="0.07" StartY="0.01" EndX="0.39" EndY="0.11" />
-		<MountPoint Side="Front" StartX="2.60" StartY="1.89" EndX="2.92" EndY="1.99" />
-		<MountPoint Side="Front" StartX="2.60" StartY="0.01" EndX="2.92" EndY="0.11" />
-		<MountPoint Side="Right" StartX="2.61" StartY="1.89" EndX="2.93" EndY="1.99" />
-		<MountPoint Side="Right" StartX="2.61" StartY="0.01" EndX="2.93" EndY="0.11" />
-		<MountPoint Side="Right" StartX="0.06" StartY="1.89" EndX="0.38" EndY="1.99" />
-		<MountPoint Side="Right" StartX="0.06" StartY="0.01" EndX="0.38" EndY="0.11" />
-		<MountPoint Side="Back" StartX="2.61" StartY="1.89" EndX="2.93" EndY="1.99" />
-		<MountPoint Side="Back" StartX="2.61" StartY="0.01" EndX="2.93" EndY="0.11" />
-		<MountPoint Side="Back" StartX="0.08" StartY="1.89" EndX="0.40" EndY="1.99" />
-		<MountPoint Side="Back" StartX="0.08" StartY="0.01" EndX="0.40" EndY="0.11" />
-      </MountPoints>
-      <BuildProgressModels>
-        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\LBFusionReactor_Constr1.mwm" />
-        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\LBFusionReactor_Constr2.mwm" />
-        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\LBFusionReactor_Constr3.mwm" />
-      </BuildProgressModels>
-      <BlockPairName>Tier1D2o</BlockPairName>
-      <MirroringY>Z</MirroringY>
-      <MirroringZ>Y</MirroringZ>
-      <EdgeType>Light</EdgeType>
-      <BuildTimeSeconds>80</BuildTimeSeconds>
-      <Description>Deuterium Reactor that provides 1 Gigawatt of power, requires Deuterium Container to fuel.</Description>
-	  
-      <ResourceSourceGroup>Reactors</ResourceSourceGroup>
-      <MaxPowerOutput>1000</MaxPowerOutput>
-      <StockpileAmount>10</StockpileAmount>
-
-      <EmissiveColorPreset>Default</EmissiveColorPreset>
-      <ResourceSinkGroup>Factory</ResourceSinkGroup>
-
-      <InventorySize>
-        <X>1</X>
-        <Y>1</Y>
-        <Z>1</Z>
-      </InventorySize>            <!-- 
+    <CubeBlocks>
+        <!-- Begin Tier 1 Reactors -->
+        <Definition xsi:type="MyObjectBuilder_ReactorDefinition">
+            <Id>
+                <TypeId>Reactor</TypeId>
+                <SubtypeId>LBFusionReactorT1</SubtypeId>
+            </Id>
+            <DisplayName>1GW Deuterium Fusion Reactor Mk1</DisplayName>
+            <Icon>Textures\GUI\Icons\Cubes\FusionReactor.dds</Icon>
+            <CubeSize>Large</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="3" y="2" z="3" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Cubes\LBFusionReactor.mwm</Model>
+            <Components>
+                <Component Subtype="SteelPlate" Count="800" />
+                <Component Subtype="Construction" Count="200" />
+                <Component Subtype="MetalGrid" Count="40" />
+                <Component Subtype="Computer" Count="250" />
+                <Component Subtype="LargeTube" Count="50" />
+                <Component Subtype="Superconductor" Count="150" />
+                <Component Subtype="Magnetron_Component" Count="400" />
+                <Component Subtype="Magnetron_UpgradeMk1" Count="1">
+                    <DeconstructId>
+                        <TypeId>Ingot</TypeId>
+                        <SubtypeId>UpgradePartMk2</SubtypeId>
+                    </DeconstructId>
+                </Component>
+                <Component Subtype="Motor" Count="20" />
+                <Component Subtype="SteelPlate" Count="300" />
+            </Components>
+            <CriticalComponent Subtype="Motor" Index="0" />
+            <MountPoints>
+                <MountPoint Side="Front" StartX="0.07" StartY="1.89" EndX="0.39" EndY="1.99" />
+                <MountPoint Side="Left" StartX="0.07" StartY="1.89" EndX="0.39" EndY="1.99" />
+                <MountPoint Side="Bottom" StartX="1.10" StartY="1.10" EndX="1.90" EndY="1.90" Default="true"/>
+                <MountPoint Side="Top" StartX="1.09" StartY="1.09" EndX="1.91" EndY="1.91" />
+                <MountPoint Side="Left" StartX="2.61" StartY="1.89" EndX="2.93" EndY="1.99" />
+                <MountPoint Side="Front" StartX="0.07" StartY="0.01" EndX="0.39" EndY="0.11" />
+                <MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="0.55" EndY="0.55" />
+                <MountPoint Side="Top" StartX="0.00" StartY="2.45" EndX="0.55" EndY="3.00" />
+                <MountPoint Side="Top" StartX="2.45" StartY="2.44" EndX="3.00" EndY="3.00" />
+                <MountPoint Side="Top" StartX="2.46" StartY="0.00" EndX="3.00" EndY="0.55" />
+                <MountPoint Side="Bottom" StartX="0.00" StartY="2.45" EndX="0.55" EndY="3.00" />
+                <MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="0.55" EndY="0.55" />
+                <MountPoint Side="Bottom" StartX="2.45" StartY="0.00" EndX="3.00" EndY="0.56" />
+                <MountPoint Side="Bottom" StartX="2.44" StartY="2.45" EndX="3.00" EndY="3.00" />
+                <MountPoint Side="Left" StartX="2.61" StartY="0.01" EndX="2.93" EndY="0.11" />
+                <MountPoint Side="Left" StartX="0.07" StartY="0.01" EndX="0.39" EndY="0.11" />
+                <MountPoint Side="Front" StartX="2.60" StartY="1.89" EndX="2.92" EndY="1.99" />
+                <MountPoint Side="Front" StartX="2.60" StartY="0.01" EndX="2.92" EndY="0.11" />
+                <MountPoint Side="Right" StartX="2.61" StartY="1.89" EndX="2.93" EndY="1.99" />
+                <MountPoint Side="Right" StartX="2.61" StartY="0.01" EndX="2.93" EndY="0.11" />
+                <MountPoint Side="Right" StartX="0.06" StartY="1.89" EndX="0.38" EndY="1.99" />
+                <MountPoint Side="Right" StartX="0.06" StartY="0.01" EndX="0.38" EndY="0.11" />
+                <MountPoint Side="Back" StartX="2.61" StartY="1.89" EndX="2.93" EndY="1.99" />
+                <MountPoint Side="Back" StartX="2.61" StartY="0.01" EndX="2.93" EndY="0.11" />
+                <MountPoint Side="Back" StartX="0.08" StartY="1.89" EndX="0.40" EndY="1.99" />
+                <MountPoint Side="Back" StartX="0.08" StartY="0.01" EndX="0.40" EndY="0.11" />
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\LBFusionReactor_Constr1.mwm" />
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\LBFusionReactor_Constr2.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\LBFusionReactor_Constr3.mwm" />
+            </BuildProgressModels>
+            <BlockPairName>Tier1D2o</BlockPairName>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>80</BuildTimeSeconds>
+            <Description>Deuterium Reactor that provides 1 Gigawatt of power, requires Deuterium Container to fuel.</Description>
+            <ResourceSourceGroup>Reactors</ResourceSourceGroup>
+            <MaxPowerOutput>1000</MaxPowerOutput>
+            <StockpileAmount>10</StockpileAmount>
+            <EmissiveColorPreset>Default</EmissiveColorPreset>
+            <ResourceSinkGroup>Factory</ResourceSinkGroup>
+            <InventorySize>
+                <X>1</X>
+                <Y>1</Y>
+                <Z>1</Z>
+            </InventorySize>
+            <!-- 
                 Values are volume fill ratio, means how much fuel reactor pulls from conveyor system to the inventory.
                 If volume fill ratio is bellow minimum, reactor starts pulling fuel up to maximum value.
                 Warning: Changing these values will affect performance.
             -->
             <InventoryFillFactorMin>0.001</InventoryFillFactorMin>
             <InventoryFillFactorMax>0.002</InventoryFillFactorMax>
-
             <!-- 
                 This is how much of fuel is pulled from conveyor system in one tick.
                 It's in minutes, means that it will pull X minutes of fuel in one tick.
                 Warning: Changing this value will affect performance.
             -->
             <FuelPullAmountFromConveyorInMinutes>10.0</FuelPullAmountFromConveyorInMinutes>
-      <FuelInfos>
-	   <FuelInfo>
-	    <Id>
-	     <TypeId>Ingot</TypeId>
-         <SubtypeId>DeuteriumContainer</SubtypeId>
-		</Id>
-		<Ratio>0.05</Ratio>
-	   </FuelInfo>
-      </FuelInfos>
-      <PrimarySound>ShipLrgNuclearSm</PrimarySound>
-      <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
-      <DamagedSound>ParticleReactor</DamagedSound>
-      <DestroyEffect>Explosion_Warhead_02</DestroyEffect>
-      <DestroySound>WepSmallWarheadExpl</DestroySound>
-	  <GuiVisible>false</GuiVisible>
-	  <PCU>25</PCU>
-    </Definition>	
-	
-    <Definition xsi:type="MyObjectBuilder_ReactorDefinition">
-      <Id>
-        <TypeId>Reactor</TypeId>
-        <SubtypeId>SBFusionReactorT1</SubtypeId>
-      </Id>
-      <DisplayName>20MW Deuterium Fusion Reactor Mk1</DisplayName>
-      <Icon>Textures\GUI\Icons\Cubes\FusionReactor.dds</Icon>
-      <CubeSize>Small</CubeSize>
-      <BlockTopology>TriangleMesh</BlockTopology>
-      <Size x="3" y="2" z="3" />
-      <ModelOffset x="0" y="0" z="0" />
-      <Model>Models\Cubes\SBFusionReactor.mwm</Model>
-      <Components>
-        <Component Subtype="SteelPlate" Count="20" />
-        <Component Subtype="Construction" Count="18" />
-        <Component Subtype="LargeTube" Count="4" />
-        <Component Subtype="SmallTube" Count="6" />
-    		<Component Subtype="Magnetron_Component" Count="3" />
-    		<Component Subtype="Magnetron_Component" Count="1">
-		  	<DeconstructId>
-            <TypeId>Component</TypeId>
-            <SubtypeId>UpgradePartMk2</SubtypeId>
-        </DeconstructId>
-        </Component>
-        <Component Subtype="Computer" Count="28" />
-        <Component Subtype="Superconductor" Count="8" />
-        <Component Subtype="Motor" Count="4" />
-        <Component Subtype="Construction" Count="2" />
-        <Component Subtype="SteelPlate" Count="10" />
-      </Components>
-      <CriticalComponent Subtype="Motor" Index="0" />
-      <MountPoints>
-		<MountPoint EndY="2.00" EndX="3.00" StartY="0.00" StartX="0.00" Side="Front"/>
-		<MountPoint EndY="3.00" EndX="3.00" StartY="0.00" StartX="0.00" Side="Bottom" Default="true" />
-		<MountPoint EndY="3.00" EndX="3.00" StartY="0.00" StartX="0.00" Side="Top"/>
-		<MountPoint EndY="2.00" EndX="3.00" StartY="0.00" StartX="0.00" Side="Left"/>
-		<MountPoint EndY="2.00" EndX="3.00" StartY="0.00" StartX="0.00" Side="Right"/>
-		<MountPoint EndY="2.00" EndX="3.00" StartY="0.00" StartX="0.00" Side="Back"/>
-      </MountPoints>
-
-      <BuildProgressModels>
-        <Model BuildPercentUpperBound="0.5" File="Models\Cubes\SBFusionReactor_Constr1.mwm" />
-        <Model BuildPercentUpperBound="1.0" File="Models\Cubes\SBFusionReactor_Constr2.mwm" />
-      </BuildProgressModels>
-      <BlockPairName>Tier1D2o</BlockPairName>
-      <MirroringY>Z</MirroringY>
-      <MirroringZ>Y</MirroringZ>
-      <EdgeType>Light</EdgeType>
-      <BuildTimeSeconds>40</BuildTimeSeconds>
-      <EmissiveColorPreset>Default</EmissiveColorPreset>
-      <Description>Deuterium Reactor that provides 20 Megawatts of power, also requires Deuterium Container to fuel.</Description>
-
-
-
-      <ResourceSinkGroup>Factory</ResourceSinkGroup>
-
-      <ResourceSourceGroup>Reactors</ResourceSourceGroup>
-      <MaxPowerOutput>20</MaxPowerOutput>
-      <StockpileAmount>10</StockpileAmount>
-      <InventorySize>
-        <X>1</X>
-        <Y>1</Y>
-        <Z>1</Z>
-      </InventorySize>
-                  <!-- 
+            <FuelInfos>
+                <FuelInfo>
+                    <Id>
+                        <TypeId>Ingot</TypeId>
+                        <SubtypeId>DeuteriumContainer</SubtypeId>
+                        <SubtypeId>DTFuelCapsule</SubtypeId>
+                    </Id>
+                    <Ratio>0.05</Ratio>
+                </FuelInfo>
+            </FuelInfos>
+            <PrimarySound>ShipLrgNuclearSm</PrimarySound>
+            <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+            <DamagedSound>ParticleReactor</DamagedSound>
+            <DestroyEffect>Explosion_Warhead_02</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <GuiVisible>false</GuiVisible>
+            <PCU>25</PCU>
+        </Definition>
+        <Definition xsi:type="MyObjectBuilder_ReactorDefinition">
+            <Id>
+                <TypeId>Reactor</TypeId>
+                <SubtypeId>SBFusionReactorT1</SubtypeId>
+            </Id>
+            <DisplayName>20MW Deuterium Fusion Reactor Mk1</DisplayName>
+            <Icon>Textures\GUI\Icons\Cubes\FusionReactor.dds</Icon>
+            <CubeSize>Small</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="3" y="2" z="3" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Cubes\SBFusionReactor.mwm</Model>
+            <Components>
+                <Component Subtype="SteelPlate" Count="20" />
+                <Component Subtype="SmallTube" Count="6" />
+                <Component Subtype="Magnetron_Component" Count="4" />
+                <Component Subtype="Magnetron_UpgradeMk1" Count="1">
+                    <DeconstructId>
+                        <TypeId>Ingot</TypeId>
+                        <SubtypeId>UpgradePartMk2</SubtypeId>
+                    </DeconstructId>
+                </Component>
+                <Component Subtype="Computer" Count="28" />
+                <Component Subtype="Superconductor" Count="8" />
+                <Component Subtype="Motor" Count="4" />
+                <Component Subtype="Construction" Count="2" />
+                <Component Subtype="SteelPlate" Count="10" />
+            </Components>
+            <CriticalComponent Subtype="Motor" Index="0" />
+            <MountPoints>
+                <MountPoint EndY="2.00" EndX="3.00" StartY="0.00" StartX="0.00" Side="Front"/>
+                <MountPoint EndY="3.00" EndX="3.00" StartY="0.00" StartX="0.00" Side="Bottom" Default="true" />
+                <MountPoint EndY="3.00" EndX="3.00" StartY="0.00" StartX="0.00" Side="Top"/>
+                <MountPoint EndY="2.00" EndX="3.00" StartY="0.00" StartX="0.00" Side="Left"/>
+                <MountPoint EndY="2.00" EndX="3.00" StartY="0.00" StartX="0.00" Side="Right"/>
+                <MountPoint EndY="2.00" EndX="3.00" StartY="0.00" StartX="0.00" Side="Back"/>
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.5" File="Models\Cubes\SBFusionReactor_Constr1.mwm" />
+                <Model BuildPercentUpperBound="1.0" File="Models\Cubes\SBFusionReactor_Constr2.mwm" />
+            </BuildProgressModels>
+            <BlockPairName>Tier1D2o</BlockPairName>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>40</BuildTimeSeconds>
+            <EmissiveColorPreset>Default</EmissiveColorPreset>
+            <Description>Deuterium Reactor that provides 20 Megawatts of power, also requires Deuterium Container to fuel.</Description>
+            <ResourceSinkGroup>Factory</ResourceSinkGroup>
+            <ResourceSourceGroup>Reactors</ResourceSourceGroup>
+            <MaxPowerOutput>20</MaxPowerOutput>
+            <StockpileAmount>10</StockpileAmount>
+            <InventorySize>
+                <X>1</X>
+                <Y>1</Y>
+                <Z>1</Z>
+            </InventorySize>
+            <!-- 
                 Values are volume fill ratio, means how much fuel reactor pulls from conveyor system to the inventory.
                 If volume fill ratio is bellow minimum, reactor starts pulling fuel up to maximum value.
                 Warning: Changing these values will affect performance.
             -->
             <InventoryFillFactorMin>0.001</InventoryFillFactorMin>
             <InventoryFillFactorMax>0.002</InventoryFillFactorMax>
-
             <!-- 
                 This is how much of fuel is pulled from conveyor system in one tick.
                 It's in minutes, means that it will pull X minutes of fuel in one tick.
                 Warning: Changing this value will affect performance.
             -->
             <FuelPullAmountFromConveyorInMinutes>10.0</FuelPullAmountFromConveyorInMinutes>
-      <FuelInfos>
-	   <FuelInfo>
-	    <Id>
-	     <TypeId>Ingot</TypeId>
-         <SubtypeId>DeuteriumContainer</SubtypeId>
-		</Id>
-		<Ratio>0.05</Ratio>
-	   </FuelInfo>
-      </FuelInfos>
-      <PrimarySound>ShipLrgNuclearSm</PrimarySound>
-      <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
-      <DamagedSound>ParticleReactor</DamagedSound>
-      <DestroyEffect>Explosion_Warhead_02</DestroyEffect>
-      <DestroySound>WepSmallWarheadExpl</DestroySound>
-	  <GuiVisible>false</GuiVisible>
-	  <PCU>25</PCU>
-    </Definition>
-	<!-- End Tier 1 Reactors -->
-	
-	
-	<!--Begin Tier 2 Reactors -->
-    <Definition xsi:type="MyObjectBuilder_ReactorDefinition">
-      <Id>
-        <TypeId>Reactor</TypeId>
-        <SubtypeId>LBFusionReactorT2</SubtypeId>
-      </Id>
-      <DisplayName>2.5GW Deuterium Fusion Reactor Mk2</DisplayName>
-      <Icon>Textures\GUI\Icons\Cubes\FusionReactor.dds</Icon>
-      <CubeSize>Large</CubeSize>
-      <BlockTopology>TriangleMesh</BlockTopology>
-      <Size x="3" y="2" z="3" />
-      <ModelOffset x="0" y="0" z="0" />
-      <Model>Models\Cubes\LBFusionReactor.mwm</Model>
-      <Components>
-        <Component Subtype="SteelPlate" Count="800" />
-        <Component Subtype="Construction" Count="300" />
-        <Component Subtype="MetalGrid" Count="40" />
-        <Component Subtype="LargeTube" Count="50" />
-        <Component Subtype="Computer" Count="300" />
-	    	<Component Subtype="Superconductor" Count="200" />
-        <Component Subtype="Magnetron_Component" Count="2000" />        
-        <Component Subtype="Magnetron_UpgradeMk2" Count="1">
-		  	<DeconstructId>
-            <TypeId>Component</TypeId>
-            <SubtypeId>UpgradePartMk3</SubtypeId>
-        </DeconstructId>
-        </Component>
-        <Component Subtype="Motor" Count="20" />
-        <Component Subtype="SteelPlate" Count="300" />
-      </Components>
-      <CriticalComponent Subtype="Motor" Index="0" />
-      <MountPoints>
-		<MountPoint Side="Front" StartX="0.07" StartY="1.89" EndX="0.39" EndY="1.99" />
-		<MountPoint Side="Left" StartX="0.07" StartY="1.89" EndX="0.39" EndY="1.99" />
-		<MountPoint Side="Bottom" StartX="1.10" StartY="1.10" EndX="1.90" EndY="1.90"  Default="true"/>
-		<MountPoint Side="Top" StartX="1.09" StartY="1.09" EndX="1.91" EndY="1.91" />
-		<MountPoint Side="Left" StartX="2.61" StartY="1.89" EndX="2.93" EndY="1.99" />
-		<MountPoint Side="Front" StartX="0.07" StartY="0.01" EndX="0.39" EndY="0.11" />
-		<MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="0.55" EndY="0.55" />
-		<MountPoint Side="Top" StartX="0.00" StartY="2.45" EndX="0.55" EndY="3.00" />
-		<MountPoint Side="Top" StartX="2.45" StartY="2.44" EndX="3.00" EndY="3.00" />
-		<MountPoint Side="Top" StartX="2.46" StartY="0.00" EndX="3.00" EndY="0.55" />
-		<MountPoint Side="Bottom" StartX="0.00" StartY="2.45" EndX="0.55" EndY="3.00" />
-		<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="0.55" EndY="0.55" />
-		<MountPoint Side="Bottom" StartX="2.45" StartY="0.00" EndX="3.00" EndY="0.56" />
-		<MountPoint Side="Bottom" StartX="2.44" StartY="2.45" EndX="3.00" EndY="3.00" />
-		<MountPoint Side="Left" StartX="2.61" StartY="0.01" EndX="2.93" EndY="0.11" />
-		<MountPoint Side="Left" StartX="0.07" StartY="0.01" EndX="0.39" EndY="0.11" />
-		<MountPoint Side="Front" StartX="2.60" StartY="1.89" EndX="2.92" EndY="1.99" />
-		<MountPoint Side="Front" StartX="2.60" StartY="0.01" EndX="2.92" EndY="0.11" />
-		<MountPoint Side="Right" StartX="2.61" StartY="1.89" EndX="2.93" EndY="1.99" />
-		<MountPoint Side="Right" StartX="2.61" StartY="0.01" EndX="2.93" EndY="0.11" />
-		<MountPoint Side="Right" StartX="0.06" StartY="1.89" EndX="0.38" EndY="1.99" />
-		<MountPoint Side="Right" StartX="0.06" StartY="0.01" EndX="0.38" EndY="0.11" />
-		<MountPoint Side="Back" StartX="2.61" StartY="1.89" EndX="2.93" EndY="1.99" />
-		<MountPoint Side="Back" StartX="2.61" StartY="0.01" EndX="2.93" EndY="0.11" />
-		<MountPoint Side="Back" StartX="0.08" StartY="1.89" EndX="0.40" EndY="1.99" />
-		<MountPoint Side="Back" StartX="0.08" StartY="0.01" EndX="0.40" EndY="0.11" />
-      </MountPoints>
-      <BuildProgressModels>
-        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\LBFusionReactor_Constr1.mwm" />
-        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\LBFusionReactor_Constr2.mwm" />
-        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\LBFusionReactor_Constr3.mwm" />
-      </BuildProgressModels>
-      <BlockPairName>Tier2D2o</BlockPairName>
-      <MirroringY>Z</MirroringY>
-      <MirroringZ>Y</MirroringZ>
-      <EdgeType>Light</EdgeType>
-      <BuildTimeSeconds>80</BuildTimeSeconds>
-      <Description>Deuterium Reactor that provides 2.5 Gigawatts of power, also requires Deuterium Container to fuel.</Description>
-
-      <ResourceSourceGroup>Reactors</ResourceSourceGroup>
-      <MaxPowerOutput>2500</MaxPowerOutput>
-      <StockpileAmount>10</StockpileAmount>
-
-      <EmissiveColorPreset>Default</EmissiveColorPreset>
-      <ResourceSinkGroup>Factory</ResourceSinkGroup>
-
-      <InventorySize>
-        <X>1</X>
-        <Y>1</Y>
-        <Z>1</Z>
-      </InventorySize>
-                  <!-- 
+            <FuelInfos>
+                <FuelInfo>
+                    <Id>
+                        <TypeId>Ingot</TypeId>
+                        <SubtypeId>DeuteriumContainer</SubtypeId>
+                        <SubtypeId>DTFuelCapsule</SubtypeId>
+                    </Id>
+                    <Ratio>0.05</Ratio>
+                </FuelInfo>
+            </FuelInfos>
+            <PrimarySound>ShipLrgNuclearSm</PrimarySound>
+            <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+            <DamagedSound>ParticleReactor</DamagedSound>
+            <DestroyEffect>Explosion_Warhead_02</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <GuiVisible>false</GuiVisible>
+            <PCU>25</PCU>
+        </Definition>
+        <!-- End Tier 1 Reactors -->
+        <!--Begin Tier 2 Reactors -->
+        <Definition xsi:type="MyObjectBuilder_ReactorDefinition">
+            <Id>
+                <TypeId>Reactor</TypeId>
+                <SubtypeId>LBFusionReactorT2</SubtypeId>
+            </Id>
+            <DisplayName>2.5GW Deuterium Fusion Reactor Mk2</DisplayName>
+            <Icon>Textures\GUI\Icons\Cubes\FusionReactor.dds</Icon>
+            <CubeSize>Large</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="3" y="2" z="3" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Cubes\LBFusionReactor.mwm</Model>
+            <Components>
+                <Component Subtype="SteelPlate" Count="800" />
+                <Component Subtype="Construction" Count="300" />
+                <Component Subtype="MetalGrid" Count="40" />
+                <Component Subtype="LargeTube" Count="50" />
+                <Component Subtype="Computer" Count="300" />
+                <Component Subtype="Superconductor" Count="200" />
+                <Component Subtype="Magnetron_Component" Count="400" />
+                <Component Subtype="Magnetron_UpgradeMk2" Count="1">
+                    <DeconstructId>
+                        <TypeId>Ingot</TypeId>
+                        <SubtypeId>UpgradePartMk3</SubtypeId>
+                    </DeconstructId>
+                </Component>
+                <Component Subtype="Motor" Count="20" />
+                <Component Subtype="SteelPlate" Count="300" />
+            </Components>
+            <CriticalComponent Subtype="Motor" Index="0" />
+            <MountPoints>
+                <MountPoint Side="Front" StartX="0.07" StartY="1.89" EndX="0.39" EndY="1.99" />
+                <MountPoint Side="Left" StartX="0.07" StartY="1.89" EndX="0.39" EndY="1.99" />
+                <MountPoint Side="Bottom" StartX="1.10" StartY="1.10" EndX="1.90" EndY="1.90"  Default="true"/>
+                <MountPoint Side="Top" StartX="1.09" StartY="1.09" EndX="1.91" EndY="1.91" />
+                <MountPoint Side="Left" StartX="2.61" StartY="1.89" EndX="2.93" EndY="1.99" />
+                <MountPoint Side="Front" StartX="0.07" StartY="0.01" EndX="0.39" EndY="0.11" />
+                <MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="0.55" EndY="0.55" />
+                <MountPoint Side="Top" StartX="0.00" StartY="2.45" EndX="0.55" EndY="3.00" />
+                <MountPoint Side="Top" StartX="2.45" StartY="2.44" EndX="3.00" EndY="3.00" />
+                <MountPoint Side="Top" StartX="2.46" StartY="0.00" EndX="3.00" EndY="0.55" />
+                <MountPoint Side="Bottom" StartX="0.00" StartY="2.45" EndX="0.55" EndY="3.00" />
+                <MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="0.55" EndY="0.55" />
+                <MountPoint Side="Bottom" StartX="2.45" StartY="0.00" EndX="3.00" EndY="0.56" />
+                <MountPoint Side="Bottom" StartX="2.44" StartY="2.45" EndX="3.00" EndY="3.00" />
+                <MountPoint Side="Left" StartX="2.61" StartY="0.01" EndX="2.93" EndY="0.11" />
+                <MountPoint Side="Left" StartX="0.07" StartY="0.01" EndX="0.39" EndY="0.11" />
+                <MountPoint Side="Front" StartX="2.60" StartY="1.89" EndX="2.92" EndY="1.99" />
+                <MountPoint Side="Front" StartX="2.60" StartY="0.01" EndX="2.92" EndY="0.11" />
+                <MountPoint Side="Right" StartX="2.61" StartY="1.89" EndX="2.93" EndY="1.99" />
+                <MountPoint Side="Right" StartX="2.61" StartY="0.01" EndX="2.93" EndY="0.11" />
+                <MountPoint Side="Right" StartX="0.06" StartY="1.89" EndX="0.38" EndY="1.99" />
+                <MountPoint Side="Right" StartX="0.06" StartY="0.01" EndX="0.38" EndY="0.11" />
+                <MountPoint Side="Back" StartX="2.61" StartY="1.89" EndX="2.93" EndY="1.99" />
+                <MountPoint Side="Back" StartX="2.61" StartY="0.01" EndX="2.93" EndY="0.11" />
+                <MountPoint Side="Back" StartX="0.08" StartY="1.89" EndX="0.40" EndY="1.99" />
+                <MountPoint Side="Back" StartX="0.08" StartY="0.01" EndX="0.40" EndY="0.11" />
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\LBFusionReactor_Constr1.mwm" />
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\LBFusionReactor_Constr2.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\LBFusionReactor_Constr3.mwm" />
+            </BuildProgressModels>
+            <BlockPairName>Tier2D2o</BlockPairName>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>80</BuildTimeSeconds>
+            <Description>Deuterium Reactor that provides 2.5 Gigawatts of power, also requires Deuterium Container to fuel.</Description>
+            <ResourceSourceGroup>Reactors</ResourceSourceGroup>
+            <MaxPowerOutput>2500</MaxPowerOutput>
+            <StockpileAmount>10</StockpileAmount>
+            <EmissiveColorPreset>Default</EmissiveColorPreset>
+            <ResourceSinkGroup>Factory</ResourceSinkGroup>
+            <InventorySize>
+                <X>1</X>
+                <Y>1</Y>
+                <Z>1</Z>
+            </InventorySize>
+            <!-- 
                 Values are volume fill ratio, means how much fuel reactor pulls from conveyor system to the inventory.
                 If volume fill ratio is bellow minimum, reactor starts pulling fuel up to maximum value.
                 Warning: Changing these values will affect performance.
             -->
             <InventoryFillFactorMin>0.001</InventoryFillFactorMin>
             <InventoryFillFactorMax>0.002</InventoryFillFactorMax>
-
             <!-- 
                 This is how much of fuel is pulled from conveyor system in one tick.
                 It's in minutes, means that it will pull X minutes of fuel in one tick.
                 Warning: Changing this value will affect performance.
             -->
             <FuelPullAmountFromConveyorInMinutes>10.0</FuelPullAmountFromConveyorInMinutes>
-      <FuelInfos>
-	   <FuelInfo>
-	    <Id>
-	     <TypeId>Ingot</TypeId>
-         <SubtypeId>DeuteriumContainer</SubtypeId>
-		</Id>
-		<Ratio>0.04</Ratio>
-	   </FuelInfo>
-      </FuelInfos>
-      <PrimarySound>ShipLrgNuclearSm</PrimarySound>
-      <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
-      <DamagedSound>ParticleReactor</DamagedSound>
-      <DestroyEffect>Explosion_Warhead_02</DestroyEffect>
-      <DestroySound>WepSmallWarheadExpl</DestroySound>
-	  <GuiVisible>false</GuiVisible>
-	  <PCU>25</PCU>
-    </Definition>	
-	
-	<Definition xsi:type="MyObjectBuilder_ReactorDefinition">
-      <Id>
-        <TypeId>Reactor</TypeId>
-        <SubtypeId>SBFusionReactorT2</SubtypeId>
-      </Id>
-      <DisplayName>45MW Deuterium Fusion Reactor Mk2</DisplayName>
-      <Icon>Textures\GUI\Icons\Cubes\FusionReactor.dds</Icon>
-      <CubeSize>Small</CubeSize>
-      <BlockTopology>TriangleMesh</BlockTopology>
-      <Size x="3" y="2" z="3" />
-      <ModelOffset x="0" y="0" z="0" />
-      <Model>Models\Cubes\SBFusionReactor.mwm</Model>
-      <Components>
-        <Component Subtype="SteelPlate" Count="20" />
-        <Component Subtype="Construction" Count="18" />
-        <Component Subtype="LargeTube" Count="4" />
-        <Component Subtype="SmallTube" Count="6" />
-	    	<Component Subtype="Magnetron_Component" Count="8" />
-	    	<Component Subtype="Magnetron_UpgradeMk2" Count="1">
-		  	<DeconstructId>
-            <TypeId>Component</TypeId>
-            <SubtypeId>UpgradePartMk3</SubtypeId>
-        </DeconstructId>
-        </Component>
-        <Component Subtype="Computer" Count="40" />
-        <Component Subtype="Superconductor" Count="8" />
-        <Component Subtype="Motor" Count="4" />
-        <Component Subtype="Construction" Count="2" />
-        <Component Subtype="SteelPlate" Count="10" />
-      </Components>
-      <CriticalComponent Subtype="Motor" Index="0" />
-      <MountPoints>
-		<MountPoint EndY="2.00" EndX="3.00" StartY="0.00" StartX="0.00" Side="Front"/>
-		<MountPoint EndY="3.00" EndX="3.00" StartY="0.00" StartX="0.00" Side="Bottom" Default="true" />
-		<MountPoint EndY="3.00" EndX="3.00" StartY="0.00" StartX="0.00" Side="Top"/>
-		<MountPoint EndY="2.00" EndX="3.00" StartY="0.00" StartX="0.00" Side="Left"/>
-		<MountPoint EndY="2.00" EndX="3.00" StartY="0.00" StartX="0.00" Side="Right"/>
-		<MountPoint EndY="2.00" EndX="3.00" StartY="0.00" StartX="0.00" Side="Back"/>
-      </MountPoints>
-
-      <BuildProgressModels>
-        <Model BuildPercentUpperBound="0.5" File="Models\Cubes\SBFusionReactor_Constr1.mwm" />
-        <Model BuildPercentUpperBound="1.0" File="Models\Cubes\SBFusionReactor_Constr2.mwm" />
-      </BuildProgressModels>
-      <BlockPairName>Tier2D2o</BlockPairName>
-      <MirroringY>Z</MirroringY>
-      <MirroringZ>Y</MirroringZ>
-      <EdgeType>Light</EdgeType>
-      <BuildTimeSeconds>40</BuildTimeSeconds>
-      <EmissiveColorPreset>Default</EmissiveColorPreset>
-      <Description>Deuterium Reactor that provides 45 Megawatts of power, also requires Deuterium Container to fuel.</Description>
-
-
-
-      <ResourceSinkGroup>Factory</ResourceSinkGroup>
-
-      <ResourceSourceGroup>Reactors</ResourceSourceGroup>
-      <MaxPowerOutput>45</MaxPowerOutput>
-      <StockpileAmount>10</StockpileAmount>
-
-      <InventorySize>
-        <X>1</X>
-        <Y>1</Y>
-        <Z>1</Z>
-      </InventorySize>
-                  <!-- 
+            <FuelInfos>
+                <FuelInfo>
+                    <Id>
+                        <TypeId>Ingot</TypeId>
+                        <SubtypeId>DeuteriumContainer</SubtypeId>
+                        <SubtypeId>DTFuelCapsule</SubtypeId>
+                    </Id>
+                    <Ratio>0.04</Ratio>
+                </FuelInfo>
+            </FuelInfos>
+            <PrimarySound>ShipLrgNuclearSm</PrimarySound>
+            <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+            <DamagedSound>ParticleReactor</DamagedSound>
+            <DestroyEffect>Explosion_Warhead_02</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <GuiVisible>false</GuiVisible>
+            <PCU>25</PCU>
+        </Definition>
+        <Definition xsi:type="MyObjectBuilder_ReactorDefinition">
+            <Id>
+                <TypeId>Reactor</TypeId>
+                <SubtypeId>SBFusionReactorT2</SubtypeId>
+            </Id>
+            <DisplayName>45MW Deuterium Fusion Reactor Mk2</DisplayName>
+            <Icon>Textures\GUI\Icons\Cubes\FusionReactor.dds</Icon>
+            <CubeSize>Small</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="3" y="2" z="3" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Cubes\SBFusionReactor.mwm</Model>
+            <Components>
+                <Component Subtype="SteelPlate" Count="20" />
+                <Component Subtype="SmallTube" Count="6" />
+                <Component Subtype="Magnetron_Component" Count="4" />
+                <Component Subtype="Magnetron_UpgradeMk2" Count="1">
+                    <DeconstructId>
+                        <TypeId>Ingot</TypeId>
+                        <SubtypeId>UpgradePartMk3</SubtypeId>
+                    </DeconstructId>
+                </Component>
+                <Component Subtype="Computer" Count="40" />
+                <Component Subtype="Superconductor" Count="8" />
+                <Component Subtype="Motor" Count="4" />
+                <Component Subtype="Construction" Count="2" />
+                <Component Subtype="SteelPlate" Count="10" />
+            </Components>
+            <CriticalComponent Subtype="Motor" Index="0" />
+            <MountPoints>
+                <MountPoint EndY="2.00" EndX="3.00" StartY="0.00" StartX="0.00" Side="Front"/>
+                <MountPoint EndY="3.00" EndX="3.00" StartY="0.00" StartX="0.00" Side="Bottom" Default="true" />
+                <MountPoint EndY="3.00" EndX="3.00" StartY="0.00" StartX="0.00" Side="Top"/>
+                <MountPoint EndY="2.00" EndX="3.00" StartY="0.00" StartX="0.00" Side="Left"/>
+                <MountPoint EndY="2.00" EndX="3.00" StartY="0.00" StartX="0.00" Side="Right"/>
+                <MountPoint EndY="2.00" EndX="3.00" StartY="0.00" StartX="0.00" Side="Back"/>
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.5" File="Models\Cubes\SBFusionReactor_Constr1.mwm" />
+                <Model BuildPercentUpperBound="1.0" File="Models\Cubes\SBFusionReactor_Constr2.mwm" />
+            </BuildProgressModels>
+            <BlockPairName>Tier2D2o</BlockPairName>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>40</BuildTimeSeconds>
+            <EmissiveColorPreset>Default</EmissiveColorPreset>
+            <Description>Deuterium Reactor that provides 45 Megawatts of power, also requires Deuterium Container to fuel.</Description>
+            <ResourceSinkGroup>Factory</ResourceSinkGroup>
+            <ResourceSourceGroup>Reactors</ResourceSourceGroup>
+            <MaxPowerOutput>45</MaxPowerOutput>
+            <StockpileAmount>10</StockpileAmount>
+            <InventorySize>
+                <X>1</X>
+                <Y>1</Y>
+                <Z>1</Z>
+            </InventorySize>
+            <!-- 
                 Values are volume fill ratio, means how much fuel reactor pulls from conveyor system to the inventory.
                 If volume fill ratio is bellow minimum, reactor starts pulling fuel up to maximum value.
                 Warning: Changing these values will affect performance.
             -->
             <InventoryFillFactorMin>0.001</InventoryFillFactorMin>
             <InventoryFillFactorMax>0.002</InventoryFillFactorMax>
-
             <!-- 
                 This is how much of fuel is pulled from conveyor system in one tick.
                 It's in minutes, means that it will pull X minutes of fuel in one tick.
                 Warning: Changing this value will affect performance.
             -->
             <FuelPullAmountFromConveyorInMinutes>10.0</FuelPullAmountFromConveyorInMinutes>
-      <FuelInfos>
-	   <FuelInfo>
-	    <Id>
-	     <TypeId>Ingot</TypeId>
-         <SubtypeId>DeuteriumContainer</SubtypeId>
-		</Id>
-		<Ratio>0.04</Ratio>
-	   </FuelInfo>
-      </FuelInfos>
-      <PrimarySound>ShipLrgNuclearSm</PrimarySound>
-      <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
-      <DamagedSound>ParticleReactor</DamagedSound>
-      <DestroyEffect>Explosion_Warhead_02</DestroyEffect>
-      <DestroySound>WepSmallWarheadExpl</DestroySound>
-	  <GuiVisible>false</GuiVisible>
-	  <PCU>25</PCU>
-    </Definition>
-	<!-- End Tier 2 Reactors -->
-	
-	
-	<!-- Begin Tier 3 Reactors -->
-	    <Definition xsi:type="MyObjectBuilder_ReactorDefinition">
-      <Id>
-        <TypeId>Reactor</TypeId>
-        <SubtypeId>LBFusionReactorT3</SubtypeId>
-      </Id>
-      <DisplayName>7GW Deuterium Fusion Reactor Mk3</DisplayName>
-      <Icon>Textures\GUI\Icons\Cubes\FusionReactor.dds</Icon>
-      <CubeSize>Large</CubeSize>
-      <BlockTopology>TriangleMesh</BlockTopology>
-      <Size x="3" y="2" z="3" />
-      <ModelOffset x="0" y="0" z="0" />
-      <Model>Models\Cubes\LBFusionReactor.mwm</Model>
-      <Components>
-        <Component Subtype="SteelPlate" Count="800" />
-        <Component Subtype="Construction" Count="400" />
-        <Component Subtype="MetalGrid" Count="40" />
-        <Component Subtype="LargeTube" Count="50" />
-        <Component Subtype="Computer" Count="300" />
-	    	<Component Subtype="Superconductor" Count="300" />
-        <Component Subtype="Magnetron_Component" Count="3800" />
-	    	<Component Subtype="Magnetron_UpgradeMk3" Count="1" >
-		  	<DeconstructId>
-            <TypeId>Component</TypeId>
-            <SubtypeId>UpgradePartMk4</SubtypeId>
-        </DeconstructId>
-        </Component>
-        <Component Subtype="Motor" Count="20" />
-        <Component Subtype="SteelPlate" Count="300" />
-      </Components>
-      <CriticalComponent Subtype="Motor" Index="0" />
-      <MountPoints>
-		<MountPoint Side="Front" StartX="0.07" StartY="1.89" EndX="0.39" EndY="1.99" />
-		<MountPoint Side="Left" StartX="0.07" StartY="1.89" EndX="0.39" EndY="1.99" />
-		<MountPoint Side="Bottom" StartX="1.10" StartY="1.10" EndX="1.90" EndY="1.90"  Default="true"/>
-		<MountPoint Side="Top" StartX="1.09" StartY="1.09" EndX="1.91" EndY="1.91" />
-		<MountPoint Side="Left" StartX="2.61" StartY="1.89" EndX="2.93" EndY="1.99" />
-		<MountPoint Side="Front" StartX="0.07" StartY="0.01" EndX="0.39" EndY="0.11" />
-		<MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="0.55" EndY="0.55" />
-		<MountPoint Side="Top" StartX="0.00" StartY="2.45" EndX="0.55" EndY="3.00" />
-		<MountPoint Side="Top" StartX="2.45" StartY="2.44" EndX="3.00" EndY="3.00" />
-		<MountPoint Side="Top" StartX="2.46" StartY="0.00" EndX="3.00" EndY="0.55" />
-		<MountPoint Side="Bottom" StartX="0.00" StartY="2.45" EndX="0.55" EndY="3.00" />
-		<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="0.55" EndY="0.55" />
-		<MountPoint Side="Bottom" StartX="2.45" StartY="0.00" EndX="3.00" EndY="0.56" />
-		<MountPoint Side="Bottom" StartX="2.44" StartY="2.45" EndX="3.00" EndY="3.00" />
-		<MountPoint Side="Left" StartX="2.61" StartY="0.01" EndX="2.93" EndY="0.11" />
-		<MountPoint Side="Left" StartX="0.07" StartY="0.01" EndX="0.39" EndY="0.11" />
-		<MountPoint Side="Front" StartX="2.60" StartY="1.89" EndX="2.92" EndY="1.99" />
-		<MountPoint Side="Front" StartX="2.60" StartY="0.01" EndX="2.92" EndY="0.11" />
-		<MountPoint Side="Right" StartX="2.61" StartY="1.89" EndX="2.93" EndY="1.99" />
-		<MountPoint Side="Right" StartX="2.61" StartY="0.01" EndX="2.93" EndY="0.11" />
-		<MountPoint Side="Right" StartX="0.06" StartY="1.89" EndX="0.38" EndY="1.99" />
-		<MountPoint Side="Right" StartX="0.06" StartY="0.01" EndX="0.38" EndY="0.11" />
-		<MountPoint Side="Back" StartX="2.61" StartY="1.89" EndX="2.93" EndY="1.99" />
-		<MountPoint Side="Back" StartX="2.61" StartY="0.01" EndX="2.93" EndY="0.11" />
-		<MountPoint Side="Back" StartX="0.08" StartY="1.89" EndX="0.40" EndY="1.99" />
-		<MountPoint Side="Back" StartX="0.08" StartY="0.01" EndX="0.40" EndY="0.11" />
-      </MountPoints>
-      <BuildProgressModels>
-        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\LBFusionReactor_Constr1.mwm" />
-        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\LBFusionReactor_Constr2.mwm" />
-        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\LBFusionReactor_Constr3.mwm" />
-      </BuildProgressModels>
-      <BlockPairName>Tier3D2o</BlockPairName>
-      <MirroringY>Z</MirroringY>
-      <MirroringZ>Y</MirroringZ>
-      <EdgeType>Light</EdgeType>
-      <BuildTimeSeconds>80</BuildTimeSeconds>
-      <Description>Deuterium Reactor that provides 7 Gigawatts of power, also requires Deuterium Container to fuel.</Description>
-
-      <ResourceSourceGroup>Reactors</ResourceSourceGroup>
-      <MaxPowerOutput>7000</MaxPowerOutput>
-      <StockpileAmount>10</StockpileAmount>
-
-      <EmissiveColorPreset>Default</EmissiveColorPreset>
-      <ResourceSinkGroup>Factory</ResourceSinkGroup>
-
-      <InventorySize>
-        <X>1</X>
-        <Y>1</Y>
-        <Z>1</Z>
-      </InventorySize>
-                  <!-- 
+            <FuelInfos>
+                <FuelInfo>
+                    <Id>
+                        <TypeId>Ingot</TypeId>
+                        <SubtypeId>DeuteriumContainer</SubtypeId>
+                        <SubtypeId>DTFuelCapsule</SubtypeId>
+                    </Id>
+                    <Ratio>0.04</Ratio>
+                </FuelInfo>
+            </FuelInfos>
+            <PrimarySound>ShipLrgNuclearSm</PrimarySound>
+            <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+            <DamagedSound>ParticleReactor</DamagedSound>
+            <DestroyEffect>Explosion_Warhead_02</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <GuiVisible>false</GuiVisible>
+            <PCU>25</PCU>
+        </Definition>
+        <!-- End Tier 2 Reactors -->
+        <!-- Begin Tier 3 Reactors -->
+        <Definition xsi:type="MyObjectBuilder_ReactorDefinition">
+            <Id>
+                <TypeId>Reactor</TypeId>
+                <SubtypeId>LBFusionReactorT3</SubtypeId>
+            </Id>
+            <DisplayName>7GW Deuterium Fusion Reactor Mk3</DisplayName>
+            <Icon>Textures\GUI\Icons\Cubes\FusionReactor.dds</Icon>
+            <CubeSize>Large</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="3" y="2" z="3" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Cubes\LBFusionReactor.mwm</Model>
+            <Components>
+                <Component Subtype="SteelPlate" Count="800" />
+                <Component Subtype="Construction" Count="400" />
+                <Component Subtype="MetalGrid" Count="40" />
+                <Component Subtype="LargeTube" Count="50" />
+                <Component Subtype="Computer" Count="300" />
+                <Component Subtype="Superconductor" Count="300" />
+                <Component Subtype="Magnetron_Component" Count="400" />
+                <Component Subtype="Magnetron_UpgradeMk3" Count="1" >
+                    <DeconstructId>
+                        <TypeId>Ingot</TypeId>
+                        <SubtypeId>UpgradePartMk4</SubtypeId>
+                    </DeconstructId>
+                </Component>
+                <Component Subtype="Motor" Count="20" />
+                <Component Subtype="SteelPlate" Count="300" />
+            </Components>
+            <CriticalComponent Subtype="Motor" Index="0" />
+            <MountPoints>
+                <MountPoint Side="Front" StartX="0.07" StartY="1.89" EndX="0.39" EndY="1.99" />
+                <MountPoint Side="Left" StartX="0.07" StartY="1.89" EndX="0.39" EndY="1.99" />
+                <MountPoint Side="Bottom" StartX="1.10" StartY="1.10" EndX="1.90" EndY="1.90"  Default="true"/>
+                <MountPoint Side="Top" StartX="1.09" StartY="1.09" EndX="1.91" EndY="1.91" />
+                <MountPoint Side="Left" StartX="2.61" StartY="1.89" EndX="2.93" EndY="1.99" />
+                <MountPoint Side="Front" StartX="0.07" StartY="0.01" EndX="0.39" EndY="0.11" />
+                <MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="0.55" EndY="0.55" />
+                <MountPoint Side="Top" StartX="0.00" StartY="2.45" EndX="0.55" EndY="3.00" />
+                <MountPoint Side="Top" StartX="2.45" StartY="2.44" EndX="3.00" EndY="3.00" />
+                <MountPoint Side="Top" StartX="2.46" StartY="0.00" EndX="3.00" EndY="0.55" />
+                <MountPoint Side="Bottom" StartX="0.00" StartY="2.45" EndX="0.55" EndY="3.00" />
+                <MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="0.55" EndY="0.55" />
+                <MountPoint Side="Bottom" StartX="2.45" StartY="0.00" EndX="3.00" EndY="0.56" />
+                <MountPoint Side="Bottom" StartX="2.44" StartY="2.45" EndX="3.00" EndY="3.00" />
+                <MountPoint Side="Left" StartX="2.61" StartY="0.01" EndX="2.93" EndY="0.11" />
+                <MountPoint Side="Left" StartX="0.07" StartY="0.01" EndX="0.39" EndY="0.11" />
+                <MountPoint Side="Front" StartX="2.60" StartY="1.89" EndX="2.92" EndY="1.99" />
+                <MountPoint Side="Front" StartX="2.60" StartY="0.01" EndX="2.92" EndY="0.11" />
+                <MountPoint Side="Right" StartX="2.61" StartY="1.89" EndX="2.93" EndY="1.99" />
+                <MountPoint Side="Right" StartX="2.61" StartY="0.01" EndX="2.93" EndY="0.11" />
+                <MountPoint Side="Right" StartX="0.06" StartY="1.89" EndX="0.38" EndY="1.99" />
+                <MountPoint Side="Right" StartX="0.06" StartY="0.01" EndX="0.38" EndY="0.11" />
+                <MountPoint Side="Back" StartX="2.61" StartY="1.89" EndX="2.93" EndY="1.99" />
+                <MountPoint Side="Back" StartX="2.61" StartY="0.01" EndX="2.93" EndY="0.11" />
+                <MountPoint Side="Back" StartX="0.08" StartY="1.89" EndX="0.40" EndY="1.99" />
+                <MountPoint Side="Back" StartX="0.08" StartY="0.01" EndX="0.40" EndY="0.11" />
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\LBFusionReactor_Constr1.mwm" />
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\LBFusionReactor_Constr2.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\LBFusionReactor_Constr3.mwm" />
+            </BuildProgressModels>
+            <BlockPairName>Tier3D2o</BlockPairName>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>80</BuildTimeSeconds>
+            <Description>Deuterium Reactor that provides 7 Gigawatts of power, also requires Deuterium Container to fuel.</Description>
+            <ResourceSourceGroup>Reactors</ResourceSourceGroup>
+            <MaxPowerOutput>7000</MaxPowerOutput>
+            <StockpileAmount>10</StockpileAmount>
+            <EmissiveColorPreset>Default</EmissiveColorPreset>
+            <ResourceSinkGroup>Factory</ResourceSinkGroup>
+            <InventorySize>
+                <X>1</X>
+                <Y>1</Y>
+                <Z>1</Z>
+            </InventorySize>
+            <!-- 
                 Values are volume fill ratio, means how much fuel reactor pulls from conveyor system to the inventory.
                 If volume fill ratio is bellow minimum, reactor starts pulling fuel up to maximum value.
                 Warning: Changing these values will affect performance.
             -->
             <InventoryFillFactorMin>0.001</InventoryFillFactorMin>
             <InventoryFillFactorMax>0.002</InventoryFillFactorMax>
-
             <!-- 
                 This is how much of fuel is pulled from conveyor system in one tick.
                 It's in minutes, means that it will pull X minutes of fuel in one tick.
                 Warning: Changing this value will affect performance.
             -->
             <FuelPullAmountFromConveyorInMinutes>10.0</FuelPullAmountFromConveyorInMinutes>
-      <FuelInfos>
-	   <FuelInfo>
-	    <Id>
-	     <TypeId>Ingot</TypeId>
-         <SubtypeId>DeuteriumContainer</SubtypeId>
-		</Id>
-		<Ratio>0.03</Ratio>
-	   </FuelInfo>
-      </FuelInfos>
-      <PrimarySound>ShipLrgNuclearSm</PrimarySound>
-      <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
-      <DamagedSound>ParticleReactor</DamagedSound>
-      <DestroyEffect>Explosion_Warhead_02</DestroyEffect>
-      <DestroySound>WepSmallWarheadExpl</DestroySound>
-	  <GuiVisible>false</GuiVisible>
-	  <PCU>25</PCU>
-  </Definition>
-
-	<Definition xsi:type="MyObjectBuilder_ReactorDefinition">
-      <Id>
-        <TypeId>Reactor</TypeId>
-        <SubtypeId>SBFusionReactorT3</SubtypeId>
-      </Id>
-      <DisplayName>75MW Deuterium Fusion Reactor Mk3</DisplayName>
-      <Icon>Textures\GUI\Icons\Cubes\FusionReactor.dds</Icon>
-      <CubeSize>Small</CubeSize>
-      <BlockTopology>TriangleMesh</BlockTopology>
-      <Size x="3" y="2" z="3" />
-      <ModelOffset x="0" y="0" z="0" />
-      <Model>Models\Cubes\SBFusionReactor.mwm</Model>
-      <Components>
-        <Component Subtype="SteelPlate" Count="20" />
-        <Component Subtype="Construction" Count="18" />
-        <Component Subtype="LargeTube" Count="4" />
-        <Component Subtype="SmallTube" Count="6" />
-		    <Component Subtype="Magnetron_Component" Count="10" />
-		    <Component Subtype="Magnetron_UpgradeMk3" Count="1">
-		  	<DeconstructId>
-            <TypeId>Component</TypeId>
-            <SubtypeId>UpgradePartMk4</SubtypeId>
-        </DeconstructId>
-        </Component>
-        <Component Subtype="Computer" Count="56" />
-        <Component Subtype="Superconductor" Count="10" />
-        <Component Subtype="Motor" Count="4" />
-        <Component Subtype="Construction" Count="4" />
-        <Component Subtype="SteelPlate" Count="10" />
-      </Components>
-      <CriticalComponent Subtype="Motor" Index="0" />
-      <MountPoints>
-		<MountPoint EndY="2.00" EndX="3.00" StartY="0.00" StartX="0.00" Side="Front"/>
-		<MountPoint EndY="3.00" EndX="3.00" StartY="0.00" StartX="0.00" Side="Bottom" Default="true" />
-		<MountPoint EndY="3.00" EndX="3.00" StartY="0.00" StartX="0.00" Side="Top"/>
-		<MountPoint EndY="2.00" EndX="3.00" StartY="0.00" StartX="0.00" Side="Left"/>
-		<MountPoint EndY="2.00" EndX="3.00" StartY="0.00" StartX="0.00" Side="Right"/>
-		<MountPoint EndY="2.00" EndX="3.00" StartY="0.00" StartX="0.00" Side="Back"/>
-      </MountPoints>
-
-      <BuildProgressModels>
-        <Model BuildPercentUpperBound="0.5" File="Models\Cubes\SBFusionReactor_Constr1.mwm" />
-        <Model BuildPercentUpperBound="1.0" File="Models\Cubes\SBFusionReactor_Constr2.mwm" />
-      </BuildProgressModels>
-      <BlockPairName>Tier3D2o</BlockPairName>
-      <MirroringY>Z</MirroringY>
-      <MirroringZ>Y</MirroringZ>
-      <EdgeType>Light</EdgeType>
-      <BuildTimeSeconds>40</BuildTimeSeconds>
-      <EmissiveColorPreset>Default</EmissiveColorPreset>
-      <Description>Deuterium Reactor that provides 75 Megawatts of power, also requires Deuterium Container to fuel.</Description>
-
-
-
-      <ResourceSinkGroup>Factory</ResourceSinkGroup>
-
-      <ResourceSourceGroup>Reactors</ResourceSourceGroup>
-      <MaxPowerOutput>75</MaxPowerOutput>
-      <StockpileAmount>10</StockpileAmount>
-
-      <InventorySize>
-        <X>1</X>
-        <Y>1</Y>
-        <Z>1</Z>
-      </InventorySize>
-                  <!-- 
+            <FuelInfos>
+                <FuelInfo>
+                    <Id>
+                        <TypeId>Ingot</TypeId>
+                        <SubtypeId>DeuteriumContainer</SubtypeId>
+                        <SubtypeId>DTFuelCapsule</SubtypeId>
+                    </Id>
+                    <Ratio>0.03</Ratio>
+                </FuelInfo>
+            </FuelInfos>
+            <PrimarySound>ShipLrgNuclearSm</PrimarySound>
+            <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+            <DamagedSound>ParticleReactor</DamagedSound>
+            <DestroyEffect>Explosion_Warhead_02</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <GuiVisible>false</GuiVisible>
+            <PCU>25</PCU>
+        </Definition>
+        <Definition xsi:type="MyObjectBuilder_ReactorDefinition">
+            <Id>
+                <TypeId>Reactor</TypeId>
+                <SubtypeId>SBFusionReactorT3</SubtypeId>
+            </Id>
+            <DisplayName>75MW Deuterium Fusion Reactor Mk3</DisplayName>
+            <Icon>Textures\GUI\Icons\Cubes\FusionReactor.dds</Icon>
+            <CubeSize>Small</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="3" y="2" z="3" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Cubes\SBFusionReactor.mwm</Model>
+            <Components>
+                <Component Subtype="SteelPlate" Count="20" />
+                <Component Subtype="SmallTube" Count="6" />
+                <Component Subtype="Magnetron_Component" Count="4" />
+                <Component Subtype="Magnetron_UpgradeMk3" Count="1">
+                    <DeconstructId>
+                        <TypeId>Ingot</TypeId>
+                        <SubtypeId>UpgradePartMk4</SubtypeId>
+                    </DeconstructId>
+                </Component>
+                <Component Subtype="Computer" Count="56" />
+                <Component Subtype="Superconductor" Count="10" />
+                <Component Subtype="Motor" Count="4" />
+                <Component Subtype="Construction" Count="4" />
+                <Component Subtype="SteelPlate" Count="10" />
+            </Components>
+            <CriticalComponent Subtype="Motor" Index="0" />
+            <MountPoints>
+                <MountPoint EndY="2.00" EndX="3.00" StartY="0.00" StartX="0.00" Side="Front"/>
+                <MountPoint EndY="3.00" EndX="3.00" StartY="0.00" StartX="0.00" Side="Bottom" Default="true" />
+                <MountPoint EndY="3.00" EndX="3.00" StartY="0.00" StartX="0.00" Side="Top"/>
+                <MountPoint EndY="2.00" EndX="3.00" StartY="0.00" StartX="0.00" Side="Left"/>
+                <MountPoint EndY="2.00" EndX="3.00" StartY="0.00" StartX="0.00" Side="Right"/>
+                <MountPoint EndY="2.00" EndX="3.00" StartY="0.00" StartX="0.00" Side="Back"/>
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.5" File="Models\Cubes\SBFusionReactor_Constr1.mwm" />
+                <Model BuildPercentUpperBound="1.0" File="Models\Cubes\SBFusionReactor_Constr2.mwm" />
+            </BuildProgressModels>
+            <BlockPairName>Tier3D2o</BlockPairName>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>40</BuildTimeSeconds>
+            <EmissiveColorPreset>Default</EmissiveColorPreset>
+            <Description>Deuterium Reactor that provides 75 Megawatts of power, also requires Deuterium Container to fuel.</Description>
+            <ResourceSinkGroup>Factory</ResourceSinkGroup>
+            <ResourceSourceGroup>Reactors</ResourceSourceGroup>
+            <MaxPowerOutput>75</MaxPowerOutput>
+            <StockpileAmount>10</StockpileAmount>
+            <InventorySize>
+                <X>1</X>
+                <Y>1</Y>
+                <Z>1</Z>
+            </InventorySize>
+            <!-- 
                 Values are volume fill ratio, means how much fuel reactor pulls from conveyor system to the inventory.
                 If volume fill ratio is bellow minimum, reactor starts pulling fuel up to maximum value.
                 Warning: Changing these values will affect performance.
             -->
             <InventoryFillFactorMin>0.001</InventoryFillFactorMin>
             <InventoryFillFactorMax>0.002</InventoryFillFactorMax>
-
             <!-- 
                 This is how much of fuel is pulled from conveyor system in one tick.
                 It's in minutes, means that it will pull X minutes of fuel in one tick.
                 Warning: Changing this value will affect performance.
             -->
             <FuelPullAmountFromConveyorInMinutes>10.0</FuelPullAmountFromConveyorInMinutes>
-      <FuelInfos>
-	   <FuelInfo>
-	    <Id>
-	     <TypeId>Ingot</TypeId>
-         <SubtypeId>DeuteriumContainer</SubtypeId>
-		</Id>
-		<Ratio>0.03</Ratio>
-	   </FuelInfo>
-      </FuelInfos>
-      <PrimarySound>ShipLrgNuclearSm</PrimarySound>
-      <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
-      <DamagedSound>ParticleReactor</DamagedSound>
-      <DestroyEffect>Explosion_Warhead_02</DestroyEffect>
-      <DestroySound>WepSmallWarheadExpl</DestroySound>
-	  <GuiVisible>false</GuiVisible>
-	  <PCU>25</PCU>
-    </Definition>
-	<!-- End Tier 3 Reactors -->
-	 
-	 
-	<!-- Begin Tier 4 Reactors -->
-    <Definition xsi:type="MyObjectBuilder_ReactorDefinition">
-      <Id>
-        <TypeId>Reactor</TypeId>
-        <SubtypeId>LBFusionReactorT4</SubtypeId>
-      </Id>
-      <DisplayName>15GW Deuterium Fusion Reactor Mk4</DisplayName>
-      <Icon>Textures\GUI\Icons\Cubes\FusionReactor.dds</Icon>
-      <CubeSize>Large</CubeSize>
-      <BlockTopology>TriangleMesh</BlockTopology>
-      <Size x="3" y="2" z="3" />
-      <ModelOffset x="0" y="0" z="0" />
-      <Model>Models\Cubes\LBFusionReactor.mwm</Model>
-      <Components>
-        <Component Subtype="SteelPlate" Count="800" />
-        <Component Subtype="Construction" Count="460" />
-        <Component Subtype="MetalGrid" Count="40" />
-        <Component Subtype="LargeTube" Count="50" />
-        <Component Subtype="Computer" Count="300" />
-	    	<Component Subtype="Superconductor" Count="350" />
-        <Component Subtype="Magnetron_Component" Count="5700" />
-		    <Component Subtype="Magnetron_UpgradeMk4" Count="1" >
-		  	<DeconstructId>
-            <TypeId>Component</TypeId>
-            <SubtypeId>UpgradePartMk5</SubtypeId>
-        </DeconstructId>
-        </Component>
-        <Component Subtype="Motor" Count="20" />
-        <Component Subtype="SteelPlate" Count="300" />
-      </Components>
-      <CriticalComponent Subtype="Motor" Index="0" />
-      <MountPoints>
-		<MountPoint Side="Front" StartX="0.07" StartY="1.89" EndX="0.39" EndY="1.99" />
-		<MountPoint Side="Left" StartX="0.07" StartY="1.89" EndX="0.39" EndY="1.99" />
-		<MountPoint Side="Bottom" StartX="1.10" StartY="1.10" EndX="1.90" EndY="1.90"  Default="true"/>
-		<MountPoint Side="Top" StartX="1.09" StartY="1.09" EndX="1.91" EndY="1.91" />
-		<MountPoint Side="Left" StartX="2.61" StartY="1.89" EndX="2.93" EndY="1.99" />
-		<MountPoint Side="Front" StartX="0.07" StartY="0.01" EndX="0.39" EndY="0.11" />
-		<MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="0.55" EndY="0.55" />
-		<MountPoint Side="Top" StartX="0.00" StartY="2.45" EndX="0.55" EndY="3.00" />
-		<MountPoint Side="Top" StartX="2.45" StartY="2.44" EndX="3.00" EndY="3.00" />
-		<MountPoint Side="Top" StartX="2.46" StartY="0.00" EndX="3.00" EndY="0.55" />
-		<MountPoint Side="Bottom" StartX="0.00" StartY="2.45" EndX="0.55" EndY="3.00" />
-		<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="0.55" EndY="0.55" />
-		<MountPoint Side="Bottom" StartX="2.45" StartY="0.00" EndX="3.00" EndY="0.56" />
-		<MountPoint Side="Bottom" StartX="2.44" StartY="2.45" EndX="3.00" EndY="3.00" />
-		<MountPoint Side="Left" StartX="2.61" StartY="0.01" EndX="2.93" EndY="0.11" />
-		<MountPoint Side="Left" StartX="0.07" StartY="0.01" EndX="0.39" EndY="0.11" />
-		<MountPoint Side="Front" StartX="2.60" StartY="1.89" EndX="2.92" EndY="1.99" />
-		<MountPoint Side="Front" StartX="2.60" StartY="0.01" EndX="2.92" EndY="0.11" />
-		<MountPoint Side="Right" StartX="2.61" StartY="1.89" EndX="2.93" EndY="1.99" />
-		<MountPoint Side="Right" StartX="2.61" StartY="0.01" EndX="2.93" EndY="0.11" />
-		<MountPoint Side="Right" StartX="0.06" StartY="1.89" EndX="0.38" EndY="1.99" />
-		<MountPoint Side="Right" StartX="0.06" StartY="0.01" EndX="0.38" EndY="0.11" />
-		<MountPoint Side="Back" StartX="2.61" StartY="1.89" EndX="2.93" EndY="1.99" />
-		<MountPoint Side="Back" StartX="2.61" StartY="0.01" EndX="2.93" EndY="0.11" />
-		<MountPoint Side="Back" StartX="0.08" StartY="1.89" EndX="0.40" EndY="1.99" />
-		<MountPoint Side="Back" StartX="0.08" StartY="0.01" EndX="0.40" EndY="0.11" />
-      </MountPoints>
-      <BuildProgressModels>
-        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\LBFusionReactor_Constr1.mwm" />
-        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\LBFusionReactor_Constr2.mwm" />
-        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\LBFusionReactor_Constr3.mwm" />
-      </BuildProgressModels>
-      <BlockPairName>Tier4D2o</BlockPairName>
-      <MirroringY>Z</MirroringY>
-      <MirroringZ>Y</MirroringZ>
-      <EdgeType>Light</EdgeType>
-      <BuildTimeSeconds>80</BuildTimeSeconds>
-      <Description>Deuterium Reactor that provides 15 Gigawatts of power, also requires Deuterium Container to fuel.</Description>
-
-      <ResourceSourceGroup>Reactors</ResourceSourceGroup>
-      <MaxPowerOutput>15000</MaxPowerOutput>
-      <StockpileAmount>10</StockpileAmount>
-
-      <EmissiveColorPreset>Default</EmissiveColorPreset>
-      <ResourceSinkGroup>Factory</ResourceSinkGroup>
-
-      <InventorySize>
-        <X>1</X>
-        <Y>1</Y>
-        <Z>1</Z>
-      </InventorySize>
-                  <!-- 
+            <FuelInfos>
+                <FuelInfo>
+                    <Id>
+                        <TypeId>Ingot</TypeId>
+                        <SubtypeId>DeuteriumContainer</SubtypeId>
+                        <SubtypeId>DTFuelCapsule</SubtypeId>
+                    </Id>
+                    <Ratio>0.03</Ratio>
+                </FuelInfo>
+            </FuelInfos>
+            <PrimarySound>ShipLrgNuclearSm</PrimarySound>
+            <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+            <DamagedSound>ParticleReactor</DamagedSound>
+            <DestroyEffect>Explosion_Warhead_02</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <GuiVisible>false</GuiVisible>
+            <PCU>25</PCU>
+        </Definition>
+        <!-- End Tier 3 Reactors -->
+        <!-- Begin Tier 4 Reactors -->
+        <Definition xsi:type="MyObjectBuilder_ReactorDefinition">
+            <Id>
+                <TypeId>Reactor</TypeId>
+                <SubtypeId>LBFusionReactorT4</SubtypeId>
+            </Id>
+            <DisplayName>15GW Deuterium Fusion Reactor Mk4</DisplayName>
+            <Icon>Textures\GUI\Icons\Cubes\FusionReactor.dds</Icon>
+            <CubeSize>Large</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="3" y="2" z="3" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Cubes\LBFusionReactor.mwm</Model>
+            <Components>
+                <Component Subtype="SteelPlate" Count="800" />
+                <Component Subtype="Construction" Count="460" />
+                <Component Subtype="MetalGrid" Count="40" />
+                <Component Subtype="LargeTube" Count="50" />
+                <Component Subtype="Computer" Count="300" />
+                <Component Subtype="Superconductor" Count="350" />
+                <Component Subtype="Magnetron_Component" Count="400" />
+                <Component Subtype="Magnetron_UpgradeMk4" Count="1" >
+                    <DeconstructId>
+                        <TypeId>Ingot</TypeId>
+                        <SubtypeId>UpgradePartMk5</SubtypeId>
+                    </DeconstructId>
+                </Component>
+                <Component Subtype="Motor" Count="20" />
+                <Component Subtype="SteelPlate" Count="300" />
+            </Components>
+            <CriticalComponent Subtype="Motor" Index="0" />
+            <MountPoints>
+                <MountPoint Side="Front" StartX="0.07" StartY="1.89" EndX="0.39" EndY="1.99" />
+                <MountPoint Side="Left" StartX="0.07" StartY="1.89" EndX="0.39" EndY="1.99" />
+                <MountPoint Side="Bottom" StartX="1.10" StartY="1.10" EndX="1.90" EndY="1.90"  Default="true"/>
+                <MountPoint Side="Top" StartX="1.09" StartY="1.09" EndX="1.91" EndY="1.91" />
+                <MountPoint Side="Left" StartX="2.61" StartY="1.89" EndX="2.93" EndY="1.99" />
+                <MountPoint Side="Front" StartX="0.07" StartY="0.01" EndX="0.39" EndY="0.11" />
+                <MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="0.55" EndY="0.55" />
+                <MountPoint Side="Top" StartX="0.00" StartY="2.45" EndX="0.55" EndY="3.00" />
+                <MountPoint Side="Top" StartX="2.45" StartY="2.44" EndX="3.00" EndY="3.00" />
+                <MountPoint Side="Top" StartX="2.46" StartY="0.00" EndX="3.00" EndY="0.55" />
+                <MountPoint Side="Bottom" StartX="0.00" StartY="2.45" EndX="0.55" EndY="3.00" />
+                <MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="0.55" EndY="0.55" />
+                <MountPoint Side="Bottom" StartX="2.45" StartY="0.00" EndX="3.00" EndY="0.56" />
+                <MountPoint Side="Bottom" StartX="2.44" StartY="2.45" EndX="3.00" EndY="3.00" />
+                <MountPoint Side="Left" StartX="2.61" StartY="0.01" EndX="2.93" EndY="0.11" />
+                <MountPoint Side="Left" StartX="0.07" StartY="0.01" EndX="0.39" EndY="0.11" />
+                <MountPoint Side="Front" StartX="2.60" StartY="1.89" EndX="2.92" EndY="1.99" />
+                <MountPoint Side="Front" StartX="2.60" StartY="0.01" EndX="2.92" EndY="0.11" />
+                <MountPoint Side="Right" StartX="2.61" StartY="1.89" EndX="2.93" EndY="1.99" />
+                <MountPoint Side="Right" StartX="2.61" StartY="0.01" EndX="2.93" EndY="0.11" />
+                <MountPoint Side="Right" StartX="0.06" StartY="1.89" EndX="0.38" EndY="1.99" />
+                <MountPoint Side="Right" StartX="0.06" StartY="0.01" EndX="0.38" EndY="0.11" />
+                <MountPoint Side="Back" StartX="2.61" StartY="1.89" EndX="2.93" EndY="1.99" />
+                <MountPoint Side="Back" StartX="2.61" StartY="0.01" EndX="2.93" EndY="0.11" />
+                <MountPoint Side="Back" StartX="0.08" StartY="1.89" EndX="0.40" EndY="1.99" />
+                <MountPoint Side="Back" StartX="0.08" StartY="0.01" EndX="0.40" EndY="0.11" />
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\LBFusionReactor_Constr1.mwm" />
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\LBFusionReactor_Constr2.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\LBFusionReactor_Constr3.mwm" />
+            </BuildProgressModels>
+            <BlockPairName>Tier4D2o</BlockPairName>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>80</BuildTimeSeconds>
+            <Description>Deuterium Reactor that provides 15 Gigawatts of power, also requires Deuterium Container to fuel.</Description>
+            <ResourceSourceGroup>Reactors</ResourceSourceGroup>
+            <MaxPowerOutput>15000</MaxPowerOutput>
+            <StockpileAmount>10</StockpileAmount>
+            <EmissiveColorPreset>Default</EmissiveColorPreset>
+            <ResourceSinkGroup>Factory</ResourceSinkGroup>
+            <InventorySize>
+                <X>1</X>
+                <Y>1</Y>
+                <Z>1</Z>
+            </InventorySize>
+            <!-- 
                 Values are volume fill ratio, means how much fuel reactor pulls from conveyor system to the inventory.
                 If volume fill ratio is bellow minimum, reactor starts pulling fuel up to maximum value.
                 Warning: Changing these values will affect performance.
             -->
             <InventoryFillFactorMin>0.001</InventoryFillFactorMin>
             <InventoryFillFactorMax>0.002</InventoryFillFactorMax>
-
             <!-- 
                 This is how much of fuel is pulled from conveyor system in one tick.
                 It's in minutes, means that it will pull X minutes of fuel in one tick.
                 Warning: Changing this value will affect performance.
             -->
             <FuelPullAmountFromConveyorInMinutes>10.0</FuelPullAmountFromConveyorInMinutes>
-      <FuelInfos>
-	   <FuelInfo>
-	    <Id>
-	     <TypeId>Ingot</TypeId>
-         <SubtypeId>DeuteriumContainer</SubtypeId>
-		</Id>
-		<Ratio>0.02</Ratio>
-	   </FuelInfo>
-      </FuelInfos>
-      <PrimarySound>ShipLrgNuclearSm</PrimarySound>
-      <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
-      <DamagedSound>ParticleReactor</DamagedSound>
-      <DestroyEffect>Explosion_Warhead_02</DestroyEffect>
-      <DestroySound>WepSmallWarheadExpl</DestroySound>
-	  <GuiVisible>false</GuiVisible>
-	  <PCU>25</PCU>
-    </Definition>
-	<Definition xsi:type="MyObjectBuilder_ReactorDefinition">
-      <Id>
-        <TypeId>Reactor</TypeId>
-        <SubtypeId>SBFusionReactorT4</SubtypeId>
-      </Id>
-      <DisplayName>150MW Deuterium Fusion Reactor Mk4</DisplayName>
-      <Icon>Textures\GUI\Icons\Cubes\FusionReactor.dds</Icon>
-      <CubeSize>Small</CubeSize>
-      <BlockTopology>TriangleMesh</BlockTopology>
-      <Size x="3" y="2" z="3" />
-      <ModelOffset x="0" y="0" z="0" />
-      <Model>Models\Cubes\SBFusionReactor.mwm</Model>
-      <Components>
-        <Component Subtype="SteelPlate" Count="20" />
-        <Component Subtype="Construction" Count="25" />
-        <Component Subtype="LargeTube" Count="4" />
-        <Component Subtype="SmallTube" Count="6" />
-	    	<Component Subtype="Magnetron_Component" Count="24" />
-    		<Component Subtype="Magnetron_UpgradeMk4" Count="1" >
-		  	<DeconstructId>
-            <TypeId>Component</TypeId>
-            <SubtypeId>UpgradePartMk5</SubtypeId>
-        </DeconstructId>
-        </Component>
-        <Component Subtype="Computer" Count="85" />
-        <Component Subtype="Superconductor" Count="24" />
-        <Component Subtype="Motor" Count="4" />
-        <Component Subtype="Construction" Count="2" />
-        <Component Subtype="SteelPlate" Count="10" />
-      </Components>
-      <CriticalComponent Subtype="Motor" Index="0" />
-      <MountPoints>
-		<MountPoint EndY="2.00" EndX="3.00" StartY="0.00" StartX="0.00" Side="Front"/>
-		<MountPoint EndY="3.00" EndX="3.00" StartY="0.00" StartX="0.00" Side="Bottom" Default="true" />
-		<MountPoint EndY="3.00" EndX="3.00" StartY="0.00" StartX="0.00" Side="Top"/>
-		<MountPoint EndY="2.00" EndX="3.00" StartY="0.00" StartX="0.00" Side="Left"/>
-		<MountPoint EndY="2.00" EndX="3.00" StartY="0.00" StartX="0.00" Side="Right"/>
-		<MountPoint EndY="2.00" EndX="3.00" StartY="0.00" StartX="0.00" Side="Back"/>
-      </MountPoints>
-
-      <BuildProgressModels>
-        <Model BuildPercentUpperBound="0.5" File="Models\Cubes\SBFusionReactor_Constr1.mwm" />
-        <Model BuildPercentUpperBound="1.0" File="Models\Cubes\SBFusionReactor_Constr2.mwm" />
-      </BuildProgressModels>
-      <BlockPairName>Tier4D2o</BlockPairName>
-      <MirroringY>Z</MirroringY>
-      <MirroringZ>Y</MirroringZ>
-      <EdgeType>Light</EdgeType>
-      <BuildTimeSeconds>40</BuildTimeSeconds>
-      <EmissiveColorPreset>Default</EmissiveColorPreset>
-      <Description>Deuterium Reactor that provides 150 Megawatts of power, also requires Deuterium Container to fuel.</Description>
-
- 
-
-      <ResourceSinkGroup>Factory</ResourceSinkGroup>
-
-      <ResourceSourceGroup>Reactors</ResourceSourceGroup>
-      <MaxPowerOutput>150</MaxPowerOutput>
-      <StockpileAmount>10</StockpileAmount>
-
-      <InventorySize>
-        <X>1</X>
-        <Y>1</Y>
-        <Z>1</Z>
-      </InventorySize>
-                  <!-- 
+            <FuelInfos>
+                <FuelInfo>
+                    <Id>
+                        <TypeId>Ingot</TypeId>
+                        <SubtypeId>DeuteriumContainer</SubtypeId>
+                        <SubtypeId>DTFuelCapsule</SubtypeId>
+                    </Id>
+                    <Ratio>0.02</Ratio>
+                </FuelInfo>
+            </FuelInfos>
+            <PrimarySound>ShipLrgNuclearSm</PrimarySound>
+            <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+            <DamagedSound>ParticleReactor</DamagedSound>
+            <DestroyEffect>Explosion_Warhead_02</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <GuiVisible>false</GuiVisible>
+            <PCU>25</PCU>
+        </Definition>
+        <Definition xsi:type="MyObjectBuilder_ReactorDefinition">
+            <Id>
+                <TypeId>Reactor</TypeId>
+                <SubtypeId>SBFusionReactorT4</SubtypeId>
+            </Id>
+            <DisplayName>150MW Deuterium Fusion Reactor Mk4</DisplayName>
+            <Icon>Textures\GUI\Icons\Cubes\FusionReactor.dds</Icon>
+            <CubeSize>Small</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="3" y="2" z="3" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Cubes\SBFusionReactor.mwm</Model>
+            <Components>
+                <Component Subtype="SteelPlate" Count="20" />
+                <Component Subtype="SmallTube" Count="6" />
+                <Component Subtype="Magnetron_Component" Count="4" />
+                <Component Subtype="Magnetron_UpgradeMk4" Count="1" >
+                    <DeconstructId>
+                        <TypeId>Ingot</TypeId>
+                        <SubtypeId>UpgradePartMk5</SubtypeId>
+                    </DeconstructId>
+                </Component>
+                <Component Subtype="Computer" Count="85" />
+                <Component Subtype="Superconductor" Count="24" />
+                <Component Subtype="Motor" Count="4" />
+                <Component Subtype="Construction" Count="2" />
+                <Component Subtype="SteelPlate" Count="10" />
+            </Components>
+            <CriticalComponent Subtype="Motor" Index="0" />
+            <MountPoints>
+                <MountPoint EndY="2.00" EndX="3.00" StartY="0.00" StartX="0.00" Side="Front"/>
+                <MountPoint EndY="3.00" EndX="3.00" StartY="0.00" StartX="0.00" Side="Bottom" Default="true" />
+                <MountPoint EndY="3.00" EndX="3.00" StartY="0.00" StartX="0.00" Side="Top"/>
+                <MountPoint EndY="2.00" EndX="3.00" StartY="0.00" StartX="0.00" Side="Left"/>
+                <MountPoint EndY="2.00" EndX="3.00" StartY="0.00" StartX="0.00" Side="Right"/>
+                <MountPoint EndY="2.00" EndX="3.00" StartY="0.00" StartX="0.00" Side="Back"/>
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.5" File="Models\Cubes\SBFusionReactor_Constr1.mwm" />
+                <Model BuildPercentUpperBound="1.0" File="Models\Cubes\SBFusionReactor_Constr2.mwm" />
+            </BuildProgressModels>
+            <BlockPairName>Tier4D2o</BlockPairName>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>40</BuildTimeSeconds>
+            <EmissiveColorPreset>Default</EmissiveColorPreset>
+            <Description>Deuterium Reactor that provides 150 Megawatts of power, also requires Deuterium Container to fuel.</Description>
+            <ResourceSinkGroup>Factory</ResourceSinkGroup>
+            <ResourceSourceGroup>Reactors</ResourceSourceGroup>
+            <MaxPowerOutput>150</MaxPowerOutput>
+            <StockpileAmount>10</StockpileAmount>
+            <InventorySize>
+                <X>1</X>
+                <Y>1</Y>
+                <Z>1</Z>
+            </InventorySize>
+            <!-- 
                 Values are volume fill ratio, means how much fuel reactor pulls from conveyor system to the inventory.
                 If volume fill ratio is bellow minimum, reactor starts pulling fuel up to maximum value.
                 Warning: Changing these values will affect performance.
             -->
             <InventoryFillFactorMin>0.001</InventoryFillFactorMin>
             <InventoryFillFactorMax>0.002</InventoryFillFactorMax>
-
             <!-- 
                 This is how much of fuel is pulled from conveyor system in one tick.
                 It's in minutes, means that it will pull X minutes of fuel in one tick.
                 Warning: Changing this value will affect performance.
             -->
             <FuelPullAmountFromConveyorInMinutes>10.0</FuelPullAmountFromConveyorInMinutes>
-      <FuelInfos>
-	   <FuelInfo>
-	    <Id>
-	     <TypeId>Ingot</TypeId>
-         <SubtypeId>DeuteriumContainer</SubtypeId>
-		</Id>
-		<Ratio>0.02</Ratio>
-	   </FuelInfo>
-      </FuelInfos>
-      <PrimarySound>ShipLrgNuclearSm</PrimarySound>
-      <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
-      <DamagedSound>ParticleReactor</DamagedSound>
-      <DestroyEffect>Explosion_Warhead_02</DestroyEffect>
-      <DestroySound>WepSmallWarheadExpl</DestroySound>
-	  <GuiVisible>false</GuiVisible>
-	  <PCU>25</PCU>
-    </Definition>
-	<!-- End Tier 4 Reactors -->
-	
-	<!-- Begin Tier 5 Reactors -->
-    <Definition xsi:type="MyObjectBuilder_ReactorDefinition">
-      <Id>
-        <TypeId>Reactor</TypeId>
-        <SubtypeId>LBFusionReactorT5</SubtypeId>
-      </Id>
-      <DisplayName>30GW Deuterium Fusion Reactor Mk5</DisplayName>
-      <Icon>Textures\GUI\Icons\Cubes\FusionReactor.dds</Icon>
-      <CubeSize>Large</CubeSize>
-      <BlockTopology>TriangleMesh</BlockTopology>
-      <Size x="3" y="2" z="3" />
-      <ModelOffset x="0" y="0" z="0" />
-      <Model>Models\Cubes\LBFusionReactor.mwm</Model>
-      <Components>
-        <Component Subtype="SteelPlate" Count="800" />
-        <Component Subtype="Construction" Count="500" />
-        <Component Subtype="MetalGrid" Count="60" />
-        <Component Subtype="LargeTube" Count="80" />
-        <Component Subtype="Computer" Count="500" />
-        <Component Subtype="Superconductor" Count="620" />
-        <Component Subtype="Magnetron_Component" Count="7300" />
-    		<Component Subtype="Magnetron_UpgradeMk5" Count="1" />
-        <Component Subtype="Motor" Count="40" />
-        <Component Subtype="SteelPlate" Count="400" />
-      </Components>
-      <CriticalComponent Subtype="Motor" Index="0" />
-      <MountPoints>
-        <MountPoint Side="Front" StartX="0.07" StartY="1.89" EndX="0.39" EndY="1.99" />
-        <MountPoint Side="Left" StartX="0.07" StartY="1.89" EndX="0.39" EndY="1.99" />
-        <MountPoint Side="Bottom" StartX="1.10" StartY="1.10" EndX="1.90" EndY="1.90"  Default="true"/>
-        <MountPoint Side="Top" StartX="1.09" StartY="1.09" EndX="1.91" EndY="1.91" />
-        <MountPoint Side="Left" StartX="2.61" StartY="1.89" EndX="2.93" EndY="1.99" />
-        <MountPoint Side="Front" StartX="0.07" StartY="0.01" EndX="0.39" EndY="0.11" />
-        <MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="0.55" EndY="0.55" />
-        <MountPoint Side="Top" StartX="0.00" StartY="2.45" EndX="0.55" EndY="3.00" />
-        <MountPoint Side="Top" StartX="2.45" StartY="2.44" EndX="3.00" EndY="3.00" />
-        <MountPoint Side="Top" StartX="2.46" StartY="0.00" EndX="3.00" EndY="0.55" />
-        <MountPoint Side="Bottom" StartX="0.00" StartY="2.45" EndX="0.55" EndY="3.00" />
-        <MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="0.55" EndY="0.55" />
-        <MountPoint Side="Bottom" StartX="2.45" StartY="0.00" EndX="3.00" EndY="0.56" />
-        <MountPoint Side="Bottom" StartX="2.44" StartY="2.45" EndX="3.00" EndY="3.00" />
-        <MountPoint Side="Left" StartX="2.61" StartY="0.01" EndX="2.93" EndY="0.11" />
-        <MountPoint Side="Left" StartX="0.07" StartY="0.01" EndX="0.39" EndY="0.11" />
-        <MountPoint Side="Front" StartX="2.60" StartY="1.89" EndX="2.92" EndY="1.99" />
-        <MountPoint Side="Front" StartX="2.60" StartY="0.01" EndX="2.92" EndY="0.11" />
-        <MountPoint Side="Right" StartX="2.61" StartY="1.89" EndX="2.93" EndY="1.99" />
-        <MountPoint Side="Right" StartX="2.61" StartY="0.01" EndX="2.93" EndY="0.11" />
-        <MountPoint Side="Right" StartX="0.06" StartY="1.89" EndX="0.38" EndY="1.99" />
-        <MountPoint Side="Right" StartX="0.06" StartY="0.01" EndX="0.38" EndY="0.11" />
-        <MountPoint Side="Back" StartX="2.61" StartY="1.89" EndX="2.93" EndY="1.99" />
-        <MountPoint Side="Back" StartX="2.61" StartY="0.01" EndX="2.93" EndY="0.11" />
-        <MountPoint Side="Back" StartX="0.08" StartY="1.89" EndX="0.40" EndY="1.99" />
-        <MountPoint Side="Back" StartX="0.08" StartY="0.01" EndX="0.40" EndY="0.11" />
-      </MountPoints>
-      <BuildProgressModels>
-        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\LBFusionReactor_Constr1.mwm" />
-        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\LBFusionReactor_Constr2.mwm" />
-        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\LBFusionReactor_Constr3.mwm" />
-      </BuildProgressModels>
-      <BlockPairName>Tier5D2o</BlockPairName>
-      <MirroringY>Z</MirroringY>
-      <MirroringZ>Y</MirroringZ>
-      <EdgeType>Light</EdgeType>
-      <BuildTimeSeconds>140</BuildTimeSeconds>
-      <Description>Deuterium Reactor that provides 30 Gigawatts of power, also requires Deuterium Container to fuel.</Description>
-
-      <ResourceSourceGroup>Reactors</ResourceSourceGroup>
-      <MaxPowerOutput>30000</MaxPowerOutput>
-      <StockpileAmount>10</StockpileAmount>
-
-      <EmissiveColorPreset>Default</EmissiveColorPreset>
-      <ResourceSinkGroup>Factory</ResourceSinkGroup>
-
-      <InventorySize>
-        <X>1</X>
-        <Y>1</Y>
-        <Z>1</Z>
-      </InventorySize>
-                  <!-- 
+            <FuelInfos>
+                <FuelInfo>
+                    <Id>
+                        <TypeId>Ingot</TypeId>
+                        <SubtypeId>DeuteriumContainer</SubtypeId>
+                        <SubtypeId>DTFuelCapsule</SubtypeId>
+                    </Id>
+                    <Ratio>0.02</Ratio>
+                </FuelInfo>
+            </FuelInfos>
+            <PrimarySound>ShipLrgNuclearSm</PrimarySound>
+            <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+            <DamagedSound>ParticleReactor</DamagedSound>
+            <DestroyEffect>Explosion_Warhead_02</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <GuiVisible>false</GuiVisible>
+            <PCU>25</PCU>
+        </Definition>
+        <!-- End Tier 4 Reactors -->
+        <!-- Begin Tier 5 Reactors -->
+        <Definition xsi:type="MyObjectBuilder_ReactorDefinition">
+            <Id>
+                <TypeId>Reactor</TypeId>
+                <SubtypeId>LBFusionReactorT5</SubtypeId>
+            </Id>
+            <DisplayName>30GW Deuterium Fusion Reactor Mk5</DisplayName>
+            <Icon>Textures\GUI\Icons\Cubes\FusionReactor.dds</Icon>
+            <CubeSize>Large</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="3" y="2" z="3" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Cubes\LBFusionReactor.mwm</Model>
+            <Components>
+                <Component Subtype="SteelPlate" Count="800" />
+                <Component Subtype="Construction" Count="500" />
+                <Component Subtype="MetalGrid" Count="60" />
+                <Component Subtype="LargeTube" Count="80" />
+                <Component Subtype="Computer" Count="500" />
+                <Component Subtype="Superconductor" Count="620" />
+                <Component Subtype="Magnetron_Component" Count="400" />
+                <Component Subtype="Magnetron_UpgradeMk5" Count="1" />
+                <Component Subtype="Motor" Count="40" />
+                <Component Subtype="SteelPlate" Count="400" />
+            </Components>
+            <CriticalComponent Subtype="Motor" Index="0" />
+            <MountPoints>
+                <MountPoint Side="Front" StartX="0.07" StartY="1.89" EndX="0.39" EndY="1.99" />
+                <MountPoint Side="Left" StartX="0.07" StartY="1.89" EndX="0.39" EndY="1.99" />
+                <MountPoint Side="Bottom" StartX="1.10" StartY="1.10" EndX="1.90" EndY="1.90"  Default="true"/>
+                <MountPoint Side="Top" StartX="1.09" StartY="1.09" EndX="1.91" EndY="1.91" />
+                <MountPoint Side="Left" StartX="2.61" StartY="1.89" EndX="2.93" EndY="1.99" />
+                <MountPoint Side="Front" StartX="0.07" StartY="0.01" EndX="0.39" EndY="0.11" />
+                <MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="0.55" EndY="0.55" />
+                <MountPoint Side="Top" StartX="0.00" StartY="2.45" EndX="0.55" EndY="3.00" />
+                <MountPoint Side="Top" StartX="2.45" StartY="2.44" EndX="3.00" EndY="3.00" />
+                <MountPoint Side="Top" StartX="2.46" StartY="0.00" EndX="3.00" EndY="0.55" />
+                <MountPoint Side="Bottom" StartX="0.00" StartY="2.45" EndX="0.55" EndY="3.00" />
+                <MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="0.55" EndY="0.55" />
+                <MountPoint Side="Bottom" StartX="2.45" StartY="0.00" EndX="3.00" EndY="0.56" />
+                <MountPoint Side="Bottom" StartX="2.44" StartY="2.45" EndX="3.00" EndY="3.00" />
+                <MountPoint Side="Left" StartX="2.61" StartY="0.01" EndX="2.93" EndY="0.11" />
+                <MountPoint Side="Left" StartX="0.07" StartY="0.01" EndX="0.39" EndY="0.11" />
+                <MountPoint Side="Front" StartX="2.60" StartY="1.89" EndX="2.92" EndY="1.99" />
+                <MountPoint Side="Front" StartX="2.60" StartY="0.01" EndX="2.92" EndY="0.11" />
+                <MountPoint Side="Right" StartX="2.61" StartY="1.89" EndX="2.93" EndY="1.99" />
+                <MountPoint Side="Right" StartX="2.61" StartY="0.01" EndX="2.93" EndY="0.11" />
+                <MountPoint Side="Right" StartX="0.06" StartY="1.89" EndX="0.38" EndY="1.99" />
+                <MountPoint Side="Right" StartX="0.06" StartY="0.01" EndX="0.38" EndY="0.11" />
+                <MountPoint Side="Back" StartX="2.61" StartY="1.89" EndX="2.93" EndY="1.99" />
+                <MountPoint Side="Back" StartX="2.61" StartY="0.01" EndX="2.93" EndY="0.11" />
+                <MountPoint Side="Back" StartX="0.08" StartY="1.89" EndX="0.40" EndY="1.99" />
+                <MountPoint Side="Back" StartX="0.08" StartY="0.01" EndX="0.40" EndY="0.11" />
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\LBFusionReactor_Constr1.mwm" />
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\LBFusionReactor_Constr2.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\LBFusionReactor_Constr3.mwm" />
+            </BuildProgressModels>
+            <BlockPairName>Tier5D2o</BlockPairName>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>140</BuildTimeSeconds>
+            <Description>Deuterium Reactor that provides 30 Gigawatts of power, also requires Deuterium Container to fuel.</Description>
+            <ResourceSourceGroup>Reactors</ResourceSourceGroup>
+            <MaxPowerOutput>30000</MaxPowerOutput>
+            <StockpileAmount>10</StockpileAmount>
+            <EmissiveColorPreset>Default</EmissiveColorPreset>
+            <ResourceSinkGroup>Factory</ResourceSinkGroup>
+            <InventorySize>
+                <X>1</X>
+                <Y>1</Y>
+                <Z>1</Z>
+            </InventorySize>
+            <!-- 
                 Values are volume fill ratio, means how much fuel reactor pulls from conveyor system to the inventory.
                 If volume fill ratio is bellow minimum, reactor starts pulling fuel up to maximum value.
                 Warning: Changing these values will affect performance.
             -->
             <InventoryFillFactorMin>0.001</InventoryFillFactorMin>
             <InventoryFillFactorMax>0.002</InventoryFillFactorMax>
-
             <!-- 
                 This is how much of fuel is pulled from conveyor system in one tick.
                 It's in minutes, means that it will pull X minutes of fuel in one tick.
                 Warning: Changing this value will affect performance.
             -->
             <FuelPullAmountFromConveyorInMinutes>10.0</FuelPullAmountFromConveyorInMinutes>
-      <FuelInfos>
-	   <FuelInfo>
-	    <Id>
-	     <TypeId>Ingot</TypeId>
-         <SubtypeId>DeuteriumContainer</SubtypeId>
-		</Id>
-		<Ratio>0.02</Ratio>
-	   </FuelInfo>
-      </FuelInfos>
-      <PrimarySound>ShipLrgNuclearSm</PrimarySound>
-      <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
-      <DamagedSound>ParticleReactor</DamagedSound>
-      <DestroyEffect>Explosion_Warhead_02</DestroyEffect>
-      <DestroySound>WepSmallWarheadExpl</DestroySound>
-      <GuiVisible>false</GuiVisible>
-	  <PCU>25</PCU>
-    </Definition>	
-    <Definition xsi:type="MyObjectBuilder_ReactorDefinition">
-      <Id>
-        <TypeId>Reactor</TypeId>
-        <SubtypeId>SBFusionReactorT5</SubtypeId>
-      </Id>
-      <DisplayName>210MW Deuterium Fusion Reactor Mk5</DisplayName>
-      <Icon>Textures\GUI\Icons\Cubes\FusionReactor.dds</Icon>
-      <CubeSize>Small</CubeSize>
-      <BlockTopology>TriangleMesh</BlockTopology>
-      <Size x="3" y="2" z="3" />
-      <ModelOffset x="0" y="0" z="0" />
-      <Model>Models\Cubes\SBFusionReactor.mwm</Model>
-      <Components>
-        <Component Subtype="SteelPlate" Count="20" />
-        <Component Subtype="Construction" Count="18" />
-        <Component Subtype="LargeTube" Count="4" />
-        <Component Subtype="SmallTube" Count="6" />
-        <Component Subtype="Computer" Count="120" />
-        <Component Subtype="Superconductor" Count="32" />
-		    <Component Subtype="Magnetron_UpgradeMk5" Count="1" />
-    		<Component Subtype="Magnetron_Component" Count="32" />
-        <Component Subtype="Motor" Count="4" />
-        <Component Subtype="Construction" Count="2" />
-        <Component Subtype="SteelPlate" Count="10" />
-      </Components>
-      <CriticalComponent Subtype="Motor" Index="0" />
-      <MountPoints>
-		<MountPoint EndY="2.00" EndX="3.00" StartY="0.00" StartX="0.00" Side="Front"/>
-		<MountPoint EndY="3.00" EndX="3.00" StartY="0.00" StartX="0.00" Side="Bottom" Default="true" />
-		<MountPoint EndY="3.00" EndX="3.00" StartY="0.00" StartX="0.00" Side="Top"/>
-		<MountPoint EndY="2.00" EndX="3.00" StartY="0.00" StartX="0.00" Side="Left"/>
-		<MountPoint EndY="2.00" EndX="3.00" StartY="0.00" StartX="0.00" Side="Right"/>
-		<MountPoint EndY="2.00" EndX="3.00" StartY="0.00" StartX="0.00" Side="Back"/>
-      </MountPoints>
-
-      <BuildProgressModels>
-        <Model BuildPercentUpperBound="0.5" File="Models\Cubes\SBFusionReactor_Constr1.mwm" />
-        <Model BuildPercentUpperBound="1.0" File="Models\Cubes\SBFusionReactor_Constr2.mwm" />
-      </BuildProgressModels>
-      <BlockPairName>Tier5D2o</BlockPairName>
-      <MirroringY>Z</MirroringY>
-      <MirroringZ>Y</MirroringZ>
-      <EdgeType>Light</EdgeType>
-      <BuildTimeSeconds>40</BuildTimeSeconds>
-      <EmissiveColorPreset>Default</EmissiveColorPreset>
-      
-      <Description>Deuterium Reactor that provides 210 Megawatts of power, also requires Deuterium Container to fuel.</Description>
-
- 
-      <ResourceSinkGroup>Factory</ResourceSinkGroup>
-
-      <ResourceSourceGroup>Reactors</ResourceSourceGroup>
-      <MaxPowerOutput>210</MaxPowerOutput>
-      <StockpileAmount>10</StockpileAmount>
-
-      <InventorySize>
-        <X>1</X>
-        <Y>1</Y>
-        <Z>1</Z>
-      </InventorySize>
-                  <!-- 
+            <FuelInfos>
+                <FuelInfo>
+                    <Id>
+                        <TypeId>Ingot</TypeId>
+                        <SubtypeId>DeuteriumContainer</SubtypeId>
+                        <SubtypeId>DTFuelCapsule</SubtypeId>
+                    </Id>
+                    <Ratio>0.02</Ratio>
+                </FuelInfo>
+            </FuelInfos>
+            <PrimarySound>ShipLrgNuclearSm</PrimarySound>
+            <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+            <DamagedSound>ParticleReactor</DamagedSound>
+            <DestroyEffect>Explosion_Warhead_02</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <GuiVisible>false</GuiVisible>
+            <PCU>25</PCU>
+        </Definition>
+        <Definition xsi:type="MyObjectBuilder_ReactorDefinition">
+            <Id>
+                <TypeId>Reactor</TypeId>
+                <SubtypeId>SBFusionReactorT5</SubtypeId>
+            </Id>
+            <DisplayName>210MW Deuterium Fusion Reactor Mk5</DisplayName>
+            <Icon>Textures\GUI\Icons\Cubes\FusionReactor.dds</Icon>
+            <CubeSize>Small</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="3" y="2" z="3" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Cubes\SBFusionReactor.mwm</Model>
+            <Components>
+                <Component Subtype="SteelPlate" Count="20" />
+                <Component Subtype="SmallTube" Count="6" />
+                <Component Subtype="Computer" Count="120" />
+                <Component Subtype="Superconductor" Count="32" />
+                <Component Subtype="Magnetron_UpgradeMk5" Count="1" />
+                <Component Subtype="Magnetron_Component" Count="4" />
+                <Component Subtype="Motor" Count="4" />
+                <Component Subtype="Construction" Count="2" />
+                <Component Subtype="SteelPlate" Count="10" />
+            </Components>
+            <CriticalComponent Subtype="Motor" Index="0" />
+            <MountPoints>
+                <MountPoint EndY="2.00" EndX="3.00" StartY="0.00" StartX="0.00" Side="Front"/>
+                <MountPoint EndY="3.00" EndX="3.00" StartY="0.00" StartX="0.00" Side="Bottom" Default="true" />
+                <MountPoint EndY="3.00" EndX="3.00" StartY="0.00" StartX="0.00" Side="Top"/>
+                <MountPoint EndY="2.00" EndX="3.00" StartY="0.00" StartX="0.00" Side="Left"/>
+                <MountPoint EndY="2.00" EndX="3.00" StartY="0.00" StartX="0.00" Side="Right"/>
+                <MountPoint EndY="2.00" EndX="3.00" StartY="0.00" StartX="0.00" Side="Back"/>
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.5" File="Models\Cubes\SBFusionReactor_Constr1.mwm" />
+                <Model BuildPercentUpperBound="1.0" File="Models\Cubes\SBFusionReactor_Constr2.mwm" />
+            </BuildProgressModels>
+            <BlockPairName>Tier5D2o</BlockPairName>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>40</BuildTimeSeconds>
+            <EmissiveColorPreset>Default</EmissiveColorPreset>
+            <Description>Deuterium Reactor that provides 210 Megawatts of power, also requires Deuterium Container to fuel.</Description>
+            <ResourceSinkGroup>Factory</ResourceSinkGroup>
+            <ResourceSourceGroup>Reactors</ResourceSourceGroup>
+            <MaxPowerOutput>210</MaxPowerOutput>
+            <StockpileAmount>10</StockpileAmount>
+            <InventorySize>
+                <X>1</X>
+                <Y>1</Y>
+                <Z>1</Z>
+            </InventorySize>
+            <!-- 
                 Values are volume fill ratio, means how much fuel reactor pulls from conveyor system to the inventory.
                 If volume fill ratio is bellow minimum, reactor starts pulling fuel up to maximum value.
                 Warning: Changing these values will affect performance.
             -->
             <InventoryFillFactorMin>0.001</InventoryFillFactorMin>
             <InventoryFillFactorMax>0.002</InventoryFillFactorMax>
-
             <!-- 
                 This is how much of fuel is pulled from conveyor system in one tick.
                 It's in minutes, means that it will pull X minutes of fuel in one tick.
                 Warning: Changing this value will affect performance.
             -->
             <FuelPullAmountFromConveyorInMinutes>10.0</FuelPullAmountFromConveyorInMinutes>
-      <FuelInfos>
-	   <FuelInfo>
-	    <Id>
-	     <TypeId>Ingot</TypeId>
-         <SubtypeId>DeuteriumContainer</SubtypeId>
-		</Id>
-		<Ratio>0.02</Ratio>
-	   </FuelInfo>
-      </FuelInfos>
-	  <PrimarySound>ShipLrgNuclearSm</PrimarySound>
-      <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
-      <DamagedSound>ParticleReactor</DamagedSound>
-      <DestroyEffect>Explosion_Warhead_02</DestroyEffect>
-      <DestroySound>WepSmallWarheadExpl</DestroySound>
-	  <GuiVisible>false</GuiVisible>
-	  <PCU>25</PCU>
-    </Definition>
-	
-	<!-- End Tier 5 Reactors -->
-	
-	
-	
-	<!-- Begin HeavyH2O Refinery -->
-    <Definition xsi:type="MyObjectBuilder_RefineryDefinition">
-      <Id>
-        <TypeId>Refinery</TypeId>
-        <SubtypeId>DeuteriumProcessor</SubtypeId>
-      </Id>
-      <DisplayName>Deuterium Processor</DisplayName>
-      <Icon>Textures\GUI\Icons\Cubes\ThRefinery.dds</Icon>
-      <CubeSize>Large</CubeSize>
-      <BlockTopology>TriangleMesh</BlockTopology>
-      <Size x="1" y="2" z="1" />
-      <ModelOffset x="0" y="0" z="0" />
-      <Model>Models\Cubes\LBDeuteriumRefinery.mwm</Model>
-      <Components>
-        <Component Subtype="SteelPlate" Count="110" />
-        <Component Subtype="Construction" Count="5" />
-        <Component Subtype="LargeTube" Count="2" />
-        <Component Subtype="Motor" Count="4" />
-        <Component Subtype="Computer" Count="5" />
-        <Component Subtype="SteelPlate" Count="10" />
-      </Components>
-      <CriticalComponent Subtype="Computer" Index="0" />
-      <MirroringZ>Y</MirroringZ>
-      <MirroringY>Z</MirroringY>
-      <BuildProgressModels>
-        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\LBDeuteriumRefinery_BS1.mwm" />
-        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\LBDeuteriumRefinery_BS2.mwm" />
-        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\LBDeuteriumRefinery_BS3.mwm" />
-      </BuildProgressModels>
-      <BlockPairName>D2oProcessor</BlockPairName>
-      <Description>Deuterium Processor for material extraction of deuterium liquid into Deuterium Containers for fuel.</Description>
-      <EdgeType>Light</EdgeType>
-      <EmissiveColorPreset>Default</EmissiveColorPreset>
-      <BuildTimeSeconds>20</BuildTimeSeconds>
-      <ResourceSinkGroup>Factory</ResourceSinkGroup>
-      <InventoryMaxVolume>4</InventoryMaxVolume>
-	  <OreAmountPerPullRequest>1000</OreAmountPerPullRequest>
-      <RefineSpeed>1</RefineSpeed>
-      <MaterialEfficiency>1</MaterialEfficiency>
-      <InventorySize>
-        <X>2</X>
-        <Y>2</Y>
-        <Z>2</Z>
-      </InventorySize>
-      
-      <StandbyPowerConsumption>0.001</StandbyPowerConsumption>
-      <OperationalPowerConsumption>0.83</OperationalPowerConsumption>
-      <BlueprintClasses>
-        <Class>HeavyH2OIngots</Class>
-      </BlueprintClasses>
-      <DamageEffectId>212</DamageEffectId>
-
-      <DamagedSound>ParticleHeavyMech</DamagedSound>
-      <PrimarySound>BlockAssembler</PrimarySound>
-      <ActionSound>BlockAssemblerProcess</ActionSound>
-      <DestroyEffect>Explosion_Missile</DestroyEffect>
-      <DestroySound>WepSmallMissileExpl</DestroySound>
-	  <PCU>90</PCU>
-    </Definition>
-	
-   <Definition xsi:type="MyObjectBuilder_AssemblerDefinition">
-      <Id>
-        <TypeId>Assembler</TypeId>
-        <SubtypeId>DeuteriumandUraniumAssembler</SubtypeId>
-      </Id>
-      <DisplayName>Queue-able Deuterium Processor</DisplayName>
-      <Icon>Textures\GUI\Icons\Cubes\ThRefinery.dds</Icon>
-      <CubeSize>Large</CubeSize>
-      <BlockTopology>TriangleMesh</BlockTopology>
-      <Size x="1" y="2" z="1" />
-      <ModelOffset x="0" y="0" z="0" />
-      <Model>Models\Cubes\LBDeuteriumRefinery.mwm</Model>
-      <Components>
-        <Component Subtype="SteelPlate" Count="110" />
-        <Component Subtype="Construction" Count="5" />
-        <Component Subtype="LargeTube" Count="2" />
-        <Component Subtype="Motor" Count="4" />
-        <Component Subtype="Computer" Count="5" />
-        <Component Subtype="SteelPlate" Count="10" />
-      </Components>
-      <CriticalComponent Subtype="Computer" Index="0" />
-      <MirroringZ>Y</MirroringZ>
-      <MirroringY>Z</MirroringY>
-      <BuildProgressModels>
-        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\LBDeuteriumRefinery_BS1.mwm" />
-        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\LBDeuteriumRefinery_BS2.mwm" />
-        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\LBDeuteriumRefinery_BS3.mwm" />
-      </BuildProgressModels>
-      <BlockPairName>D2oProcessor2</BlockPairName>
-      <Description>Queue-able Deuterium Processor to process ice, stone, and Deuterium into Deuterium Containers for use in the fusion reactors.</Description>
-      <EdgeType>Light</EdgeType>
-      <EmissiveColorPreset>Default</EmissiveColorPreset>
-      <BuildTimeSeconds>20</BuildTimeSeconds>
-      <ResourceSinkGroup>Factory</ResourceSinkGroup>
-      <InventoryMaxVolume>4</InventoryMaxVolume>
-	  <OreAmountPerPullRequest>1000</OreAmountPerPullRequest>
-	  <GuiVisible>false</GuiVisible>
-      <InventorySize>
-        <X>2</X>
-        <Y>2</Y>
-        <Z>2</Z>
-      </InventorySize>
-      <StandbyPowerConsumption>0.001</StandbyPowerConsumption>
-      <OperationalPowerConsumption>0.83</OperationalPowerConsumption>
-      <BlueprintClasses>
-		<Class>HeavyH2OIngots</Class>
-      </BlueprintClasses>
-      <AssemblySpeed>1.0</AssemblySpeed>
-      <DamageEffectId>212</DamageEffectId>
-      <Description>Description_Refinery</Description>
-
-      <DamagedSound>ParticleHeavyMech</DamagedSound>
-      <PrimarySound>BlockAssembler</PrimarySound>
-      <ActionSound>BlockAssemblerProcess</ActionSound>
-      <DestroyEffect>Explosion_Missile</DestroyEffect>
-      <DestroySound>WepSmallMissileExpl</DestroySound>
-	  <PCU>40</PCU>
+            <FuelInfos>
+                <FuelInfo>
+                    <Id>
+                        <TypeId>Ingot</TypeId>
+                        <SubtypeId>DeuteriumContainer</SubtypeId>
+                        <SubtypeId>DTFuelCapsule</SubtypeId>
+                    </Id>
+                    <Ratio>0.02</Ratio>
+                </FuelInfo>
+            </FuelInfos>
+            <PrimarySound>ShipLrgNuclearSm</PrimarySound>
+            <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+            <DamagedSound>ParticleReactor</DamagedSound>
+            <DestroyEffect>Explosion_Warhead_02</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <GuiVisible>false</GuiVisible>
+            <PCU>25</PCU>
+        </Definition>
+        <!-- End Tier 5 Reactors -->
+        <!-- Begin HeavyH2O Refinery -->
+        <Definition xsi:type="MyObjectBuilder_RefineryDefinition">
+            <Id>
+                <TypeId>Refinery</TypeId>
+                <SubtypeId>DeuteriumProcessor</SubtypeId>
+            </Id>
+            <DisplayName>Deuterium Processor</DisplayName>
+            <Icon>Textures\GUI\Icons\Cubes\ThRefinery.dds</Icon>
+            <CubeSize>Large</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="1" y="2" z="1" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Cubes\LBDeuteriumRefinery.mwm</Model>
+            <Components>
+                <Component Subtype="SteelPlate" Count="110" />
+                <Component Subtype="Construction" Count="5" />
+                <Component Subtype="LargeTube" Count="2" />
+                <Component Subtype="Motor" Count="4" />
+                <Component Subtype="Computer" Count="5" />
+                <Component Subtype="SteelPlate" Count="10" />
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+            <MirroringZ>Y</MirroringZ>
+            <MirroringY>Z</MirroringY>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\LBDeuteriumRefinery_BS1.mwm" />
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\LBDeuteriumRefinery_BS2.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\LBDeuteriumRefinery_BS3.mwm" />
+            </BuildProgressModels>
+            <BlockPairName>D2oProcessor</BlockPairName>
+            <Description>Deuterium Processor for material extraction of deuterium liquid into Deuterium Containers for fuel.</Description>
+            <EdgeType>Light</EdgeType>
+            <EmissiveColorPreset>Default</EmissiveColorPreset>
+            <BuildTimeSeconds>20</BuildTimeSeconds>
+            <ResourceSinkGroup>Factory</ResourceSinkGroup>
+            <InventoryMaxVolume>4</InventoryMaxVolume>
+            <OreAmountPerPullRequest>1000</OreAmountPerPullRequest>
+            <RefineSpeed>1</RefineSpeed>
+            <MaterialEfficiency>1</MaterialEfficiency>
+            <InventorySize>
+                <X>2</X>
+                <Y>2</Y>
+                <Z>2</Z>
+            </InventorySize>
+            <StandbyPowerConsumption>0.001</StandbyPowerConsumption>
+            <OperationalPowerConsumption>0.83</OperationalPowerConsumption>
+            <BlueprintClasses>
+                <Class>HeavyH2OIngots</Class>
+            </BlueprintClasses>
+            <DamageEffectId>212</DamageEffectId>
+            <DamagedSound>ParticleHeavyMech</DamagedSound>
+            <PrimarySound>BlockAssembler</PrimarySound>
+            <ActionSound>BlockAssemblerProcess</ActionSound>
+            <DestroyEffect>Explosion_Missile</DestroyEffect>
+            <DestroySound>WepSmallMissileExpl</DestroySound>
+            <PCU>90</PCU>
+        </Definition>
+        <Definition xsi:type="MyObjectBuilder_AssemblerDefinition">
+            <Id>
+                <TypeId>Assembler</TypeId>
+                <SubtypeId>DeuteriumandUraniumAssembler</SubtypeId>
+            </Id>
+            <DisplayName>Queue-able Deuterium Processor</DisplayName>
+            <Icon>Textures\GUI\Icons\Cubes\ThRefinery.dds</Icon>
+            <CubeSize>Large</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="1" y="2" z="1" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Cubes\LBDeuteriumRefinery.mwm</Model>
+            <Components>
+                <Component Subtype="SteelPlate" Count="110" />
+                <Component Subtype="Construction" Count="5" />
+                <Component Subtype="LargeTube" Count="2" />
+                <Component Subtype="Motor" Count="4" />
+                <Component Subtype="Computer" Count="5" />
+                <Component Subtype="SteelPlate" Count="10" />
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+            <MirroringZ>Y</MirroringZ>
+            <MirroringY>Z</MirroringY>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\LBDeuteriumRefinery_BS1.mwm" />
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\LBDeuteriumRefinery_BS2.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\LBDeuteriumRefinery_BS3.mwm" />
+            </BuildProgressModels>
+            <BlockPairName>D2oProcessor2</BlockPairName>
+            <Description>Queue-able Deuterium Processor to process ice, stone, and Deuterium into Deuterium Containers for use in the fusion reactors.</Description>
+            <EdgeType>Light</EdgeType>
+            <EmissiveColorPreset>Default</EmissiveColorPreset>
+            <BuildTimeSeconds>20</BuildTimeSeconds>
+            <ResourceSinkGroup>Factory</ResourceSinkGroup>
+            <InventoryMaxVolume>4</InventoryMaxVolume>
+            <OreAmountPerPullRequest>1000</OreAmountPerPullRequest>
+            <GuiVisible>false</GuiVisible>
+            <InventorySize>
+                <X>2</X>
+                <Y>2</Y>
+                <Z>2</Z>
+            </InventorySize>
+            <StandbyPowerConsumption>0.001</StandbyPowerConsumption>
+            <OperationalPowerConsumption>0.83</OperationalPowerConsumption>
+            <BlueprintClasses>
+                <Class>HeavyH2OIngots</Class>
+            </BlueprintClasses>
+            <AssemblySpeed>1.0</AssemblySpeed>
+            <DamageEffectId>212</DamageEffectId>
+            <Description>Description_Refinery</Description>
+            <DamagedSound>ParticleHeavyMech</DamagedSound>
+            <PrimarySound>BlockAssembler</PrimarySound>
+            <ActionSound>BlockAssemblerProcess</ActionSound>
+            <DestroyEffect>Explosion_Missile</DestroyEffect>
+            <DestroySound>WepSmallMissileExpl</DestroySound>
+            <PCU>40</PCU>
             <TieredUpdateTimes>
                 <unsignedInt>60</unsignedInt>
                 <unsignedInt>120</unsignedInt>
                 <unsignedInt>240</unsignedInt>
             </TieredUpdateTimes>
-    </Definition> 
-<!-- End HeavyH2O Refinery --> 
-
-
- </CubeBlocks>
- <BlockPositions>
-      <BlockPosition>
-      <Name>D2oProcessor</Name>
-      <Position>
-        <X>2</X>
-        <Y>20</Y>
-      </Position>
-    </BlockPosition>
-      <BlockPosition>
-      <Name>D2oProcessor2</Name>
-      <Position>
-        <X>3</X>
-        <Y>20</Y>
-      </Position>
-    </BlockPosition>
-    <BlockPosition>
-      <Name>Tier1D2o</Name>
-      <Position>
-        <X>1</X>
-        <Y>20</Y>
-      </Position>
-    </BlockPosition>
- </BlockPositions>
+        </Definition>
+        <!-- End HeavyH2O Refinery -->
+    </CubeBlocks>
+    <BlockPositions>
+        <BlockPosition>
+            <Name>D2oProcessor</Name>
+            <Position>
+                <X>2</X>
+                <Y>20</Y>
+            </Position>
+        </BlockPosition>
+        <BlockPosition>
+            <Name>D2oProcessor2</Name>
+            <Position>
+                <X>3</X>
+                <Y>20</Y>
+            </Position>
+        </BlockPosition>
+        <BlockPosition>
+            <Name>Tier1D2o</Name>
+            <Position>
+                <X>1</X>
+                <Y>20</Y>
+            </Position>
+        </BlockPosition>
+    </BlockPositions>
 </Definitions>
