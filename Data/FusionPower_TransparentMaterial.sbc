@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <TransparentMaterial>
+  <TransparentMaterials>
   <TransparentMaterial>
       <Id>
         <TypeId>TransparentMaterialDefinition</TypeId>
         <SubtypeId>SafeZoneShield_Material</SubtypeId>
       </Id>      
-      <Texture>Textures\Models\Environment\SafeZone\SafeZoneShield_Digital_alphamask.DDS</Texture>
-      <GlossTexture>Textures\Models\Environment\SafeZone\SafeZoneShield_Digital_ng.DDS</GlossTexture>
+      <Texture>Textures\Models\Environment\SafeZone\SafeZoneShield_Default_alphamask.DDS</Texture>
+      <GlossTexture>Textures\Models\Environment\SafeZone\SafeZoneShield_Default_ng.DDS</GlossTexture>
         <ShadowMultiplier>
             <X>20</X>
             <Y>0.05</Y>
@@ -28,5 +28,5 @@
         <SpecularColorFactor>0</SpecularColorFactor>
         <Gloss>0.2</Gloss>
     </TransparentMaterial>
-	</TransparentMaterial>
+	</TransparentMaterials>
 </Definitions>
