@@ -6,8 +6,8 @@
         <TypeId>TransparentMaterialDefinition</TypeId>
         <SubtypeId>SafeZoneShield_Material</SubtypeId>
       </Id>      
-      <Texture>Textures\Models\Environment\SafeZone\SafeZoneShield_Default_alphamask.DDS</Texture>
-      <GlossTexture>Textures\Models\Environment\SafeZone\SafeZoneShield_Default_ng.DDS</GlossTexture>
+      <Texture>Textures\Models\Environment\SafeZone\SafeZoneShield_Default_alphamask.dds</Texture>
+      <GlossTexture>Textures\Models\Environment\SafeZone\SafeZoneShield_Default_ng.dds</GlossTexture>
         <ShadowMultiplier>
             <X>20</X>
             <Y>0.05</Y>
