@@ -279,6 +279,9 @@
             <DestroySound>WepSmallWarheadExpl</DestroySound>
             <GuiVisible>false</GuiVisible>
             <PCU>25</PCU>
+            <TargetingGroups>
+                <string>PowerSystems</string>
+            </TargetingGroups>
         </Definition>
         <Definition xsi:type="MyObjectBuilder_ReactorDefinition">
             <Id>
@@ -367,6 +370,9 @@
             <DestroySound>WepSmallWarheadExpl</DestroySound>
             <GuiVisible>false</GuiVisible>
             <PCU>25</PCU>
+            <TargetingGroups>
+                <string>PowerSystems</string>
+            </TargetingGroups>
         </Definition>
         <!-- End Tier 1 Reactors -->
         <!--Begin Tier 2 Reactors -->
@@ -479,6 +485,9 @@
             <DestroySound>WepSmallWarheadExpl</DestroySound>
             <GuiVisible>false</GuiVisible>
             <PCU>25</PCU>
+            <TargetingGroups>
+                <string>PowerSystems</string>
+            </TargetingGroups>
         </Definition>
         <Definition xsi:type="MyObjectBuilder_ReactorDefinition">
             <Id>
@@ -567,6 +576,9 @@
             <DestroySound>WepSmallWarheadExpl</DestroySound>
             <GuiVisible>false</GuiVisible>
             <PCU>25</PCU>
+            <TargetingGroups>
+                <string>PowerSystems</string>
+            </TargetingGroups>
         </Definition>
         <!-- End Tier 2 Reactors -->
         <!-- Begin Tier 3 Reactors -->
@@ -679,6 +691,9 @@
             <DestroySound>WepSmallWarheadExpl</DestroySound>
             <GuiVisible>false</GuiVisible>
             <PCU>25</PCU>
+            <TargetingGroups>
+                <string>PowerSystems</string>
+            </TargetingGroups>
         </Definition>
         <Definition xsi:type="MyObjectBuilder_ReactorDefinition">
             <Id>
@@ -767,6 +782,9 @@
             <DestroySound>WepSmallWarheadExpl</DestroySound>
             <GuiVisible>false</GuiVisible>
             <PCU>25</PCU>
+            <TargetingGroups>
+                <string>PowerSystems</string>
+            </TargetingGroups>
         </Definition>
         <!-- End Tier 3 Reactors -->
         <!-- Begin Tier 4 Reactors -->
@@ -879,6 +897,9 @@
             <DestroySound>WepSmallWarheadExpl</DestroySound>
             <GuiVisible>false</GuiVisible>
             <PCU>25</PCU>
+            <TargetingGroups>
+                <string>PowerSystems</string>
+            </TargetingGroups>
         </Definition>
         <Definition xsi:type="MyObjectBuilder_ReactorDefinition">
             <Id>
@@ -967,6 +988,9 @@
             <DestroySound>WepSmallWarheadExpl</DestroySound>
             <GuiVisible>false</GuiVisible>
             <PCU>25</PCU>
+            <TargetingGroups>
+                <string>PowerSystems</string>
+            </TargetingGroups>
         </Definition>
         <!-- End Tier 4 Reactors -->
         <!-- Begin Tier 5 Reactors -->
@@ -1074,6 +1098,9 @@
             <DestroySound>WepSmallWarheadExpl</DestroySound>
             <GuiVisible>false</GuiVisible>
             <PCU>25</PCU>
+            <TargetingGroups>
+                <string>PowerSystems</string>
+            </TargetingGroups>
         </Definition>
         <Definition xsi:type="MyObjectBuilder_ReactorDefinition">
             <Id>
@@ -1157,6 +1184,9 @@
             <DestroySound>WepSmallWarheadExpl</DestroySound>
             <GuiVisible>false</GuiVisible>
             <PCU>25</PCU>
+            <TargetingGroups>
+                <string>PowerSystems</string>
+            </TargetingGroups>
         </Definition>
         <!-- End Tier 5 Reactors -->
         <!-- Begin HeavyH2O Refinery -->
@@ -1215,6 +1245,11 @@
             <DestroyEffect>Explosion_Missile</DestroyEffect>
             <DestroySound>WepSmallMissileExpl</DestroySound>
             <PCU>90</PCU>
+            <TieredUpdateTimes>
+                <unsignedInt>60</unsignedInt>
+                <unsignedInt>120</unsignedInt>
+                <unsignedInt>240</unsignedInt>
+            </TieredUpdateTimes>
         </Definition>
         <Definition xsi:type="MyObjectBuilder_AssemblerDefinition">
             <Id>
