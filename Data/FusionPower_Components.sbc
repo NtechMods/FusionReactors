@@ -17,8 +17,8 @@
       <Volume>20</Volume>
       <Model>Models\Components\reactor_components_component.mwm</Model>
             <MinimalPricePerUnit>100000</MinimalPricePerUnit>
-            <MinimumOfferAmount>1</MinimumOfferAmount>
-            <MaximumOfferAmount>12</MaximumOfferAmount>
+            <MinimumOfferAmount>10</MinimumOfferAmount>
+            <MaximumOfferAmount>48</MaximumOfferAmount>
             <CanPlayerOrder>true</CanPlayerOrder>
       <MaxIntegrity>20</MaxIntegrity>
       <DropProbability>0.1</DropProbability>
@@ -28,7 +28,7 @@
         <TypeId>Component</TypeId>
         <SubtypeId>MagnetronComponent</SubtypeId>
       </Id>
-      <DisplayName>Magnetron Mk1</DisplayName>
+      <DisplayName>Magnetron Component</DisplayName>
       <Icon>Textures\GUI\Icons\component\AdvancedReactorBundle.dds</Icon>
       <Size>
         <X>0.4</X>
@@ -38,122 +38,9 @@
       <Mass>50</Mass>
       <Volume>20</Volume>
       <Model>Models\Components\reactor_components_component.mwm</Model>
-      <MaxIntegrity>20</MaxIntegrity>
-      <DropProbability>0.1</DropProbability>
-    </Component>
-
-    <!-- Upgrade components -->
-
-    <Component>
-      <Id>
-        <TypeId>Component</TypeId>
-        <SubtypeId>Magnetron_UpgradeMk1</SubtypeId>
-      </Id>
-      <DisplayName>Magnetron Mk1</DisplayName>
-      <Icon>Textures\GUI\Icons\component\AdvancedReactorBundle.dds</Icon>
-      <Size>
-        <X>0.4</X>
-        <Y>0.4</Y>
-        <Z>0.4</Z>
-      </Size>
-      <Mass>5</Mass>
-      <Volume>2</Volume>
-      <Model>Models\Components\reactor_components_component.mwm</Model>
-            <MinimalPricePerUnit>200000</MinimalPricePerUnit>
-            <MinimumOfferAmount>1</MinimumOfferAmount>
-            <MaximumOfferAmount>12</MaximumOfferAmount>
-            <CanPlayerOrder>true</CanPlayerOrder>
-      <MaxIntegrity>20</MaxIntegrity>
-      <DropProbability>0.1</DropProbability>
-    </Component>
-
-       
-    <Component>
-      <Id>
-        <TypeId>Component</TypeId>
-        <SubtypeId>Magnetron_UpgradeMk2</SubtypeId>
-      </Id>
-      <DisplayName>Magnetron Mk2</DisplayName>
-      <Icon>Textures\GUI\Icons\component\AdvancedReactorBundle.dds</Icon>
-      <Size>
-        <X>0.4</X>
-        <Y>0.4</Y>
-        <Z>0.4</Z>
-      </Size>
-      <Mass>5</Mass>
-      <Volume>2</Volume>
-      <Model>Models\Components\reactor_components_component.mwm</Model>
-            <MinimalPricePerUnit>200000</MinimalPricePerUnit>
-            <MinimumOfferAmount>1</MinimumOfferAmount>
-            <MaximumOfferAmount>12</MaximumOfferAmount>
-            <CanPlayerOrder>true</CanPlayerOrder>
-      <MaxIntegrity>20</MaxIntegrity>
-      <DropProbability>0.1</DropProbability>
-    </Component>
-    
-    <Component>
-      <Id>
-        <TypeId>Component</TypeId>
-        <SubtypeId>Magnetron_UpgradeMk3</SubtypeId>
-      </Id>
-      <DisplayName>Magnetron Mk3</DisplayName>
-      <Icon>Textures\GUI\Icons\component\AdvancedReactorBundle.dds</Icon>
-      <Size>
-        <X>0.4</X>
-        <Y>0.4</Y>
-        <Z>0.4</Z>
-      </Size>
-      <Mass>5</Mass>
-      <Volume>2</Volume>
-      <Model>Models\Components\reactor_components_component.mwm</Model>
-            <MinimalPricePerUnit>200000</MinimalPricePerUnit>
-            <MinimumOfferAmount>1</MinimumOfferAmount>
-            <MaximumOfferAmount>12</MaximumOfferAmount>
-            <CanPlayerOrder>true</CanPlayerOrder>
-      <MaxIntegrity>20</MaxIntegrity>
-      <DropProbability>0.1</DropProbability>
-    </Component>
-    <Component>
-      <Id>
-        <TypeId>Component</TypeId>
-        <SubtypeId>Magnetron_UpgradeMk4</SubtypeId>
-      </Id>
-      <DisplayName>Magnetron Mk4</DisplayName>
-      <Icon>Textures\GUI\Icons\component\AdvancedReactorBundle.dds</Icon>
-      <Size>
-        <X>0.4</X>
-        <Y>0.4</Y>
-        <Z>0.4</Z>
-      </Size>
-      <Mass>5</Mass>
-      <Volume>2</Volume>
-      <Model>Models\Components\reactor_components_component.mwm</Model>
-            <MinimalPricePerUnit>200000</MinimalPricePerUnit>
-            <MinimumOfferAmount>1</MinimumOfferAmount>
-            <MaximumOfferAmount>12</MaximumOfferAmount>
-            <CanPlayerOrder>true</CanPlayerOrder>
-      <MaxIntegrity>20</MaxIntegrity>
-      <DropProbability>0.1</DropProbability>
-    </Component>
-    
-    <Component>
-      <Id>
-        <TypeId>Component</TypeId>
-        <SubtypeId>Magnetron_UpgradeMk5</SubtypeId>
-      </Id>
-      <DisplayName>Magnetron Mk5</DisplayName>
-      <Icon>Textures\GUI\Icons\component\AdvancedReactorBundle.dds</Icon>
-      <Size>
-        <X>0.4</X>
-        <Y>0.4</Y>
-        <Z>0.4</Z>
-      </Size>
-      <Mass>5</Mass>
-      <Volume>2</Volume>
-      <Model>Models\Components\reactor_components_component.mwm</Model>
-            <MinimalPricePerUnit>200000</MinimalPricePerUnit>
-            <MinimumOfferAmount>1</MinimumOfferAmount>
-            <MaximumOfferAmount>12</MaximumOfferAmount>
+            <MinimalPricePerUnit>100000</MinimalPricePerUnit>
+            <MinimumOfferAmount>10</MinimumOfferAmount>
+            <MaximumOfferAmount>48</MaximumOfferAmount>
             <CanPlayerOrder>true</CanPlayerOrder>
       <MaxIntegrity>20</MaxIntegrity>
       <DropProbability>0.1</DropProbability>

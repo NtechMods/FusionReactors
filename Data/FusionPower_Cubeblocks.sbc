@@ -133,10 +133,9 @@
             <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="DeuteriumRefinerGroup" />
             <Icon>Textures\GUI\Icons\Cubes\ThRefinery.dds</Icon>
             <DisplayName>DisplayName_BlockGroup_FusionRefiners</DisplayName>
-            <Description>Deuterium Fuel Refiners that refine deuterium ice, ice, or stone.</Description>
+            <Description>Deuterium Fuel Refiners that refine deuterium ice or ice with uranium ore.</Description>
             <Blocks>
                 <Block Type="MyObjectBuilder_Refinery" Subtype="DeuteriumProcessor" />
-                <Block Type="MyObjectBuilder_Assembler" Subtype="DeuteriumandUraniumAssembler" />
             </Blocks>
         </BlockVariantGroup>
     </BlockVariantGroups>
@@ -175,7 +174,7 @@
                 <TypeId>Reactor</TypeId>
                 <SubtypeId>LBFusionReactorT1</SubtypeId>
             </Id>
-            <DisplayName>1GW Deuterium Fusion Reactor Mk1</DisplayName>
+            <DisplayName>1GW Deuterium Fusion Reactor</DisplayName>
             <Icon>Textures\GUI\Icons\Cubes\FusionReactor.dds</Icon>
             <CubeSize>Large</CubeSize>
             <BlockTopology>TriangleMesh</BlockTopology>
@@ -189,13 +188,7 @@
                 <Component Subtype="Computer" Count="250" />
                 <Component Subtype="LargeTube" Count="50" />
                 <Component Subtype="Superconductor" Count="150" />
-                <Component Subtype="Magnetron_Component" Count="400" />
-                <Component Subtype="Magnetron_UpgradeMk1" Count="1">
-                    <DeconstructId>
-                        <TypeId>Ingot</TypeId>
-                        <SubtypeId>UpgradePartMk2</SubtypeId>
-                    </DeconstructId>
-                </Component>
+                <Component Subtype="Magnetron_Component" Count="1000" />
                 <Component Subtype="Motor" Count="20" />
                 <Component Subtype="SteelPlate" Count="300" />
             </Components>
@@ -203,7 +196,7 @@
             <MountPoints>
                 <MountPoint Side="Front" StartX="0.07" StartY="1.89" EndX="0.39" EndY="1.99" />
                 <MountPoint Side="Left" StartX="0.07" StartY="1.89" EndX="0.39" EndY="1.99" />
-                <MountPoint Side="Bottom" StartX="1.10" StartY="1.10" EndX="1.90" EndY="1.90" Default="true"/>
+                <MountPoint Side="Bottom" StartX="1.10" StartY="1.10" EndX="1.90" EndY="1.90" />
                 <MountPoint Side="Top" StartX="1.09" StartY="1.09" EndX="1.91" EndY="1.91" />
                 <MountPoint Side="Left" StartX="2.61" StartY="1.89" EndX="2.93" EndY="1.99" />
                 <MountPoint Side="Front" StartX="0.07" StartY="0.01" EndX="0.39" EndY="0.11" />
@@ -249,27 +242,13 @@
                 <Y>1</Y>
                 <Z>1</Z>
             </InventorySize>
-            <!-- 
-                Values are volume fill ratio, means how much fuel reactor pulls from conveyor system to the inventory.
-                If volume fill ratio is bellow minimum, reactor starts pulling fuel up to maximum value.
-                Warning: Changing these values will affect performance.
-            -->
-            <InventoryFillFactorMin>0.001</InventoryFillFactorMin>
-            <InventoryFillFactorMax>0.002</InventoryFillFactorMax>
-            <!-- 
-                This is how much of fuel is pulled from conveyor system in one tick.
-                It's in minutes, means that it will pull X minutes of fuel in one tick.
-                Warning: Changing this value will affect performance.
-            -->
-            <FuelPullAmountFromConveyorInMinutes>10.0</FuelPullAmountFromConveyorInMinutes>
             <FuelInfos>
                 <FuelInfo>
                     <Id>
                         <TypeId>Ingot</TypeId>
                         <SubtypeId>DeuteriumContainer</SubtypeId>
-                        <SubtypeId>DTFuelCapsule</SubtypeId>
                     </Id>
-                    <Ratio>0.05</Ratio>
+                    <Ratio>0.04</Ratio>
                 </FuelInfo>
             </FuelInfos>
             <PrimarySound>ShipLrgNuclearSm</PrimarySound>
@@ -288,7 +267,7 @@
                 <TypeId>Reactor</TypeId>
                 <SubtypeId>SBFusionReactorT1</SubtypeId>
             </Id>
-            <DisplayName>20MW Deuterium Fusion Reactor Mk1</DisplayName>
+            <DisplayName>20MW Deuterium Fusion Reactor</DisplayName>
             <Icon>Textures\GUI\Icons\Cubes\FusionReactor.dds</Icon>
             <CubeSize>Small</CubeSize>
             <BlockTopology>TriangleMesh</BlockTopology>
@@ -297,14 +276,10 @@
             <Model>Models\Cubes\SBFusionReactor.mwm</Model>
             <Components>
                 <Component Subtype="SteelPlate" Count="20" />
+                <Component Subtype="Construction" Count="18" />
+                <Component Subtype="LargeTube" Count="4" />
                 <Component Subtype="SmallTube" Count="6" />
                 <Component Subtype="Magnetron_Component" Count="4" />
-                <Component Subtype="Magnetron_UpgradeMk1" Count="1">
-                    <DeconstructId>
-                        <TypeId>Ingot</TypeId>
-                        <SubtypeId>UpgradePartMk2</SubtypeId>
-                    </DeconstructId>
-                </Component>
                 <Component Subtype="Computer" Count="28" />
                 <Component Subtype="Superconductor" Count="8" />
                 <Component Subtype="Motor" Count="4" />
@@ -340,27 +315,13 @@
                 <Y>1</Y>
                 <Z>1</Z>
             </InventorySize>
-            <!-- 
-                Values are volume fill ratio, means how much fuel reactor pulls from conveyor system to the inventory.
-                If volume fill ratio is bellow minimum, reactor starts pulling fuel up to maximum value.
-                Warning: Changing these values will affect performance.
-            -->
-            <InventoryFillFactorMin>0.001</InventoryFillFactorMin>
-            <InventoryFillFactorMax>0.002</InventoryFillFactorMax>
-            <!-- 
-                This is how much of fuel is pulled from conveyor system in one tick.
-                It's in minutes, means that it will pull X minutes of fuel in one tick.
-                Warning: Changing this value will affect performance.
-            -->
-            <FuelPullAmountFromConveyorInMinutes>10.0</FuelPullAmountFromConveyorInMinutes>
             <FuelInfos>
                 <FuelInfo>
                     <Id>
                         <TypeId>Ingot</TypeId>
                         <SubtypeId>DeuteriumContainer</SubtypeId>
-                        <SubtypeId>DTFuelCapsule</SubtypeId>
                     </Id>
-                    <Ratio>0.05</Ratio>
+                    <Ratio>0.04</Ratio>
                 </FuelInfo>
             </FuelInfos>
             <PrimarySound>ShipLrgNuclearSm</PrimarySound>
@@ -381,7 +342,7 @@
                 <TypeId>Reactor</TypeId>
                 <SubtypeId>LBFusionReactorT2</SubtypeId>
             </Id>
-            <DisplayName>2.5GW Deuterium Fusion Reactor Mk2</DisplayName>
+            <DisplayName>2.5GW Deuterium Fusion Reactor</DisplayName>
             <Icon>Textures\GUI\Icons\Cubes\FusionReactor.dds</Icon>
             <CubeSize>Large</CubeSize>
             <BlockTopology>TriangleMesh</BlockTopology>
@@ -395,13 +356,7 @@
                 <Component Subtype="LargeTube" Count="50" />
                 <Component Subtype="Computer" Count="300" />
                 <Component Subtype="Superconductor" Count="200" />
-                <Component Subtype="Magnetron_Component" Count="400" />
-                <Component Subtype="Magnetron_UpgradeMk2" Count="1">
-                    <DeconstructId>
-                        <TypeId>Ingot</TypeId>
-                        <SubtypeId>UpgradePartMk3</SubtypeId>
-                    </DeconstructId>
-                </Component>
+                <Component Subtype="Magnetron_Component" Count="2000" />
                 <Component Subtype="Motor" Count="20" />
                 <Component Subtype="SteelPlate" Count="300" />
             </Components>
@@ -409,7 +364,7 @@
             <MountPoints>
                 <MountPoint Side="Front" StartX="0.07" StartY="1.89" EndX="0.39" EndY="1.99" />
                 <MountPoint Side="Left" StartX="0.07" StartY="1.89" EndX="0.39" EndY="1.99" />
-                <MountPoint Side="Bottom" StartX="1.10" StartY="1.10" EndX="1.90" EndY="1.90"  Default="true"/>
+                <MountPoint Side="Bottom" StartX="1.10" StartY="1.10" EndX="1.90" EndY="1.90" />
                 <MountPoint Side="Top" StartX="1.09" StartY="1.09" EndX="1.91" EndY="1.91" />
                 <MountPoint Side="Left" StartX="2.61" StartY="1.89" EndX="2.93" EndY="1.99" />
                 <MountPoint Side="Front" StartX="0.07" StartY="0.01" EndX="0.39" EndY="0.11" />
@@ -455,25 +410,11 @@
                 <Y>1</Y>
                 <Z>1</Z>
             </InventorySize>
-            <!-- 
-                Values are volume fill ratio, means how much fuel reactor pulls from conveyor system to the inventory.
-                If volume fill ratio is bellow minimum, reactor starts pulling fuel up to maximum value.
-                Warning: Changing these values will affect performance.
-            -->
-            <InventoryFillFactorMin>0.001</InventoryFillFactorMin>
-            <InventoryFillFactorMax>0.002</InventoryFillFactorMax>
-            <!-- 
-                This is how much of fuel is pulled from conveyor system in one tick.
-                It's in minutes, means that it will pull X minutes of fuel in one tick.
-                Warning: Changing this value will affect performance.
-            -->
-            <FuelPullAmountFromConveyorInMinutes>10.0</FuelPullAmountFromConveyorInMinutes>
             <FuelInfos>
                 <FuelInfo>
                     <Id>
                         <TypeId>Ingot</TypeId>
                         <SubtypeId>DeuteriumContainer</SubtypeId>
-                        <SubtypeId>DTFuelCapsule</SubtypeId>
                     </Id>
                     <Ratio>0.04</Ratio>
                 </FuelInfo>
@@ -494,7 +435,7 @@
                 <TypeId>Reactor</TypeId>
                 <SubtypeId>SBFusionReactorT2</SubtypeId>
             </Id>
-            <DisplayName>45MW Deuterium Fusion Reactor Mk2</DisplayName>
+            <DisplayName>45MW Deuterium Fusion Reactor</DisplayName>
             <Icon>Textures\GUI\Icons\Cubes\FusionReactor.dds</Icon>
             <CubeSize>Small</CubeSize>
             <BlockTopology>TriangleMesh</BlockTopology>
@@ -503,14 +444,10 @@
             <Model>Models\Cubes\SBFusionReactor.mwm</Model>
             <Components>
                 <Component Subtype="SteelPlate" Count="20" />
+                <Component Subtype="Construction" Count="18" />
+                <Component Subtype="LargeTube" Count="4" />
                 <Component Subtype="SmallTube" Count="6" />
-                <Component Subtype="Magnetron_Component" Count="4" />
-                <Component Subtype="Magnetron_UpgradeMk2" Count="1">
-                    <DeconstructId>
-                        <TypeId>Ingot</TypeId>
-                        <SubtypeId>UpgradePartMk3</SubtypeId>
-                    </DeconstructId>
-                </Component>
+                <Component Subtype="Magnetron_Component" Count="8" />
                 <Component Subtype="Computer" Count="40" />
                 <Component Subtype="Superconductor" Count="8" />
                 <Component Subtype="Motor" Count="4" />
@@ -546,25 +483,11 @@
                 <Y>1</Y>
                 <Z>1</Z>
             </InventorySize>
-            <!-- 
-                Values are volume fill ratio, means how much fuel reactor pulls from conveyor system to the inventory.
-                If volume fill ratio is bellow minimum, reactor starts pulling fuel up to maximum value.
-                Warning: Changing these values will affect performance.
-            -->
-            <InventoryFillFactorMin>0.001</InventoryFillFactorMin>
-            <InventoryFillFactorMax>0.002</InventoryFillFactorMax>
-            <!-- 
-                This is how much of fuel is pulled from conveyor system in one tick.
-                It's in minutes, means that it will pull X minutes of fuel in one tick.
-                Warning: Changing this value will affect performance.
-            -->
-            <FuelPullAmountFromConveyorInMinutes>10.0</FuelPullAmountFromConveyorInMinutes>
             <FuelInfos>
                 <FuelInfo>
                     <Id>
                         <TypeId>Ingot</TypeId>
                         <SubtypeId>DeuteriumContainer</SubtypeId>
-                        <SubtypeId>DTFuelCapsule</SubtypeId>
                     </Id>
                     <Ratio>0.04</Ratio>
                 </FuelInfo>
@@ -587,7 +510,7 @@
                 <TypeId>Reactor</TypeId>
                 <SubtypeId>LBFusionReactorT3</SubtypeId>
             </Id>
-            <DisplayName>7GW Deuterium Fusion Reactor Mk3</DisplayName>
+            <DisplayName>7GW Deuterium Fusion Reactor </DisplayName>
             <Icon>Textures\GUI\Icons\Cubes\FusionReactor.dds</Icon>
             <CubeSize>Large</CubeSize>
             <BlockTopology>TriangleMesh</BlockTopology>
@@ -601,13 +524,7 @@
                 <Component Subtype="LargeTube" Count="50" />
                 <Component Subtype="Computer" Count="300" />
                 <Component Subtype="Superconductor" Count="300" />
-                <Component Subtype="Magnetron_Component" Count="400" />
-                <Component Subtype="Magnetron_UpgradeMk3" Count="1" >
-                    <DeconstructId>
-                        <TypeId>Ingot</TypeId>
-                        <SubtypeId>UpgradePartMk4</SubtypeId>
-                    </DeconstructId>
-                </Component>
+                <Component Subtype="Magnetron_Component" Count="3800" />
                 <Component Subtype="Motor" Count="20" />
                 <Component Subtype="SteelPlate" Count="300" />
             </Components>
@@ -615,7 +532,7 @@
             <MountPoints>
                 <MountPoint Side="Front" StartX="0.07" StartY="1.89" EndX="0.39" EndY="1.99" />
                 <MountPoint Side="Left" StartX="0.07" StartY="1.89" EndX="0.39" EndY="1.99" />
-                <MountPoint Side="Bottom" StartX="1.10" StartY="1.10" EndX="1.90" EndY="1.90"  Default="true"/>
+                <MountPoint Side="Bottom" StartX="1.10" StartY="1.10" EndX="1.90" EndY="1.90" />
                 <MountPoint Side="Top" StartX="1.09" StartY="1.09" EndX="1.91" EndY="1.91" />
                 <MountPoint Side="Left" StartX="2.61" StartY="1.89" EndX="2.93" EndY="1.99" />
                 <MountPoint Side="Front" StartX="0.07" StartY="0.01" EndX="0.39" EndY="0.11" />
@@ -661,27 +578,13 @@
                 <Y>1</Y>
                 <Z>1</Z>
             </InventorySize>
-            <!-- 
-                Values are volume fill ratio, means how much fuel reactor pulls from conveyor system to the inventory.
-                If volume fill ratio is bellow minimum, reactor starts pulling fuel up to maximum value.
-                Warning: Changing these values will affect performance.
-            -->
-            <InventoryFillFactorMin>0.001</InventoryFillFactorMin>
-            <InventoryFillFactorMax>0.002</InventoryFillFactorMax>
-            <!-- 
-                This is how much of fuel is pulled from conveyor system in one tick.
-                It's in minutes, means that it will pull X minutes of fuel in one tick.
-                Warning: Changing this value will affect performance.
-            -->
-            <FuelPullAmountFromConveyorInMinutes>10.0</FuelPullAmountFromConveyorInMinutes>
             <FuelInfos>
                 <FuelInfo>
                     <Id>
                         <TypeId>Ingot</TypeId>
                         <SubtypeId>DeuteriumContainer</SubtypeId>
-                        <SubtypeId>DTFuelCapsule</SubtypeId>
                     </Id>
-                    <Ratio>0.03</Ratio>
+                    <Ratio>0.04</Ratio>
                 </FuelInfo>
             </FuelInfos>
             <PrimarySound>ShipLrgNuclearSm</PrimarySound>
@@ -700,7 +603,7 @@
                 <TypeId>Reactor</TypeId>
                 <SubtypeId>SBFusionReactorT3</SubtypeId>
             </Id>
-            <DisplayName>75MW Deuterium Fusion Reactor Mk3</DisplayName>
+            <DisplayName>75MW Deuterium Fusion Reactor</DisplayName>
             <Icon>Textures\GUI\Icons\Cubes\FusionReactor.dds</Icon>
             <CubeSize>Small</CubeSize>
             <BlockTopology>TriangleMesh</BlockTopology>
@@ -709,14 +612,10 @@
             <Model>Models\Cubes\SBFusionReactor.mwm</Model>
             <Components>
                 <Component Subtype="SteelPlate" Count="20" />
+                <Component Subtype="Construction" Count="18" />
+                <Component Subtype="LargeTube" Count="4" />
                 <Component Subtype="SmallTube" Count="6" />
-                <Component Subtype="Magnetron_Component" Count="4" />
-                <Component Subtype="Magnetron_UpgradeMk3" Count="1">
-                    <DeconstructId>
-                        <TypeId>Ingot</TypeId>
-                        <SubtypeId>UpgradePartMk4</SubtypeId>
-                    </DeconstructId>
-                </Component>
+                <Component Subtype="Magnetron_Component" Count="10" />
                 <Component Subtype="Computer" Count="56" />
                 <Component Subtype="Superconductor" Count="10" />
                 <Component Subtype="Motor" Count="4" />
@@ -752,27 +651,13 @@
                 <Y>1</Y>
                 <Z>1</Z>
             </InventorySize>
-            <!-- 
-                Values are volume fill ratio, means how much fuel reactor pulls from conveyor system to the inventory.
-                If volume fill ratio is bellow minimum, reactor starts pulling fuel up to maximum value.
-                Warning: Changing these values will affect performance.
-            -->
-            <InventoryFillFactorMin>0.001</InventoryFillFactorMin>
-            <InventoryFillFactorMax>0.002</InventoryFillFactorMax>
-            <!-- 
-                This is how much of fuel is pulled from conveyor system in one tick.
-                It's in minutes, means that it will pull X minutes of fuel in one tick.
-                Warning: Changing this value will affect performance.
-            -->
-            <FuelPullAmountFromConveyorInMinutes>10.0</FuelPullAmountFromConveyorInMinutes>
             <FuelInfos>
                 <FuelInfo>
                     <Id>
                         <TypeId>Ingot</TypeId>
                         <SubtypeId>DeuteriumContainer</SubtypeId>
-                        <SubtypeId>DTFuelCapsule</SubtypeId>
                     </Id>
-                    <Ratio>0.03</Ratio>
+                    <Ratio>0.04</Ratio>
                 </FuelInfo>
             </FuelInfos>
             <PrimarySound>ShipLrgNuclearSm</PrimarySound>
@@ -793,7 +678,7 @@
                 <TypeId>Reactor</TypeId>
                 <SubtypeId>LBFusionReactorT4</SubtypeId>
             </Id>
-            <DisplayName>15GW Deuterium Fusion Reactor Mk4</DisplayName>
+            <DisplayName>15GW Deuterium Fusion Reactor</DisplayName>
             <Icon>Textures\GUI\Icons\Cubes\FusionReactor.dds</Icon>
             <CubeSize>Large</CubeSize>
             <BlockTopology>TriangleMesh</BlockTopology>
@@ -807,13 +692,7 @@
                 <Component Subtype="LargeTube" Count="50" />
                 <Component Subtype="Computer" Count="300" />
                 <Component Subtype="Superconductor" Count="350" />
-                <Component Subtype="Magnetron_Component" Count="400" />
-                <Component Subtype="Magnetron_UpgradeMk4" Count="1" >
-                    <DeconstructId>
-                        <TypeId>Ingot</TypeId>
-                        <SubtypeId>UpgradePartMk5</SubtypeId>
-                    </DeconstructId>
-                </Component>
+                <Component Subtype="Magnetron_Component" Count="5700" />
                 <Component Subtype="Motor" Count="20" />
                 <Component Subtype="SteelPlate" Count="300" />
             </Components>
@@ -821,7 +700,7 @@
             <MountPoints>
                 <MountPoint Side="Front" StartX="0.07" StartY="1.89" EndX="0.39" EndY="1.99" />
                 <MountPoint Side="Left" StartX="0.07" StartY="1.89" EndX="0.39" EndY="1.99" />
-                <MountPoint Side="Bottom" StartX="1.10" StartY="1.10" EndX="1.90" EndY="1.90"  Default="true"/>
+                <MountPoint Side="Bottom" StartX="1.10" StartY="1.10" EndX="1.90" EndY="1.90" />
                 <MountPoint Side="Top" StartX="1.09" StartY="1.09" EndX="1.91" EndY="1.91" />
                 <MountPoint Side="Left" StartX="2.61" StartY="1.89" EndX="2.93" EndY="1.99" />
                 <MountPoint Side="Front" StartX="0.07" StartY="0.01" EndX="0.39" EndY="0.11" />
@@ -867,27 +746,13 @@
                 <Y>1</Y>
                 <Z>1</Z>
             </InventorySize>
-            <!-- 
-                Values are volume fill ratio, means how much fuel reactor pulls from conveyor system to the inventory.
-                If volume fill ratio is bellow minimum, reactor starts pulling fuel up to maximum value.
-                Warning: Changing these values will affect performance.
-            -->
-            <InventoryFillFactorMin>0.001</InventoryFillFactorMin>
-            <InventoryFillFactorMax>0.002</InventoryFillFactorMax>
-            <!-- 
-                This is how much of fuel is pulled from conveyor system in one tick.
-                It's in minutes, means that it will pull X minutes of fuel in one tick.
-                Warning: Changing this value will affect performance.
-            -->
-            <FuelPullAmountFromConveyorInMinutes>10.0</FuelPullAmountFromConveyorInMinutes>
             <FuelInfos>
                 <FuelInfo>
                     <Id>
                         <TypeId>Ingot</TypeId>
                         <SubtypeId>DeuteriumContainer</SubtypeId>
-                        <SubtypeId>DTFuelCapsule</SubtypeId>
                     </Id>
-                    <Ratio>0.02</Ratio>
+                    <Ratio>0.04</Ratio>
                 </FuelInfo>
             </FuelInfos>
             <PrimarySound>ShipLrgNuclearSm</PrimarySound>
@@ -906,7 +771,7 @@
                 <TypeId>Reactor</TypeId>
                 <SubtypeId>SBFusionReactorT4</SubtypeId>
             </Id>
-            <DisplayName>150MW Deuterium Fusion Reactor Mk4</DisplayName>
+            <DisplayName>150MW Deuterium Fusion Reactor</DisplayName>
             <Icon>Textures\GUI\Icons\Cubes\FusionReactor.dds</Icon>
             <CubeSize>Small</CubeSize>
             <BlockTopology>TriangleMesh</BlockTopology>
@@ -915,14 +780,10 @@
             <Model>Models\Cubes\SBFusionReactor.mwm</Model>
             <Components>
                 <Component Subtype="SteelPlate" Count="20" />
+                <Component Subtype="Construction" Count="25" />
+                <Component Subtype="LargeTube" Count="4" />
                 <Component Subtype="SmallTube" Count="6" />
-                <Component Subtype="Magnetron_Component" Count="4" />
-                <Component Subtype="Magnetron_UpgradeMk4" Count="1" >
-                    <DeconstructId>
-                        <TypeId>Ingot</TypeId>
-                        <SubtypeId>UpgradePartMk5</SubtypeId>
-                    </DeconstructId>
-                </Component>
+                <Component Subtype="Magnetron_Component" Count="24" />
                 <Component Subtype="Computer" Count="85" />
                 <Component Subtype="Superconductor" Count="24" />
                 <Component Subtype="Motor" Count="4" />
@@ -958,27 +819,13 @@
                 <Y>1</Y>
                 <Z>1</Z>
             </InventorySize>
-            <!-- 
-                Values are volume fill ratio, means how much fuel reactor pulls from conveyor system to the inventory.
-                If volume fill ratio is bellow minimum, reactor starts pulling fuel up to maximum value.
-                Warning: Changing these values will affect performance.
-            -->
-            <InventoryFillFactorMin>0.001</InventoryFillFactorMin>
-            <InventoryFillFactorMax>0.002</InventoryFillFactorMax>
-            <!-- 
-                This is how much of fuel is pulled from conveyor system in one tick.
-                It's in minutes, means that it will pull X minutes of fuel in one tick.
-                Warning: Changing this value will affect performance.
-            -->
-            <FuelPullAmountFromConveyorInMinutes>10.0</FuelPullAmountFromConveyorInMinutes>
             <FuelInfos>
                 <FuelInfo>
                     <Id>
                         <TypeId>Ingot</TypeId>
                         <SubtypeId>DeuteriumContainer</SubtypeId>
-                        <SubtypeId>DTFuelCapsule</SubtypeId>
                     </Id>
-                    <Ratio>0.02</Ratio>
+                    <Ratio>0.04</Ratio>
                 </FuelInfo>
             </FuelInfos>
             <PrimarySound>ShipLrgNuclearSm</PrimarySound>
@@ -999,7 +846,7 @@
                 <TypeId>Reactor</TypeId>
                 <SubtypeId>LBFusionReactorT5</SubtypeId>
             </Id>
-            <DisplayName>30GW Deuterium Fusion Reactor Mk5</DisplayName>
+            <DisplayName>30GW Deuterium Fusion Reactor</DisplayName>
             <Icon>Textures\GUI\Icons\Cubes\FusionReactor.dds</Icon>
             <CubeSize>Large</CubeSize>
             <BlockTopology>TriangleMesh</BlockTopology>
@@ -1013,8 +860,7 @@
                 <Component Subtype="LargeTube" Count="80" />
                 <Component Subtype="Computer" Count="500" />
                 <Component Subtype="Superconductor" Count="620" />
-                <Component Subtype="Magnetron_Component" Count="400" />
-                <Component Subtype="Magnetron_UpgradeMk5" Count="1" />
+                <Component Subtype="Magnetron_Component" Count="7300" />
                 <Component Subtype="Motor" Count="40" />
                 <Component Subtype="SteelPlate" Count="400" />
             </Components>
@@ -1022,7 +868,7 @@
             <MountPoints>
                 <MountPoint Side="Front" StartX="0.07" StartY="1.89" EndX="0.39" EndY="1.99" />
                 <MountPoint Side="Left" StartX="0.07" StartY="1.89" EndX="0.39" EndY="1.99" />
-                <MountPoint Side="Bottom" StartX="1.10" StartY="1.10" EndX="1.90" EndY="1.90"  Default="true"/>
+                <MountPoint Side="Bottom" StartX="1.10" StartY="1.10" EndX="1.90" EndY="1.90" />
                 <MountPoint Side="Top" StartX="1.09" StartY="1.09" EndX="1.91" EndY="1.91" />
                 <MountPoint Side="Left" StartX="2.61" StartY="1.89" EndX="2.93" EndY="1.99" />
                 <MountPoint Side="Front" StartX="0.07" StartY="0.01" EndX="0.39" EndY="0.11" />
@@ -1068,27 +914,13 @@
                 <Y>1</Y>
                 <Z>1</Z>
             </InventorySize>
-            <!-- 
-                Values are volume fill ratio, means how much fuel reactor pulls from conveyor system to the inventory.
-                If volume fill ratio is bellow minimum, reactor starts pulling fuel up to maximum value.
-                Warning: Changing these values will affect performance.
-            -->
-            <InventoryFillFactorMin>0.001</InventoryFillFactorMin>
-            <InventoryFillFactorMax>0.002</InventoryFillFactorMax>
-            <!-- 
-                This is how much of fuel is pulled from conveyor system in one tick.
-                It's in minutes, means that it will pull X minutes of fuel in one tick.
-                Warning: Changing this value will affect performance.
-            -->
-            <FuelPullAmountFromConveyorInMinutes>10.0</FuelPullAmountFromConveyorInMinutes>
             <FuelInfos>
                 <FuelInfo>
                     <Id>
                         <TypeId>Ingot</TypeId>
                         <SubtypeId>DeuteriumContainer</SubtypeId>
-                        <SubtypeId>DTFuelCapsule</SubtypeId>
                     </Id>
-                    <Ratio>0.02</Ratio>
+                    <Ratio>0.04</Ratio>
                 </FuelInfo>
             </FuelInfos>
             <PrimarySound>ShipLrgNuclearSm</PrimarySound>
@@ -1107,7 +939,7 @@
                 <TypeId>Reactor</TypeId>
                 <SubtypeId>SBFusionReactorT5</SubtypeId>
             </Id>
-            <DisplayName>210MW Deuterium Fusion Reactor Mk5</DisplayName>
+            <DisplayName>210MW Deuterium Fusion Reactor</DisplayName>
             <Icon>Textures\GUI\Icons\Cubes\FusionReactor.dds</Icon>
             <CubeSize>Small</CubeSize>
             <BlockTopology>TriangleMesh</BlockTopology>
@@ -1116,11 +948,12 @@
             <Model>Models\Cubes\SBFusionReactor.mwm</Model>
             <Components>
                 <Component Subtype="SteelPlate" Count="20" />
+                <Component Subtype="Construction" Count="18" />
+                <Component Subtype="LargeTube" Count="4" />
                 <Component Subtype="SmallTube" Count="6" />
                 <Component Subtype="Computer" Count="120" />
                 <Component Subtype="Superconductor" Count="32" />
-                <Component Subtype="Magnetron_UpgradeMk5" Count="1" />
-                <Component Subtype="Magnetron_Component" Count="4" />
+                <Component Subtype="Magnetron_Component" Count="32" />
                 <Component Subtype="Motor" Count="4" />
                 <Component Subtype="Construction" Count="2" />
                 <Component Subtype="SteelPlate" Count="10" />
@@ -1154,27 +987,13 @@
                 <Y>1</Y>
                 <Z>1</Z>
             </InventorySize>
-            <!-- 
-                Values are volume fill ratio, means how much fuel reactor pulls from conveyor system to the inventory.
-                If volume fill ratio is bellow minimum, reactor starts pulling fuel up to maximum value.
-                Warning: Changing these values will affect performance.
-            -->
-            <InventoryFillFactorMin>0.001</InventoryFillFactorMin>
-            <InventoryFillFactorMax>0.002</InventoryFillFactorMax>
-            <!-- 
-                This is how much of fuel is pulled from conveyor system in one tick.
-                It's in minutes, means that it will pull X minutes of fuel in one tick.
-                Warning: Changing this value will affect performance.
-            -->
-            <FuelPullAmountFromConveyorInMinutes>10.0</FuelPullAmountFromConveyorInMinutes>
             <FuelInfos>
                 <FuelInfo>
                     <Id>
                         <TypeId>Ingot</TypeId>
                         <SubtypeId>DeuteriumContainer</SubtypeId>
-                        <SubtypeId>DTFuelCapsule</SubtypeId>
                     </Id>
-                    <Ratio>0.02</Ratio>
+                    <Ratio>0.04</Ratio>
                 </FuelInfo>
             </FuelInfos>
             <PrimarySound>ShipLrgNuclearSm</PrimarySound>

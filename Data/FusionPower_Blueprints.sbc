@@ -14,12 +14,11 @@
 				<Item Amount="10" TypeId="Ingot" SubtypeId="Silicon" />
 				<Item Amount="19" TypeId="Ingot" SubtypeId="Silver" />
 				<Item Amount="5" TypeId="Ingot" SubtypeId="Gold" />
-				<Item Amount="5" TypeId="Ingot" SubtypeId="Uranium" />
 			</Prerequisites>
 			<Result Amount="1" TypeId="Component" SubtypeId="Magnetron_Component" />
 			<BaseProductionTimeInSeconds>35</BaseProductionTimeInSeconds>
 		</Blueprint>
-		
+
 		<Blueprint>
 			<Id>
 				<TypeId>BlueprintDefinition</TypeId>
@@ -30,7 +29,7 @@
 			<Prerequisites>
 				<Item Amount="1" TypeId="Ore" SubtypeId="Deuterium" />
 			</Prerequisites>
-			<Result Amount="0.008" TypeId="Ingot" SubtypeId="DeuteriumContainer" />
+			<Result Amount="0.8" TypeId="Ingot" SubtypeId="DeuteriumContainer" />
 			<BaseProductionTimeInSeconds>5</BaseProductionTimeInSeconds>
 		</Blueprint> 
 <!--
@@ -60,7 +59,7 @@
 			<Prerequisites>
 				<Item Amount="1500" TypeId="Ore" SubtypeId="Stone" />
 			</Prerequisites>
-			<Result Amount="0.0015" TypeId="Ingot" SubtypeId="DeuteriumContainer" />
+			<Result Amount="0.15" TypeId="Ingot" SubtypeId="DeuteriumContainer" />
 			<BaseProductionTimeInSeconds>30</BaseProductionTimeInSeconds>
 		</Blueprint>	
 
@@ -74,91 +73,9 @@
 			<Prerequisites>
 				<Item Amount="1500" TypeId="Ore" SubtypeId="Ice" />
 			</Prerequisites>
-			<Result Amount="0.0015" TypeId="Ingot" SubtypeId="DeuteriumContainer" />
+			<Result Amount="0.15" TypeId="Ingot" SubtypeId="DeuteriumContainer" />
 			<BaseProductionTimeInSeconds>30</BaseProductionTimeInSeconds>
 		</Blueprint>
-		<Blueprint>
-			<Id>
-				<TypeId>BlueprintDefinition</TypeId>
-				<SubtypeId>Magnetron_UpgradeMk1</SubtypeId>
-			</Id>
-			<DisplayName>Magnetron Upgrade Mk1</DisplayName>
-			<Icon>Textures\GUI\Icons\component\AdvancedReactorBundle.dds</Icon>
-			<Prerequisites>
-				<Item Amount="30" TypeId="Ingot" SubtypeId="Iron" />
-				<Item Amount="26" TypeId="Ingot" SubtypeId="Cobalt" />
-				<Item Amount="10" TypeId="Ingot" SubtypeId="Silicon" />
-				<Item Amount="5" TypeId="Ingot" SubtypeId="Gold" />
-			</Prerequisites>
-			<Result Amount="1" TypeId="Component" SubtypeId="Magnetron_UpgradeMk1" />
-			<BaseProductionTimeInSeconds>35</BaseProductionTimeInSeconds>
-		</Blueprint>
-		<Blueprint>
-			<Id>
-				<TypeId>BlueprintDefinition</TypeId>
-				<SubtypeId>Magnetron_UpgradeMk2</SubtypeId>
-			</Id>
-			<DisplayName>Magnetron Upgrade Mk2</DisplayName>
-			<Icon>Textures\GUI\Icons\component\AdvancedReactorBundle.dds</Icon>
-			<Prerequisites>
-				<Item Amount="3" TypeId="Ingot" SubtypeId="UpgradePartMk1" />
-			</Prerequisites>
-			<Result Amount="1" TypeId="Component" SubtypeId="Magnetron_UpgradeMk2" />
-			<BaseProductionTimeInSeconds>35</BaseProductionTimeInSeconds>
-		</Blueprint>
-		<Blueprint>
-			<Id>
-				<TypeId>BlueprintDefinition</TypeId>
-				<SubtypeId>Magnetron_UpgradeMk3</SubtypeId>
-			</Id>
-			<DisplayName>Magnetron Upgrade Mk3</DisplayName>
-			<Icon>Textures\GUI\Icons\component\AdvancedReactorBundle.dds</Icon>
-			<Prerequisites>
-				<Item Amount="3" TypeId="Ingot" SubtypeId="UpgradePartMk2" />
-			</Prerequisites>
-			<Result Amount="1" TypeId="Component" SubtypeId="Magnetron_UpgradeMk3" />
-			<BaseProductionTimeInSeconds>35</BaseProductionTimeInSeconds>
-		</Blueprint>
-		<Blueprint>
-			<Id>
-				<TypeId>BlueprintDefinition</TypeId>
-				<SubtypeId>Magnetron_UpgradeMk4</SubtypeId>
-			</Id>
-			<DisplayName>Magnetron Upgrade Mk4</DisplayName>
-			<Icon>Textures\GUI\Icons\component\AdvancedReactorBundle.dds</Icon>
-			<Prerequisites>
-				<Item Amount="3" TypeId="Ingot" SubtypeId="UpgradePartMk3" />
-			</Prerequisites>
-			<Result Amount="1" TypeId="Component" SubtypeId="Magnetron_UpgradeMk4" />
-			<BaseProductionTimeInSeconds>35</BaseProductionTimeInSeconds>
-		</Blueprint>
-		<Blueprint>
-			<Id>
-				<TypeId>BlueprintDefinition</TypeId>
-				<SubtypeId>Magnetron_UpgradeMk5</SubtypeId>
-			</Id>
-			<DisplayName>Magnetron Upgrade Mk5</DisplayName>
-			<Icon>Textures\GUI\Icons\component\AdvancedReactorBundle.dds</Icon>
-			<Prerequisites>
-				<Item Amount="3" TypeId="Ingot" SubtypeId="UpgradePartMk4" />
-			</Prerequisites>
-			<Result Amount="1" TypeId="Component" SubtypeId="Magnetron_UpgradeMk5" />
-			<BaseProductionTimeInSeconds>35</BaseProductionTimeInSeconds>
-		</Blueprint>
-		<Blueprint>
-			<Id>
-				<TypeId>BlueprintDefinition</TypeId>
-				<SubtypeId>Magnetron_UpgradeMk5</SubtypeId>
-			</Id>
-			<DisplayName>Magnetron Upgrade Mk5</DisplayName>
-			<Icon>Textures\GUI\Icons\component\AdvancedReactorBundle.dds</Icon>
-			<Prerequisites>
-				<Item Amount="3" TypeId="Ingot" SubtypeId="UpgradePartMk5" />
-			</Prerequisites>
-			<Result Amount="1" TypeId="Component" SubtypeId="Magnetron_UpgradeMk5" />
-			<BaseProductionTimeInSeconds>35</BaseProductionTimeInSeconds>
-		</Blueprint>
-
 
 		<!--   <Blueprint>
       <Id>
