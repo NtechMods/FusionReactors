@@ -2,7 +2,7 @@
 <Definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ParticleEffects>
     <ParticleEffect xsi:type="ParticleEffect">
-      <Id Type="MyObjectBuilder_ParticleEffect" Subtype="EMPdamageEffect" />
+      <Id Type="MyObjectBuilder_ParticleEffect" Subtype="PlasmaFieldEffect" />
       <ParticleId>5550</ParticleId>
       <Length>0.4</Length>
       <Preload>0</Preload>

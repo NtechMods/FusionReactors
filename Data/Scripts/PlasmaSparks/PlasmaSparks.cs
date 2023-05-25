@@ -1,4 +1,5 @@
 ﻿using Sandbox.Common.ObjectBuilders;
+using Sandbox.Common.ObjectBuilders.Definitions;
 using Sandbox.ModAPI;
 using System;
 using System.Collections.Generic;
@@ -18,7 +19,11 @@ namespace PlasmaField
     public class ReactorRotatorGameLogic : MyGameLogicComponent
     {
         private const float MAX_RATE = (float)Math.PI * 2; // 360 deg/sec
-        MyReactor _reactor;
+        private MyReactor _reactor;
+        private MyParticleEffect _effect;
+        private IMyModel _effectCachedModel;
+        private MatrixD? _effectMatrix;
+        private const float ParticleMaxDistance = 30;
 
         public override void OnAddedToContainer()
         {
@@ -44,14 +49,6 @@ namespace PlasmaField
             NeedsUpdate = _reactor.IsWorking ? MyEntityUpdateEnum.EACH_FRAME : MyEntityUpdateEnum.NONE;
         }
 
-        private MyParticleEffect _effect;
-        private IMyModel _effectCachedModel;
-        private MatrixD? _effectMatrix;
-
-        const float ParticleMaxDistance = 30;
-
-
-
         private void UpdateParticleEffect()
         {
             if (_effectCachedModel != _reactor.Model)
@@ -73,8 +70,6 @@ namespace PlasmaField
                 _effect.Velocity = _reactor.CubeGrid.Physics?.GetVelocityAtPoint(_effect.WorldMatrix.Translation) ?? Vector3.Right; // rotation
 
                 if (_effect == null) return;
-               // if (Vector3D.DistanceSquared(MyAPIGateway.Session.Camera.WorldMatrix.Translation, _reactor.Position) >= ParticleMaxDistance * ParticleMaxDistance)
-                //    return;
 
             }
             else
@@ -97,8 +92,8 @@ namespace PlasmaField
             {
                 var sub = (IMyEntity)subpart;
                 var fractionalOutput = (_reactor.CurrentOutput + 1) / 4800;
-                var dTheta = 1 * MAX_RATE /* * fractionalOutput*/ * MyEngineConstants.PHYSICS_STEP_SIZE_IN_SECONDS;
-                subpart.SetEmissiveParts("PlasmaEmissive", Color.Teal, 1/* fractionalOutput*/);
+                var dTheta = 1 * MAX_RATE  * MyEngineConstants.PHYSICS_STEP_SIZE_IN_SECONDS;
+                subpart.SetEmissiveParts("PlasmaEmissive", Color.Teal, 1);
                 sub.LocalMatrix = sub.LocalMatrix * Matrix.CreateRotationY(dTheta);
             }
 

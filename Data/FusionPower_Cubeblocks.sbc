@@ -115,7 +115,7 @@
             <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="DeuteriumPowerGroup" />
             <Icon>Textures\GUI\Icons\Cubes\FusionReactor.dds</Icon>
             <DisplayName>DisplayName_BlockGroup_FusionPowered</DisplayName>
-            <Description>Fusion Reactors provid power without quantity.</Description>
+            <Description>Fusion Reactors provide power without quantity.</Description>
             <Blocks>
                 <Block Type="MyObjectBuilder_Reactor" Subtype="LBFusionReactorT1" />
                 <Block Type="MyObjectBuilder_Reactor" Subtype="SBFusionReactorT1" />
@@ -133,7 +133,7 @@
             <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="DeuteriumRefinerGroup" />
             <Icon>Textures\GUI\Icons\Cubes\ThRefinery.dds</Icon>
             <DisplayName>DisplayName_BlockGroup_FusionRefiners</DisplayName>
-            <Description>Deuterium Fuel Refiners that refine deuterium ice or ice with uranium ore.</Description>
+            <Description>Deuterium Fuel Refineries that refine deuterium ice or ice.</Description>
             <Blocks>
                 <Block Type="MyObjectBuilder_Refinery" Subtype="DeuteriumProcessor" />
             </Blocks>
