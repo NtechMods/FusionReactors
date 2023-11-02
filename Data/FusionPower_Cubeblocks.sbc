@@ -136,6 +136,7 @@
             <Description>Deuterium Fuel Refineries that refine deuterium ice or ice.</Description>
             <Blocks>
                 <Block Type="MyObjectBuilder_Refinery" Subtype="DeuteriumProcessor" />
+                <Block Type="MyObjectBuilder_Assembler" Subtype="DeuteriumandUraniumAssembler" />
             </Blocks>
         </BlockVariantGroup>
     </BlockVariantGroups>
@@ -1020,7 +1021,7 @@
             <BlockTopology>TriangleMesh</BlockTopology>
             <Size x="1" y="2" z="1" />
             <ModelOffset x="0" y="0" z="0" />
-            <Model>Models\Cubes\LBDeuteriumRefinery.mwm</Model>
+            <Model>Models\Cubes\large\DeuteriumProcessor.mwm</Model>
             <Components>
                 <Component Subtype="SteelPlate" Count="110" />
                 <Component Subtype="Construction" Count="5" />
@@ -1081,7 +1082,7 @@
             <BlockTopology>TriangleMesh</BlockTopology>
             <Size x="1" y="2" z="1" />
             <ModelOffset x="0" y="0" z="0" />
-            <Model>Models\Cubes\LBDeuteriumRefinery.mwm</Model>
+            <Model>Models\Cubes\large\DeuteriumProcessor.mwm</Model>
             <Components>
                 <Component Subtype="SteelPlate" Count="110" />
                 <Component Subtype="Construction" Count="5" />
