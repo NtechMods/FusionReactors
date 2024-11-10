@@ -232,7 +232,7 @@
             <MirroringZ>Y</MirroringZ>
             <EdgeType>Light</EdgeType>
             <BuildTimeSeconds>80</BuildTimeSeconds>
-            <Description>Deuterium Reactor that provides 1 Gigawatt of power, requires Deuterium Container to fuel.</Description>
+            <Description>Deuterium Reactor that provides 1 Gigawatt of power, requires [Deuterium Container] to fuel.</Description>
             <ResourceSourceGroup>Reactors</ResourceSourceGroup>
             <MaxPowerOutput>1000</MaxPowerOutput>
             <StockpileAmount>10</StockpileAmount>
@@ -247,9 +247,9 @@
                 <FuelInfo>
                     <Id>
                         <TypeId>Ingot</TypeId>
-                        <SubtypeId>DeuteriumContainer</SubtypeId>
+                        <SubtypeId>DTFuelCapsule</SubtypeId>
                     </Id>
-                    <Ratio>0.04</Ratio>
+                    <Ratio>0.005</Ratio> <!-- MaxFuelPerSecond = ((MaxPowerOutput / FuelProductionToCapacityMultiplier * Ratio) / FuelItem_Mass) (1000 / 3600 * 0.005) / 2 -->
                 </FuelInfo>
             </FuelInfos>
             <PrimarySound>ShipLrgNuclearSm</PrimarySound>
@@ -320,9 +320,9 @@
                 <FuelInfo>
                     <Id>
                         <TypeId>Ingot</TypeId>
-                        <SubtypeId>DeuteriumContainer</SubtypeId>
+                        <SubtypeId>DTFuelCapsule</SubtypeId>
                     </Id>
-                    <Ratio>0.04</Ratio>
+                    <Ratio>0.005</Ratio> <!-- MaxFuelPerSecond = ((MaxPowerOutput / FuelProductionToCapacityMultiplier * Ratio) / FuelItem_Mass) (1000 / 3600 * 0.005) / 2 -->
                 </FuelInfo>
             </FuelInfos>
             <PrimarySound>ShipLrgNuclearSm</PrimarySound>
@@ -415,9 +415,9 @@
                 <FuelInfo>
                     <Id>
                         <TypeId>Ingot</TypeId>
-                        <SubtypeId>DeuteriumContainer</SubtypeId>
+                        <SubtypeId>DTFuelCapsule</SubtypeId>
                     </Id>
-                    <Ratio>0.04</Ratio>
+                    <Ratio>0.005</Ratio> <!-- MaxFuelPerSecond = ((MaxPowerOutput / FuelProductionToCapacityMultiplier * Ratio) / FuelItem_Mass) (1000 / 3600 * 0.005) / 2 -->
                 </FuelInfo>
             </FuelInfos>
             <PrimarySound>ShipLrgNuclearSm</PrimarySound>
@@ -488,9 +488,9 @@
                 <FuelInfo>
                     <Id>
                         <TypeId>Ingot</TypeId>
-                        <SubtypeId>DeuteriumContainer</SubtypeId>
+                        <SubtypeId>DTFuelCapsule</SubtypeId>
                     </Id>
-                    <Ratio>0.04</Ratio>
+                    <Ratio>0.005</Ratio> <!-- MaxFuelPerSecond = ((MaxPowerOutput / FuelProductionToCapacityMultiplier * Ratio) / FuelItem_Mass) (1000 / 3600 * 0.005) / 2 -->
                 </FuelInfo>
             </FuelInfos>
             <PrimarySound>ShipLrgNuclearSm</PrimarySound>
@@ -583,9 +583,9 @@
                 <FuelInfo>
                     <Id>
                         <TypeId>Ingot</TypeId>
-                        <SubtypeId>DeuteriumContainer</SubtypeId>
+                        <SubtypeId>DTFuelCapsule</SubtypeId>
                     </Id>
-                    <Ratio>0.04</Ratio>
+                    <Ratio>0.005</Ratio> <!-- MaxFuelPerSecond = ((MaxPowerOutput / FuelProductionToCapacityMultiplier * Ratio) / FuelItem_Mass) (1000 / 3600 * 0.005) / 2 -->
                 </FuelInfo>
             </FuelInfos>
             <PrimarySound>ShipLrgNuclearSm</PrimarySound>
@@ -656,9 +656,9 @@
                 <FuelInfo>
                     <Id>
                         <TypeId>Ingot</TypeId>
-                        <SubtypeId>DeuteriumContainer</SubtypeId>
+                        <SubtypeId>DTFuelCapsule</SubtypeId>
                     </Id>
-                    <Ratio>0.04</Ratio>
+                    <Ratio>0.005</Ratio> <!-- MaxFuelPerSecond = ((MaxPowerOutput / FuelProductionToCapacityMultiplier * Ratio) / FuelItem_Mass) (1000 / 3600 * 0.005) / 2 -->
                 </FuelInfo>
             </FuelInfos>
             <PrimarySound>ShipLrgNuclearSm</PrimarySound>
@@ -751,9 +751,9 @@
                 <FuelInfo>
                     <Id>
                         <TypeId>Ingot</TypeId>
-                        <SubtypeId>DeuteriumContainer</SubtypeId>
+                        <SubtypeId>DTFuelCapsule</SubtypeId>
                     </Id>
-                    <Ratio>0.04</Ratio>
+                    <Ratio>0.005</Ratio> <!-- MaxFuelPerSecond = ((MaxPowerOutput / FuelProductionToCapacityMultiplier * Ratio) / FuelItem_Mass) (1000 / 3600 * 0.005) / 2 -->
                 </FuelInfo>
             </FuelInfos>
             <PrimarySound>ShipLrgNuclearSm</PrimarySound>
@@ -824,9 +824,9 @@
                 <FuelInfo>
                     <Id>
                         <TypeId>Ingot</TypeId>
-                        <SubtypeId>DeuteriumContainer</SubtypeId>
+                        <SubtypeId>DTFuelCapsule</SubtypeId>
                     </Id>
-                    <Ratio>0.04</Ratio>
+                    <Ratio>0.005</Ratio> <!-- MaxFuelPerSecond = ((MaxPowerOutput / FuelProductionToCapacityMultiplier * Ratio) / FuelItem_Mass) (1000 / 3600 * 0.005) / 2 -->
                 </FuelInfo>
             </FuelInfos>
             <PrimarySound>ShipLrgNuclearSm</PrimarySound>
@@ -919,9 +919,9 @@
                 <FuelInfo>
                     <Id>
                         <TypeId>Ingot</TypeId>
-                        <SubtypeId>DeuteriumContainer</SubtypeId>
+                        <SubtypeId>DTFuelCapsule</SubtypeId>
                     </Id>
-                    <Ratio>0.04</Ratio>
+                    <Ratio>0.005</Ratio> <!-- MaxFuelPerSecond = ((MaxPowerOutput / FuelProductionToCapacityMultiplier * Ratio) / FuelItem_Mass) (1000 / 3600 * 0.005) / 2 -->
                 </FuelInfo>
             </FuelInfos>
             <PrimarySound>ShipLrgNuclearSm</PrimarySound>
@@ -992,9 +992,9 @@
                 <FuelInfo>
                     <Id>
                         <TypeId>Ingot</TypeId>
-                        <SubtypeId>DeuteriumContainer</SubtypeId>
+                        <SubtypeId>DTFuelCapsule</SubtypeId>
                     </Id>
-                    <Ratio>0.04</Ratio>
+                    <Ratio>0.005</Ratio> <!-- MaxFuelPerSecond = ((MaxPowerOutput / FuelProductionToCapacityMultiplier * Ratio) / FuelItem_Mass) (1000 / 3600 * 0.005) / 2 -->
                 </FuelInfo>
             </FuelInfos>
             <PrimarySound>ShipLrgNuclearSm</PrimarySound>
@@ -1139,22 +1139,22 @@
         <BlockPosition>
             <Name>D2oProcessor</Name>
             <Position>
-                <X>2</X>
-                <Y>20</Y>
+                <X>6</X>
+                <Y>14</Y>
             </Position>
         </BlockPosition>
         <BlockPosition>
             <Name>D2oProcessor2</Name>
             <Position>
-                <X>3</X>
-                <Y>20</Y>
+                <X>7</X>
+                <Y>14</Y>
             </Position>
         </BlockPosition>
         <BlockPosition>
             <Name>Tier1D2o</Name>
             <Position>
-                <X>1</X>
-                <Y>20</Y>
+                <X>8</X>
+                <Y>14</Y>
             </Position>
         </BlockPosition>
     </BlockPositions>

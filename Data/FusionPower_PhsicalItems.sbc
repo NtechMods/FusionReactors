@@ -16,19 +16,43 @@
       <Mass>2</Mass>
       <Volume>2</Volume>
       <Model>Models\Ingots\DeuteriumContainer.mwm</Model>
-	  <PhysicalMaterial>Metal</PhysicalMaterial>
-            <MinimalPricePerUnit>4700</MinimalPricePerUnit>
-            <MinimumOfferAmount>10</MinimumOfferAmount>
-            <MaximumOfferAmount>40</MaximumOfferAmount>
-            <MinimumOrderAmount>1</MinimumOrderAmount>
-            <MaximumOrderAmount>15</MaximumOrderAmount>
-            <CanPlayerOrder>true</CanPlayerOrder>
-
-            <MinimumAcquisitionAmount>10</MinimumAcquisitionAmount>
-            <MaximumAcquisitionAmount>50</MaximumAcquisitionAmount>
+      <PhysicalMaterial>Metal</PhysicalMaterial>
+      <MinimalPricePerUnit>4700</MinimalPricePerUnit>
+      <MinimumOfferAmount>10</MinimumOfferAmount>
+      <MaximumOfferAmount>40</MaximumOfferAmount>
+      <MinimumOrderAmount>1</MinimumOrderAmount>
+      <MaximumOrderAmount>15</MaximumOrderAmount>
+      <CanPlayerOrder>true</CanPlayerOrder>
+      <MinimumAcquisitionAmount>10</MinimumAcquisitionAmount>
+      <MaximumAcquisitionAmount>50</MaximumAcquisitionAmount>
       <IconSymbol>D2o</IconSymbol>
     </PhysicalItem>
-    
+    <PhysicalItem>
+      <Id>
+        <TypeId>Ingot</TypeId>
+        <SubtypeId>DTFuelCapsule</SubtypeId>
+      </Id>
+      <DisplayName>Deuterium Container</DisplayName>
+      <Icon>Textures\GUI\Icons\ingot\HH2o.dds</Icon>
+      <Size>
+        <X>0.08</X>
+        <Y>0.08</Y>
+        <Z>0.08</Z>
+      </Size>
+      <Mass>2</Mass>
+      <Volume>2</Volume>
+      <Model>Models\Ingots\DeuteriumContainer.mwm</Model>
+      <PhysicalMaterial>Metal</PhysicalMaterial>
+      <MinimalPricePerUnit>4700</MinimalPricePerUnit>
+      <MinimumOfferAmount>10</MinimumOfferAmount>
+      <MaximumOfferAmount>40</MaximumOfferAmount>
+      <MinimumOrderAmount>1</MinimumOrderAmount>
+      <MaximumOrderAmount>15</MaximumOrderAmount>
+      <CanPlayerOrder>true</CanPlayerOrder>
+      <MinimumAcquisitionAmount>10</MinimumAcquisitionAmount>
+      <MaximumAcquisitionAmount>50</MaximumAcquisitionAmount>
+      <IconSymbol>D2o</IconSymbol>
+    </PhysicalItem>
     <PhysicalItem>
       <Id>
         <TypeId>Ore</TypeId>
@@ -44,15 +68,14 @@
       <Mass>0.51</Mass>
       <Volume>0.51</Volume>
       <Model>Models\Components\Sphere.mwm</Model>
-            <MinimalPricePerUnit>1200</MinimalPricePerUnit>
-            <MinimumOfferAmount>1</MinimumOfferAmount>
-            <MaximumOfferAmount>100</MaximumOfferAmount>
-            <MinimumOrderAmount>1</MinimumOrderAmount>
-            <MaximumOrderAmount>100</MaximumOrderAmount>
-            <CanPlayerOrder>true</CanPlayerOrder>
-
-            <MinimumAcquisitionAmount>1</MinimumAcquisitionAmount>
-            <MaximumAcquisitionAmount>100</MaximumAcquisitionAmount>
+      <MinimalPricePerUnit>1200</MinimalPricePerUnit>
+      <MinimumOfferAmount>1</MinimumOfferAmount>
+      <MaximumOfferAmount>100</MaximumOfferAmount>
+      <MinimumOrderAmount>1</MinimumOrderAmount>
+      <MaximumOrderAmount>100</MaximumOrderAmount>
+      <CanPlayerOrder>true</CanPlayerOrder>
+      <MinimumAcquisitionAmount>1</MinimumAcquisitionAmount>
+      <MaximumAcquisitionAmount>100</MaximumAcquisitionAmount>
       <IconSymbol>Dh2o</IconSymbol>
     </PhysicalItem>
     <PhysicalItem>
@@ -70,18 +93,17 @@
       <Mass>2</Mass>
       <Volume>2</Volume>
       <Model>Models\Components\reactor_components_component.mwm</Model>
-	  <PhysicalMaterial>Metal</PhysicalMaterial>
-            <MinimalPricePerUnit>40700</MinimalPricePerUnit>
-            <MinimumOfferAmount>10</MinimumOfferAmount>
-            <MaximumOfferAmount>40</MaximumOfferAmount>
-            <MinimumOrderAmount>1</MinimumOrderAmount>
-            <MaximumOrderAmount>15</MaximumOrderAmount>
-            <CanPlayerOrder>true</CanPlayerOrder>
-
-            <MinimumAcquisitionAmount>10</MinimumAcquisitionAmount>
-            <MaximumAcquisitionAmount>50</MaximumAcquisitionAmount>
+      <PhysicalMaterial>Metal</PhysicalMaterial>
+      <MinimalPricePerUnit>40700</MinimalPricePerUnit>
+      <MinimumOfferAmount>10</MinimumOfferAmount>
+      <MaximumOfferAmount>40</MaximumOfferAmount>
+      <MinimumOrderAmount>1</MinimumOrderAmount>
+      <MaximumOrderAmount>15</MaximumOrderAmount>
+      <CanPlayerOrder>true</CanPlayerOrder>
+      <MinimumAcquisitionAmount>10</MinimumAcquisitionAmount>
+      <MaximumAcquisitionAmount>50</MaximumAcquisitionAmount>
       <IconSymbol>Mk1</IconSymbol>
-    </PhysicalItem> 
+    </PhysicalItem>
     <PhysicalItem>
       <Id>
         <TypeId>Ingot</TypeId>
@@ -97,18 +119,17 @@
       <Mass>2</Mass>
       <Volume>2</Volume>
       <Model>Models\Components\reactor_components_component.mwm</Model>
-	  <PhysicalMaterial>Metal</PhysicalMaterial>
-            <MinimalPricePerUnit>100700</MinimalPricePerUnit>
-            <MinimumOfferAmount>10</MinimumOfferAmount>
-            <MaximumOfferAmount>40</MaximumOfferAmount>
-            <MinimumOrderAmount>1</MinimumOrderAmount>
-            <MaximumOrderAmount>15</MaximumOrderAmount>
-            <CanPlayerOrder>true</CanPlayerOrder>
-
-            <MinimumAcquisitionAmount>10</MinimumAcquisitionAmount>
-            <MaximumAcquisitionAmount>50</MaximumAcquisitionAmount>
+      <PhysicalMaterial>Metal</PhysicalMaterial>
+      <MinimalPricePerUnit>100700</MinimalPricePerUnit>
+      <MinimumOfferAmount>10</MinimumOfferAmount>
+      <MaximumOfferAmount>40</MaximumOfferAmount>
+      <MinimumOrderAmount>1</MinimumOrderAmount>
+      <MaximumOrderAmount>15</MaximumOrderAmount>
+      <CanPlayerOrder>true</CanPlayerOrder>
+      <MinimumAcquisitionAmount>10</MinimumAcquisitionAmount>
+      <MaximumAcquisitionAmount>50</MaximumAcquisitionAmount>
       <IconSymbol>Mk2</IconSymbol>
-    </PhysicalItem> 
+    </PhysicalItem>
     <PhysicalItem>
       <Id>
         <TypeId>Ingot</TypeId>
@@ -124,18 +145,17 @@
       <Mass>2</Mass>
       <Volume>2</Volume>
       <Model>Models\Components\reactor_components_component.mwm</Model>
-	  <PhysicalMaterial>Metal</PhysicalMaterial>
-            <MinimalPricePerUnit>150700</MinimalPricePerUnit>
-            <MinimumOfferAmount>10</MinimumOfferAmount>
-            <MaximumOfferAmount>40</MaximumOfferAmount>
-            <MinimumOrderAmount>1</MinimumOrderAmount>
-            <MaximumOrderAmount>15</MaximumOrderAmount>
-            <CanPlayerOrder>true</CanPlayerOrder>
-
-            <MinimumAcquisitionAmount>10</MinimumAcquisitionAmount>
-            <MaximumAcquisitionAmount>50</MaximumAcquisitionAmount>
+      <PhysicalMaterial>Metal</PhysicalMaterial>
+      <MinimalPricePerUnit>150700</MinimalPricePerUnit>
+      <MinimumOfferAmount>10</MinimumOfferAmount>
+      <MaximumOfferAmount>40</MaximumOfferAmount>
+      <MinimumOrderAmount>1</MinimumOrderAmount>
+      <MaximumOrderAmount>15</MaximumOrderAmount>
+      <CanPlayerOrder>true</CanPlayerOrder>
+      <MinimumAcquisitionAmount>10</MinimumAcquisitionAmount>
+      <MaximumAcquisitionAmount>50</MaximumAcquisitionAmount>
       <IconSymbol>Mk3</IconSymbol>
-    </PhysicalItem> 
+    </PhysicalItem>
     <PhysicalItem>
       <Id>
         <TypeId>Ingot</TypeId>
@@ -151,18 +171,17 @@
       <Mass>2</Mass>
       <Volume>2</Volume>
       <Model>Models\Components\reactor_components_component.mwm</Model>
-	  <PhysicalMaterial>Metal</PhysicalMaterial>
-            <MinimalPricePerUnit>200700</MinimalPricePerUnit>
-            <MinimumOfferAmount>10</MinimumOfferAmount>
-            <MaximumOfferAmount>40</MaximumOfferAmount>
-            <MinimumOrderAmount>1</MinimumOrderAmount>
-            <MaximumOrderAmount>15</MaximumOrderAmount>
-            <CanPlayerOrder>true</CanPlayerOrder>
-
-            <MinimumAcquisitionAmount>10</MinimumAcquisitionAmount>
-            <MaximumAcquisitionAmount>50</MaximumAcquisitionAmount>
+      <PhysicalMaterial>Metal</PhysicalMaterial>
+      <MinimalPricePerUnit>200700</MinimalPricePerUnit>
+      <MinimumOfferAmount>10</MinimumOfferAmount>
+      <MaximumOfferAmount>40</MaximumOfferAmount>
+      <MinimumOrderAmount>1</MinimumOrderAmount>
+      <MaximumOrderAmount>15</MaximumOrderAmount>
+      <CanPlayerOrder>true</CanPlayerOrder>
+      <MinimumAcquisitionAmount>10</MinimumAcquisitionAmount>
+      <MaximumAcquisitionAmount>50</MaximumAcquisitionAmount>
       <IconSymbol>Mk4</IconSymbol>
-    </PhysicalItem> 
+    </PhysicalItem>
     <PhysicalItem>
       <Id>
         <TypeId>Ingot</TypeId>
@@ -178,19 +197,18 @@
       <Mass>2</Mass>
       <Volume>2</Volume>
       <Model>Models\Components\reactor_components_component.mwm</Model>
-	  <PhysicalMaterial>Metal</PhysicalMaterial>
-            <MinimalPricePerUnit>250700</MinimalPricePerUnit>
-            <MinimumOfferAmount>10</MinimumOfferAmount>
-            <MaximumOfferAmount>40</MaximumOfferAmount>
-            <MinimumOrderAmount>1</MinimumOrderAmount>
-            <MaximumOrderAmount>15</MaximumOrderAmount>
-            <CanPlayerOrder>true</CanPlayerOrder>
-
-            <MinimumAcquisitionAmount>10</MinimumAcquisitionAmount>
-            <MaximumAcquisitionAmount>50</MaximumAcquisitionAmount>
+      <PhysicalMaterial>Metal</PhysicalMaterial>
+      <MinimalPricePerUnit>250700</MinimalPricePerUnit>
+      <MinimumOfferAmount>10</MinimumOfferAmount>
+      <MaximumOfferAmount>40</MaximumOfferAmount>
+      <MinimumOrderAmount>1</MinimumOrderAmount>
+      <MaximumOrderAmount>15</MaximumOrderAmount>
+      <CanPlayerOrder>true</CanPlayerOrder>
+      <MinimumAcquisitionAmount>10</MinimumAcquisitionAmount>
+      <MaximumAcquisitionAmount>50</MaximumAcquisitionAmount>
       <IconSymbol>Mk5</IconSymbol>
-    </PhysicalItem> 
-<!--	<PhysicalItem>
+    </PhysicalItem>
+    <!--	<PhysicalItem>
       <Id>
         <TypeId>Ore</TypeId>
         <SubtypeId>DepletedWaterIce</SubtypeId>
