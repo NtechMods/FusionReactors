@@ -48,50 +48,6 @@ namespace PlasmaField
             UpdateParticleEffect();
             NeedsUpdate = _reactor.IsWorking ? MyEntityUpdateEnum.EACH_FRAME : MyEntityUpdateEnum.NONE;
         }
-
-
-        /*private void UpdateParticleEffect()
-        {
-            try
-            {
-                if (_effectCachedModel != _reactor.Model)
-                {
-                    _effectCachedModel = _reactor.Model;
-                    var tmp = new Dictionary<string, IMyModelDummy>();
-                    _effectCachedModel?.GetDummies(tmp);
-                    _effectMatrix = tmp.GetValueOrDefault("subpart_PlasmaParticle")?.Matrix; // empty for particle
-                }
-                if (_reactor.IsWorking && _effectMatrix.HasValue)
-                {
-                    var fractionalOutput = _reactor.CurrentOutput / _reactor.MaxOutput;
-                    var dTheta = 1 * MyEngineConstants.PHYSICS_STEP_SIZE_IN_SECONDS;
-                    _effectMatrix = _effectMatrix.Value * MatrixD.CreateRotationY(-dTheta);
-                    if (_effect == null)
-
-                        MyParticlesManager.TryCreateParticleEffect("PlasmaFieldEffect", out _effect); // particle subtype
-                    _effect.WorldMatrix = _effectMatrix.Value * _reactor.WorldMatrix;
-                    _effect.Velocity = _reactor.CubeGrid.Physics?.GetVelocityAtPoint(_effect.WorldMatrix.Translation) ?? Vector3.Right; // rotation
-
-                    if (_effect == null) return;
-
-                }
-                else
-                {
-                    _effect?.Stop();
-                    if (_effect != null)
-                        MyParticlesManager.RemoveParticleEffect(_effect);
-                    _effect = null;
-                    if (_effect == null) return;
-                }
-            }
-            catch (Exception e)
-            {
-                VRage.Utils.MyLog.Default.WriteLine($"Crashed at UpdateParticleEffect() :: _reactor={_reactor}; reactor.CubeGrid={_reactor?.CubeGrid}; _effect={_effect}; _effectMatrix={_effectMatrix}");
-                throw e;
-            }
-        }*/
-
-
         private void UpdateParticleEffect()
         {
             if (_effectCachedModel != _reactor.Model)
@@ -130,7 +86,7 @@ namespace PlasmaField
         {
             if (MyAPIGateway.Utilities.IsDedicated) return;
             UpdateParticleEffect();
-            MyEntitySubpart subpart;
+            MyEntitySubpart subpart = null;
             if (_reactor != null && _reactor.TryGetSubpart("PlasmaParticle", out subpart))
             {
                 var sub = (IMyEntity)subpart;
@@ -138,6 +94,11 @@ namespace PlasmaField
                 var dTheta = 1 * MAX_RATE * MyEngineConstants.PHYSICS_STEP_SIZE_IN_SECONDS;
                 subpart.SetEmissiveParts("PlasmaEmissive", Color.Teal, 1);
                 sub.LocalMatrix = sub.LocalMatrix * Matrix.CreateRotationY(dTheta);
+            }
+            else if (_reactor != null && _reactor.TryGetSubpart("PlasmaParticle", out subpart))
+            {
+                //Reset emissive properties when the reactor is off
+                subpart.SetEmissiveParts("PlasmaEmissive", Color.Black, 0);
             }
 
         }

@@ -4,9 +4,9 @@
 		<Blueprint>
 			<Id>
 				<TypeId>BlueprintDefinition</TypeId>
-				<SubtypeId>Magnetron_Component</SubtypeId>
+				<SubtypeId>MagnetronComponent</SubtypeId>
 			</Id>
-			<DisplayName>Magnetron Component</DisplayName>
+			<DisplayName>Magnetron</DisplayName>
 			<Icon>Textures\GUI\Icons\component\AdvancedReactorBundle.dds</Icon>
 			<Prerequisites>
 				<Item Amount="30" TypeId="Ingot" SubtypeId="Iron" />
@@ -15,7 +15,7 @@
 				<Item Amount="19" TypeId="Ingot" SubtypeId="Silver" />
 				<Item Amount="5" TypeId="Ingot" SubtypeId="Gold" />
 			</Prerequisites>
-			<Result Amount="1" TypeId="Component" SubtypeId="Magnetron_Component" />
+			<Result Amount="1" TypeId="Component" SubtypeId="MagnetronComponent" />
 			<BaseProductionTimeInSeconds>35</BaseProductionTimeInSeconds>
 		</Blueprint>
 

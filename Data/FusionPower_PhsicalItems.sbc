@@ -6,12 +6,12 @@
         <TypeId>Ingot</TypeId>
         <SubtypeId>DeuteriumContainer</SubtypeId>
       </Id>
-      <DisplayName>Deuterium Container</DisplayName>
+      <DisplayName>Deuterium Container_old</DisplayName>
       <Icon>Textures\GUI\Icons\ingot\HH2o.dds</Icon>
       <Size>
-        <X>0.08</X>
-        <Y>0.08</Y>
-        <Z>0.08</Z>
+        <X>0.04</X>
+        <Y>0.04</Y>
+        <Z>0.04</Z>
       </Size>
       <Mass>2</Mass>
       <Volume>2</Volume>
@@ -35,9 +35,9 @@
       <DisplayName>Deuterium Container</DisplayName>
       <Icon>Textures\GUI\Icons\ingot\HH2o.dds</Icon>
       <Size>
-        <X>0.08</X>
-        <Y>0.08</Y>
-        <Z>0.08</Z>
+        <X>0.04</X>
+        <Y>0.04</Y>
+        <Z>0.04</Z>
       </Size>
       <Mass>2</Mass>
       <Volume>2</Volume>
