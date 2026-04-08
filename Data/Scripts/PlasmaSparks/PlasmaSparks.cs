@@ -24,12 +24,15 @@ namespace PlasmaField
         private IMyModel _effectCachedModel;
         private MatrixD? _effectMatrix;
         private const float ParticleMaxDistance = 30;
+        private MyEntitySubpart _plasmaSubpart;
 
         public override void OnAddedToContainer()
         {
             if (MyAPIGateway.Utilities.IsDedicated) return;
             _reactor = (MyReactor)Entity;
             _reactor.IsWorkingChanged += Reactor_IsWorkingChanged;
+            // Cache subpart for performance
+            _reactor.TryGetSubpart("PlasmaParticle", out _plasmaSubpart);
             Reactor_IsWorkingChanged(_reactor);
         }
 
@@ -59,17 +62,15 @@ namespace PlasmaField
             }
             if (_reactor.IsWorking && _effectMatrix.HasValue)
             {
-                var fractionalOutput = _reactor.CurrentOutput / _reactor.MaxOutput;
                 var dTheta = 1 * MyEngineConstants.PHYSICS_STEP_SIZE_IN_SECONDS;
                 _effectMatrix = _effectMatrix.Value * MatrixD.CreateRotationY(-dTheta);
                 if (_effect == null)
-
                     MyParticlesManager.TryCreateParticleEffect("PlasmaFieldEffect", out _effect); // particle subtype
-                _effect.WorldMatrix = _effectMatrix.Value * _reactor.WorldMatrix;
-                _effect.Velocity = _reactor.CubeGrid.Physics?.GetVelocityAtPoint(_effect.WorldMatrix.Translation) ?? Vector3.Right; // rotation
-
-                if (_effect == null) return;
-
+                if (_effect != null)
+                {
+                    _effect.WorldMatrix = _effectMatrix.Value * _reactor.WorldMatrix;
+                    _effect.Velocity = _reactor.CubeGrid.Physics?.GetVelocityAtPoint(_effect.WorldMatrix.Translation) ?? Vector3.Right; // rotation
+                }
             }
             else
             {
@@ -77,7 +78,6 @@ namespace PlasmaField
                 if (_effect != null)
                     MyParticlesManager.RemoveParticleEffect(_effect);
                 _effect = null;
-                if (_effect == null) return;
             }
             
         }
@@ -86,21 +86,20 @@ namespace PlasmaField
         {
             if (MyAPIGateway.Utilities.IsDedicated) return;
             UpdateParticleEffect();
-            MyEntitySubpart subpart = null;
-            if (_reactor != null && _reactor.TryGetSubpart("PlasmaParticle", out subpart))
+            if (_plasmaSubpart != null)
             {
-                var sub = (IMyEntity)subpart;
-                var fractionalOutput = (_reactor.CurrentOutput + 1) / 4800;
                 var dTheta = 1 * MAX_RATE * MyEngineConstants.PHYSICS_STEP_SIZE_IN_SECONDS;
-                subpart.SetEmissiveParts("PlasmaEmissive", Color.Teal, 1);
-                sub.LocalMatrix = sub.LocalMatrix * Matrix.CreateRotationY(dTheta);
+                _plasmaSubpart.SetEmissiveParts("PlasmaEmissive", Color.Teal, 1);
+                _plasmaSubpart.LocalMatrix = _plasmaSubpart.LocalMatrix * Matrix.CreateRotationY(dTheta);
             }
-            else if (_reactor != null && _reactor.TryGetSubpart("PlasmaParticle", out subpart))
+            else
             {
-                //Reset emissive properties when the reactor is off
-                subpart.SetEmissiveParts("PlasmaEmissive", Color.Black, 0);
+                // Reset emissive properties when the reactor is off or subpart not found
+                if (_reactor != null && _reactor.TryGetSubpart("PlasmaParticle", out var subpart))
+                {
+                    subpart.SetEmissiveParts("PlasmaEmissive", Color.Black, 0);
+                }
             }
-
         }
     }
 }
