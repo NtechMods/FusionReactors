@@ -2,6 +2,7 @@ using Sandbox.Common.ObjectBuilders;
 using Sandbox.ModAPI;
 using Sandbox.Game.Entities;
 using System;
+using System.Collections.Generic;
 using VRage.Game;
 using VRage.Game.Components;
 using VRage.Game.Entity;
@@ -57,10 +58,17 @@ namespace PlasmaField
 
             float rotation = RotationRate * MyEngineConstants.PHYSICS_STEP_SIZE_IN_SECONDS;
             Matrix localMatrix = _plasmaSubpart.PositionComp.LocalMatrixRef;
-            localMatrix *= Matrix.CreateRotationY(rotation);
+            localMatrix *= Matrix.CreateRotationY(rotation / 3);
             _plasmaSubpart.PositionComp.SetLocalMatrix(ref localMatrix);
-            _plasmaSubpart.SetEmissiveParts("PlasmaEmissive", Color.Teal, 1f);
 
+            float power = _reactor.MaxOutput > 0f ? MathHelper.Clamp(_reactor.CurrentOutput / _reactor.MaxOutput, 0f, 1f) : 0f;
+            Vector3 lowColor = new Vector3(0.2f, 0.7f, 1f);
+            Vector3 highColor = new Vector3(1f, 0.35f, 0.1f);
+            Vector3 blendedColor = Vector3.Lerp(lowColor, highColor, power);
+            float intensity = MathHelper.Lerp(0.2f, 1f, power);
+
+            _plasmaSubpart.SetEmissiveParts("PlasmaEmissive", new Color(blendedColor.X, blendedColor.Y, blendedColor.Z), intensity);
+            _plasmaSubpart.SetEmissiveParts("Emissive", new Color(blendedColor.X * 0.5f, blendedColor.Y * 0.2f, blendedColor.Z * 1.2f), intensity * 0.8f);
             if (_effect != null)
             {
                 _effect.WorldMatrix = GetEffectWorldMatrix();
@@ -75,24 +83,32 @@ namespace PlasmaField
             if (_reactor == null || _reactor.Model == null)
                 return;
 
-            if (_plasmaSubpart == null || _plasmaSubpart.Closed)
-                _plasmaSubpart = _reactor.GetSubpart("PlasmaParticle");
-
-            if (!_reactor.IsWorking || _plasmaSubpart == null)
+            try
             {
-                if (_plasmaSubpart != null)
-                    _plasmaSubpart.SetEmissiveParts("PlasmaEmissive", Color.Black, 0f);
+                if (_plasmaSubpart == null || _plasmaSubpart.Closed)
+                    _plasmaSubpart = _reactor.GetSubpart("PlasmaParticle");
+
+                if (!_reactor.IsWorking || _plasmaSubpart == null)
+                {
+                    if (_plasmaSubpart != null)
+                        _plasmaSubpart.SetEmissiveParts("PlasmaEmissive", Color.Black, 0f);
+                    StopEffect();
+                    return;
+                }
+
+                if (_effect == null)
+                {
+                    MyParticlesManager.TryCreateParticleEffect("PlasmaFieldEffect", out _effect);
+                }
+
+                if (_effect != null)
+                    _effect.WorldMatrix = GetEffectWorldMatrix();
+            }
+            catch (KeyNotFoundException)
+            {
+                _plasmaSubpart = null;
                 StopEffect();
-                return;
             }
-
-            if (_effect == null)
-            {
-                MyParticlesManager.TryCreateParticleEffect("PlasmaFieldEffect", out _effect);
-            }
-
-            if (_effect != null)
-                _effect.WorldMatrix = GetEffectWorldMatrix();
         }
 
         private MatrixD GetEffectWorldMatrix()
