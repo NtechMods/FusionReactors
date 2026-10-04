@@ -269,7 +269,7 @@
                 <SubtypeId>SBFusionReactorT1</SubtypeId>
             </Id>
             <DisplayName>20MW Deuterium Fusion Reactor</DisplayName>
-            <Icon>Textures\GUI\Icons\Cubes\FusionReactor.dds</Icon>
+            <Icon>Textures\GUI\Icons\Cubes\SmallFusionReactor.dds</Icon>
             <CubeSize>Small</CubeSize>
             <BlockTopology>TriangleMesh</BlockTopology>
             <Size x="3" y="2" z="3" />
@@ -437,7 +437,7 @@
                 <SubtypeId>SBFusionReactorT2</SubtypeId>
             </Id>
             <DisplayName>45MW Deuterium Fusion Reactor</DisplayName>
-            <Icon>Textures\GUI\Icons\Cubes\FusionReactor.dds</Icon>
+            <Icon>Textures\GUI\Icons\Cubes\SmallFusionReactor.dds</Icon>
             <CubeSize>Small</CubeSize>
             <BlockTopology>TriangleMesh</BlockTopology>
             <Size x="3" y="2" z="3" />
@@ -605,7 +605,7 @@
                 <SubtypeId>SBFusionReactorT3</SubtypeId>
             </Id>
             <DisplayName>75MW Deuterium Fusion Reactor</DisplayName>
-            <Icon>Textures\GUI\Icons\Cubes\FusionReactor.dds</Icon>
+            <Icon>Textures\GUI\Icons\Cubes\SmallFusionReactor.dds</Icon>
             <CubeSize>Small</CubeSize>
             <BlockTopology>TriangleMesh</BlockTopology>
             <Size x="3" y="2" z="3" />
@@ -773,7 +773,7 @@
                 <SubtypeId>SBFusionReactorT4</SubtypeId>
             </Id>
             <DisplayName>150MW Deuterium Fusion Reactor</DisplayName>
-            <Icon>Textures\GUI\Icons\Cubes\FusionReactor.dds</Icon>
+            <Icon>Textures\GUI\Icons\Cubes\SmallFusionReactor.dds</Icon>
             <CubeSize>Small</CubeSize>
             <BlockTopology>TriangleMesh</BlockTopology>
             <Size x="3" y="2" z="3" />
@@ -941,7 +941,7 @@
                 <SubtypeId>SBFusionReactorT5</SubtypeId>
             </Id>
             <DisplayName>210MW Deuterium Fusion Reactor</DisplayName>
-            <Icon>Textures\GUI\Icons\Cubes\FusionReactor.dds</Icon>
+            <Icon>Textures\GUI\Icons\Cubes\SmallFusionReactor.dds</Icon>
             <CubeSize>Small</CubeSize>
             <BlockTopology>TriangleMesh</BlockTopology>
             <Size x="3" y="2" z="3" />
